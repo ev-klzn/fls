@@ -1,0 +1,84 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+}
+
+/* 
+	До БЕМ-блоків заборонено застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+
+/* (!) Це помилка */
+.section-header {
+	margin-bottom: 50px;
+}
+
+/* 
+	До БЕМ-елементу дозволено застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+/* Це вірно */
+.section-header__title {
+	margin-bottom: 50px;
+}
+
+/* 
+	До БЕМ-модифікатору дозволено застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+.section-header__title {
+	color: #0e333d;
+}
+.section-header__title--white {
+	color: #fff;
+}
+
+.section-header {
+}
+.section-header--margin {
+	margin-bottom: 50px;
+}
+
+/* БЕМ-мікс */
+
+.main-title {
+}
+
+.section-header {
+}
+.section-header__label {
+}
+.section-header__title {
+	margin-bottom: 50px;
+}
+.section-header__text {
+}
+
+.title {
+	color: #000;
+	font-size: 20px;
+	line-height: 120%;
+	/* .... */
+}
+
+.about {
+}
+.about__container {
+}
+.about__title {
+	margin-bottom: 20px;
+}
+
+.contacts {
+}
+.contacts__container {
+}
+.contacts__title {
+	margin-bottom: 50px;
+	color: green;
+}

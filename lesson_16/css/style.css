@@ -1,0 +1,904 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  /* font-family: "Causten", sans-serif; */
+  /* font-family: 'DM Serif Text', serif; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Core Sans C 65", sans-serif; */
+  /* font-family: "Cormorant Infant", serif; */
+  /* background-image: linear-gradient(to bottom, #f4f6f5, #f4f6f5, #f3f5f4, #f3f5f4, #f2f4f3); */
+}
+
+.up,
+.footer-links {
+  text-align: center;
+}
+
+.up:not(:last-child) {
+  margin-right: 15px;
+}
+
+.up:hover {
+  text-decoration: underline;
+}
+
+[class*="__container"] {
+  max-width: 925px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page__contact-us {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+/* .practice__title {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 1.33px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.33;
+}
+
+.practice__title--subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.practice__items {
+  margin-bottom: 20px;
+} */
+
+
+.wrapper {
+  position: relative;
+}
+
+
+/* .header__container {
+} */
+
+.header {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* - */
+.page__my-info {
+  margin-bottom: 150px;
+}
+
+/* .info-my {} */
+
+.info-my__title,
+.title {
+  color: #3C4242;
+  font-family: "Core Sans C 65", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+  margin-bottom: 20px;
+}
+
+.info-my__subtitle,
+.subtitle {
+  color: #3C4242;
+  font-family: "Core Sans C 65", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.44px;
+  margin-bottom: 50px;
+}
+
+/* .info-my__block {
+  margin-bottom: 50px;
+} */
+
+/* .body-info {} */
+
+.check-out__title::before {
+  content: "";
+  width: 6px;
+  height: 28px;
+  border-radius: 10px;
+  background-color: #8A33FD;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.check-out__title {}
+
+.body-info__colums,
+.check-out__colums {
+  display: flex;
+  margin-bottom: 43px;
+}
+
+.body-info__colums,
+.check-out__colums {
+  --col: 2;
+  --gap: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.column-1,
+.column-2 {
+  flex: 0 1 calc((100% - (var(--gap) * (var(--col) - 1))) / var(--col));
+}
+
+.column-1 {}
+
+.column-1__f-name,
+.column-1__country,
+.column-1__street,
+.column-1__city,
+.column-1__phone,
+.column-2__l-name,
+.column-2__company,
+.column-2__apt,
+.column-2__state,
+.column-2__code,
+.instruction {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.column-2__code,
+.column-1__phone {
+  margin-bottom: 0;
+}
+
+/* .column-1__country {}
+
+.column-1__street {}
+
+.column-1__city {}
+
+.column-1__phone {}
+
+.column-2 {}
+
+.column-2__l-name {}
+
+.column-2__company {}
+
+.column-2__apt {}
+
+.column-2__state {}
+
+.column-2__code {} */
+
+/* .instruction {} */
+
+.instruction--margin {
+  margin-bottom: 30px;
+}
+
+.column-1>div>input,
+.column-2>div>input,
+.instruction>textarea,
+.column-2__state>select {
+  padding: 15px;
+  width: 100%;
+  background-color: #F6F6F6;
+  color: #807D7E;
+  font-size: 16px;
+  border-radius: 8px;
+  height: 55px;
+}
+
+.instruction>textarea {
+  min-height: 150px;
+  padding: 17px 23px;
+  resize: vertical;
+}
+
+/* .info-my__buttons {} */
+
+.submit {
+  color: #FFF;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #8A33FD;
+  padding: 12px 40px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.submit--margin {
+  margin-right: 30px;
+}
+
+.submit:hover {
+  color: #8A33FD;
+  background: #F6F6F6;
+  border: 1px solid #8A33FD;
+}
+
+.reset {
+  color: #807D7E;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #F6F6F6;
+  padding: 12px 40px;
+  transition: all 0.3s;
+}
+
+.reset:hover {
+  color: #F6F6F6;
+  background: #8A33FD;
+  border: 1px solid #8A33FD;
+}
+
+/* - */
+
+.checkbox__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.info-my__checkbox {
+  margin-bottom: 60px;
+}
+
+.checkbox {
+  position: relative;
+}
+
+/* прибираємо стандартний чекбокс */
+.checkbox__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+/* власні стилі для outline при використанні Tab */
+/* 
+.checkbox__input:focus + .checkbox__label{
+	outline: 1px solid #c80808;
+	border-radius: 5px;
+} 
+*/
+
+/* стилізуємо label */
+.checkbox__label {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 12px;
+}
+
+/* робимо квадратик з фоновим кольором */
+.checkbox__label::before {
+  content: "";
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #BEBCBD;
+  transition: all 0.3s ease-in-out;
+}
+
+/* за потреби робим кружок та позиціонуємо його по центру квадратика, так як нема іконки то 
+для наочності я його додав, просто розкоментуйте код нижче */
+/*
+.checkbox__label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: 5px;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+*/
+/* стилі для тексту */
+.checkbox__text {
+  align-self: center;
+}
+
+/* Стан "вибраний" - checked при кліку звертаємось до псевдоелементу лейбла та задаємо 
+потрібні стилі, чи фонову картинку - іконку */
+.checkbox__input:checked+.checkbox__label::before {
+  background: #8A33FD url("можна-додати-іконку") center / 70% no-repeat;
+  border: 2px solid #BEBCBD;
+}
+
+/* Стан "вибраний" - checked при кліку звертаємось до псевдоелементу лейбла та задаємо 
+потрібні стилі, 
+after не потрібно робити коли є фонова картинка - якась іконка я його додав для наочного 
+прикладу, щоб побачити як виглядає розкоментуйте код нижче */
+/*
+.checkbox__input:checked + .checkbox__label::after {
+  opacity: 1;
+}
+*/
+
+/* - */
+
+/* .check-out__colums {
+  display: flex;
+} */
+
+
+.columns-three {
+  --col: 3;
+  --gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.columns-three__city,
+.columns-three__state,
+.columns-three__code {
+  flex: 0 1 calc((100% - (var(--gap) * (var(--col) - 1))) / var(--col));
+}
+
+.columns-three__city,
+.columns-three__state,
+.columns-three__code {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.columns-three__city>input,
+.columns-three__state>select,
+.columns-three__code>input {
+  padding: 15px;
+  width: 100%;
+  background-color: #F6F6F6;
+  color: #807D7E;
+  font-size: 16px;
+  border-radius: 8px;
+  height: 55px;
+}
+
+.check-out__colums--no-margin {
+  margin-bottom: 0;
+}
+
+/* - */
+.checkbox-check-out__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.checkbox-check-out {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #EDEEF2;
+}
+
+.checkbox-check-out {
+  position: relative;
+}
+
+/* прибираємо стандартний чекбокс */
+.checkbox-check-out__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+/* власні стилі для outline при використанні Tab */
+/* 
+.checkbox__input:focus + .checkbox__label{
+	outline: 1px solid #c80808;
+	border-radius: 5px;
+} 
+*/
+
+/* стилізуємо label */
+.checkbox-check-out__label {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 12px;
+}
+
+/* робимо квадратик з фоновим кольором */
+.checkbox-check-out__label::before {
+  content: "";
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #BEBCBD;
+  transition: all 0.3s ease-in-out;
+}
+
+/* за потреби робим кружок та позиціонуємо його по центру квадратика, так як нема іконки то 
+для наочності я його додав, просто розкоментуйте код нижче */
+/*
+.checkbox__label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: 5px;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+*/
+/* стилі для тексту */
+.checkbox-check-out__text {
+  align-self: center;
+}
+
+/* Стан "вибраний" - checked при кліку звертаємось до псевдоелементу лейбла та задаємо 
+потрібні стилі, чи фонову картинку - іконку */
+.checkbox-check-out__input:checked+.checkbox-check-out__label::before {
+  background: #8A33FD url("можна-додати-іконку") center / 70% no-repeat;
+  border: 2px solid #BEBCBD;
+}
+
+/* Стан "вибраний" - checked при кліку звертаємось до псевдоелементу лейбла та задаємо 
+потрібні стилі, 
+after не потрібно робити коли є фонова картинка - якась іконка я його додав для наочного 
+прикладу, щоб побачити як виглядає розкоментуйте код нижче */
+/*
+.checkbox__input:checked + .checkbox__label::after {
+  opacity: 1;
+}
+*/
+
+/* - */
+
+
+.check-out__checkbox {
+  margin-bottom: 30px;
+}
+
+.checkbox-check-out {}
+
+.checkbox-check-out__item {}
+
+.checkbox-check-out__input {}
+
+.checkbox-check-out__label {}
+
+.check-out__buttons {
+  margin-bottom: 30px;
+}
+
+.check-out__subtitle {
+  margin-bottom: 8px;
+}
+
+.check-out__subtitle--margin {
+  margin-bottom: 50px;
+}
+
+.check-out__text p {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 16px;
+
+}
+
+.check-out__text {
+  margin-bottom: 30px;
+}
+
+.check-out__billing-adress {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #BEBCBD;
+}
+
+.billing-adress {}
+
+.form-payment__radio {}
+
+.radio-form {
+  background-color: #EDEEF2;
+  border-radius: 12px;
+  padding: 13px 25px;
+}
+
+.radio-group {
+  padding: 25px 0px;
+  position: relative;
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.radio-group__item,
+.block-method-payment__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.radio-group__title,
+.block-method-payment__title {
+  display: inline-flex;
+  gap: 19px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.radio-group__item:checked+.radio-group__title::before,
+.block-method-payment__item:checked+.block-method-payment__title::before {
+  content: "";
+  background: url(../img/paymet_method/radio-selected.svg) center no-repeat;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+.radio-group__title::before,
+.block-method-payment__title::before {
+  content: "";
+  background: url(../img/paymet_method/radio-not-selected.svg) center no-repeat;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  transition: background 0.3s ease;
+}
+
+
+.radio-form__address {}
+
+.radio-form__address:not(:last-child) {
+  border-bottom: 1px solid #BEBCBD;
+}
+
+.radio-form__address>input {}
+
+/* - */
+
+.check-out__shipping-method {}
+
+.check-out__line {
+  border-bottom: 1px solid #BEBCBD;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.method-shipping {
+  padding: 37px 25px;
+  background-color: #EDEEF2;
+  border-radius: 12px;
+
+}
+
+.method-shipping__date {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #BEBCBD;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.method-shipping__block {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.method-shipping__body {}
+
+.method-shipping__charges {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.method-shipping__text p {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 16px;
+}
+
+.method-shipping__text {}
+
+.method-shipping__price {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* credit card */
+
+.check-out__subtitle {
+  color: #3C4242;
+  font-family: "Core Sans C 65", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.52;
+  letter-spacing: 0.44px;
+  margin-bottom: 8px;
+}
+
+.method-payment {
+  margin-bottom: 8px;
+}
+
+.method-payment-secure {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.method-payment-block {
+  padding: 45px 30px;
+  margin-bottom: 50px;
+  background-color: #EDEEF2;
+  border-radius: 12px;
+}
+
+.method-payment-block__radio {}
+
+.method-payment-block {}
+
+.radio-form {}
+
+.method-payment-block__card,
+.method-payment-block__cash,
+.method-payment-block__paypal {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #BEBCBD;
+  padding-bottom: 30px;
+}
+
+.method-payment-block__paypal {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.method-payment-block__margin {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.method-payment-block__text {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  padding-left: 37px;
+}
+
+.method-payment-block__cash-delivery {
+  color: #3C4242;
+  font-family: "Causten", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 37px;
+}
+
+.method-payment-block__icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 413px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-left: 33px;
+}
+
+.method-payment-block__icon img {
+  width: 80px;
+  border-radius: 8px;
+}
+
+.method-payment-block__img {
+  flex: 0 0 80px;
+}
+
+.column-1>div>input,
+.column-2>div>input {
+  padding: 15px;
+  width: 100%;
+  background-color: #F6F6F6;
+  color: #807D7E;
+  font-size: 16px;
+  border-radius: 8px;
+  height: 55px;
+}
+
+.method-payment__card-number {}
+
+.number-card {
+  padding-left: 33px;
+}
+
+.number-card__body {}
+
+.number-card__colums {
+  display: flex;
+}
+
+.number-card__colums--no-margin {}
+
+.number-card__colums {
+  --col: 2;
+  --gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  /* margin-bottom: 30px; */
+}
+
+.column-1,
+.column-2 {
+  flex: 0 1 calc((100% - (var(--gap) * (var(--col) - 1))) / var(--col));
+}
+
+.column-1 {}
+
+.column-1__card-number {
+  margin-bottom: 30px;
+}
+
+.column-1__expiration {}
+
+.column-2 {}
+
+.column-2__name-card {
+  margin-bottom: 30px;
+}
+
+.column-2__cvv {
+  position: relative;
+}
+
+.column-2__cvv img {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 20px;
+}
+
+.method-payment__cash {}
+
+/* contact us page */
+
+.page__contact-us {}
+
+.contact-us {}
+
+.contact-us__subtitle {
+  color: #37393F;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.contact-us__subtitle::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #40DDB6;
+}
+
+.contact-us__subtitle-call-back {
+  color: #37393F;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.form-call-back {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.form-call-back {
+  --col: 2;
+  --gap: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.form-call-back>div {
+  flex: 1 1 calc((100% - (var(--gap) * (var(--col) - 1))) / var(--col));
+  width: 100%;
+}
+
+.input-contact,
+.textarea-call-back {
+  padding: 25px 38px;
+  border: 1px solid #DDD;
+  background: #F8F8F8;
+  width: 100%;
+}
+
+.form-call-back {}
+
+.form-call-back--margin {
+  margin-bottom: 50px;
+}
+
+.input-contact {}
+
+.input {}
+
+.submit-call-back {
+  display: block;
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: #6B77E5;
+  padding: 20px 60px;
+  text-align: center;
+  margin: 0 auto;
+  transition: background 0.3s;
+}
+
+.submit-call-back:hover {
+  background: #40DDB6;
+}

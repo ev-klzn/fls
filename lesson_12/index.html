@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/style.css">
+    <title>12 - CSS Position</title>
+  </head>
+  <body>
+    <div id="up" class="wrapper">
+      <header class="header header--fix">
+        <div class="header__container">
+          <ul class="menu-level-1">
+            <li class="menu-level-1__item">
+              <a href="#" class="menu-level-1__link">Level 1 item 1</a>
+              <ul class="menu-level-2">
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 1</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 2</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 3</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-level-1__item">
+              <a href="#" class="menu-level-1__link">Level 1 item 2</a>
+              <ul class="menu-level-2">
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 1</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 2</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 3</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-level-1__item">
+              <a href="#" class="menu-level-1__link">Level 1 item 3</a>
+              <ul class="menu-level-2">
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 1</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 2</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 3</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-level-1__item">
+              <a href="#" class="menu-level-1__link">Level 1 item 4</a>
+              <ul class="menu-level-2">
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 1</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 2</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 3</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-level-1__item">
+              <a href="#" class="menu-level-1__link">Level 1 item 5</a>
+              <ul class="menu-level-2">
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 1</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 2</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-level-2__item">
+                  <a href="#" class="menu-level-2__link">Level 2 item 3</a>
+                  <ul class="menu-level-3">
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 1</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 2</a>
+                    </li>
+                    <li class="menu-level-3__item">
+                      <a href="#" class="menu-level-3__link">Level 3 item 3</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="page">
+        <div class="page__practice practice">
+          <div class="practice__container">
+            <h1 class="practice__title title">Practica</h1>
+            <div class="practice__content">
+              <div class="practice__item item-practice">
+                <h2 class="item-practice__title item-practice__title--color-1">
+                  Block color 1
+                </h2>
+                <div class="item-practice__text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Rem nesciunt architecto voluptatem, saepe ratione minima
+                    quidem quod. Architecto consequuntur vero nihil aperiam
+                    facilis excepturi dolorum dolore. Rerum excepturi error vel
+                    iure pariatur eligendi, explicabo quae nobis praesentium non
+                    quia eum fuga ipsa deleniti soluta quis quod. Beatae qui vel
+                    magni inventore. Atque obcaecati tempore fugit nihil, quasi
+                    minima ut libero quis porro aspernatur dicta earum neque
+                    labore iure quisquam inventore deserunt placeat
+                    reprehenderit tempora iusto. Dolore suscipit voluptate
+                    assumenda ipsum vel sed labore mollitia dolorum, ex, quasi
+                    molestiae quis. Itaque architecto, earum quisquam voluptatum
+                    rerum perferendis nulla nisi autem, magnam sed veniam
+                    laudantium velit dignissimos facere sit ad distinctio
+                    doloribus repellendus eum reprehenderit mollitia officia
+                    inventore? Voluptatum ipsa repellendus eveniet. Saepe
+                    assumenda atque, soluta, iusto quas doloribus placeat
+                    voluptate facilis accusantium nemo alias! Possimus sit enim
+                    saepe! Architecto neque voluptate, illo possimus iure
+                    voluptas vero dolorem in quod vitae maiores a eligendi
+                    quibusdam culpa nesciunt id facilis, veritatis dignissimos.
+                    Dolor voluptas molestiae cupiditate architecto excepturi
+                    natus nulla saepe! Maiores corporis, necessitatibus
+                    consequuntur ad dolore maxime quos suscipit dolor ut amet
+                    iste libero porro soluta consequatur debitis cumque
+                    deserunt, dignissimos minima voluptatem inventore
+                    asperiores! Doloribus, ullam. Consequatur fuga saepe rem
+                    iste! Quo obcaecati porro inventore, est cupiditate deleniti
+                    officia nam aliquid harum nobis possimus vero eaque natus
+                    provident minima deserunt, facilis consequatur doloremque
+                    voluptate et. Delectus aperiam nam aspernatur, repellendus
+                    neque optio recusandae dolore, doloremque, inventore
+                    reiciendis unde perferendis ex aut. Quod fuga eos placeat
+                    eum, nam asperiores repudiandae voluptatem incidunt
+                    voluptates, libero perferendis culpa aspernatur enim impedit
+                    corrupti sint debitis sed dolor laborum excepturi? Dolorum
+                    doloremque porro eveniet numquam veritatis laboriosam
+                    ducimus commodi dolore, cum dicta aspernatur et id, aut hic
+                    aliquam quae eaque! Rem eaque id eum atque ratione tempora,
+                    quisquam cupiditate accusantium tenetur soluta assumenda est
+                    hic voluptas quibusdam illo libero reiciendis, maxime
+                    voluptate. Magnam, laudantium at soluta exercitationem sunt
+                    consequatur consectetur error voluptas aut fugit amet!
+                    Itaque omnis laboriosam pariatur expedita tempora
+                    reprehenderit voluptatum beatae, sint assumenda tempore,
+                    deserunt eligendi eveniet aut cumque accusantium nemo iste
+                    quis illo laudantium iusto ut. Aperiam consequuntur corrupti
+                    accusamus velit voluptates. Qui nihil numquam odit beatae.
+                    Dignissimos, dolores! Mollitia delectus voluptate earum id
+                    quisquam omnis et praesentium placeat deleniti, est sint
+                    reiciendis? Numquam minima voluptatibus eaque aut ducimus
+                    voluptas corrupti temporibus id odit. Earum ea voluptatibus
+                    autem possimus sapiente consectetur dolores! Neque nobis
+                    totam voluptatem fuga possimus eum vero nostrum iusto ipsam
+                    aspernatur quas earum illo asperiores, animi perferendis
+                    pariatur consequatur beatae dolore tenetur in adipisci
+                    obcaecati distinctio ipsa alias. Eveniet nisi a accusantium
+                    aperiam recusandae deleniti eum exercitationem eius, qui
+                    sint culpa repellendus, nulla repellat itaque velit. A
+                    fugiat quis harum voluptates itaque totam, numquam assumenda
+                    earum explicabo quae sed consequatur inventore amet
+                    laudantium autem aspernatur velit asperiores quidem odio
+                    adipisci quas perspiciatis voluptas quisquam vero! Ipsam
+                    sint nihil voluptate incidunt minima cupiditate! Eligendi
+                    velit eos aliquam dolores ad aspernatur, officia possimus
+                    illum ex saepe? Atque voluptatibus blanditiis magnam non
+                    officiis nemo id, similique rerum magni sed, perspiciatis,
+                    distinctio consequatur.
+                  </p>
+                </div>
+              </div>
+              <div class="practice__item item-practice">
+                <h2 class="item-practice__title item-practice__title--color-2">
+                  Block color 2
+                </h2>
+                <div class="item-practice__text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Rem nesciunt architecto voluptatem, saepe ratione minima
+                    quidem quod. Architecto consequuntur vero nihil aperiam
+                    facilis excepturi dolorum dolore. Rerum excepturi error vel
+                    iure pariatur eligendi, explicabo quae nobis praesentium non
+                    quia eum fuga ipsa deleniti soluta quis quod. Beatae qui vel
+                    magni inventore. Atque obcaecati tempore fugit nihil, quasi
+                    minima ut libero quis porro aspernatur dicta earum neque
+                    labore iure quisquam inventore deserunt placeat
+                    reprehenderit tempora iusto. Dolore suscipit voluptate
+                    assumenda ipsum vel sed labore mollitia dolorum, ex, quasi
+                    molestiae quis. Itaque architecto, earum quisquam voluptatum
+                    rerum perferendis nulla nisi autem, magnam sed veniam
+                    laudantium velit dignissimos facere sit ad distinctio
+                    doloribus repellendus eum reprehenderit mollitia officia
+                    inventore? Voluptatum ipsa repellendus eveniet. Saepe
+                    assumenda atque, soluta, iusto quas doloribus placeat
+                    voluptate facilis accusantium nemo alias! Possimus sit enim
+                    saepe! Architecto neque voluptate, illo possimus iure
+                    voluptas vero dolorem in quod vitae maiores a eligendi
+                    quibusdam culpa nesciunt id facilis, veritatis dignissimos.
+                    Dolor voluptas molestiae cupiditate architecto excepturi
+                    natus nulla saepe! Maiores corporis, necessitatibus
+                    consequuntur ad dolore maxime quos suscipit dolor ut amet
+                    iste libero porro soluta consequatur debitis cumque
+                    deserunt, dignissimos minima voluptatem inventore
+                    asperiores! Doloribus, ullam. Consequatur fuga saepe rem
+                    iste! Quo obcaecati porro inventore, est cupiditate deleniti
+                    officia nam aliquid harum nobis possimus vero eaque natus
+                    provident minima deserunt, facilis consequatur doloremque
+                    voluptate et. Delectus aperiam nam aspernatur, repellendus
+                    neque optio recusandae dolore, doloremque, inventore
+                    reiciendis unde perferendis ex aut. Quod fuga eos placeat
+                    eum, nam asperiores repudiandae voluptatem incidunt
+                    voluptates, libero perferendis culpa aspernatur enim impedit
+                    corrupti sint debitis sed dolor laborum excepturi? Dolorum
+                    doloremque porro eveniet numquam veritatis laboriosam
+                    ducimus commodi dolore, cum dicta aspernatur et id, aut hic
+                    aliquam quae eaque! Rem eaque id eum atque ratione tempora,
+                    quisquam cupiditate accusantium tenetur soluta assumenda est
+                    hic voluptas quibusdam illo libero reiciendis, maxime
+                    voluptate. Magnam, laudantium at soluta exercitationem sunt
+                    consequatur consectetur error voluptas aut fugit amet!
+                    Itaque omnis laboriosam pariatur expedita tempora
+                    reprehenderit voluptatum beatae, sint assumenda tempore,
+                    deserunt eligendi eveniet aut cumque accusantium nemo iste
+                    quis illo laudantium iusto ut. Aperiam consequuntur corrupti
+                    accusamus velit voluptates. Qui nihil numquam odit beatae.
+                    Dignissimos, dolores! Mollitia delectus voluptate earum id
+                    quisquam omnis et praesentium placeat deleniti, est sint
+                    reiciendis? Numquam minima voluptatibus eaque aut ducimus
+                    voluptas corrupti temporibus id odit. Earum ea voluptatibus
+                    autem possimus sapiente consectetur dolores! Neque nobis
+                    totam voluptatem fuga possimus eum vero nostrum iusto ipsam
+                    aspernatur quas earum illo asperiores, animi perferendis
+                    pariatur consequatur beatae dolore tenetur in adipisci
+                    obcaecati distinctio ipsa alias. Eveniet nisi a accusantium
+                    aperiam recusandae deleniti eum exercitationem eius, qui
+                    sint culpa repellendus, nulla repellat itaque velit. A
+                    fugiat quis harum voluptates itaque totam, numquam assumenda
+                    earum explicabo quae sed consequatur inventore amet
+                    laudantium autem aspernatur velit asperiores quidem odio
+                    adipisci quas perspiciatis voluptas quisquam vero! Ipsam
+                    sint nihil voluptate incidunt minima cupiditate! Eligendi
+                    velit eos aliquam dolores ad aspernatur, officia possimus
+                    illum ex saepe? Atque voluptatibus blanditiis magnam non
+                    officiis nemo id, similique rerum magni sed, perspiciatis,
+                    distinctio consequatur.
+                  </p>
+                </div>
+              </div>
+              <div class="practice__item item-practice">
+                <h2 class="item-practice__title item-practice__title--color-3">
+                  Block color 3
+                </h2>
+                <div class="item-practice__text">
+                  <p>
+                    iure pariatur eligendi, explicabo quae nobis praesentium non
+                    quia eum fuga ipsa deleniti soluta quis quod. Beatae qui vel
+                    magni inventore. Atque obcaecati tempore fugit nihil, quasi
+                    minima ut libero quis porro aspernatur dicta earum neque
+                    labore iure quisquam inventore deserunt placeat
+                    reprehenderit tempora iusto. Dolore suscipit voluptate
+                    assumenda ipsum vel sed labore mollitia dolorum, ex, quasi
+                    molestiae quis. Itaque architecto, earum quisquam voluptatum
+                    rerum perferendis nulla nisi autem, magnam sed veniam
+                    laudantium velit dignissimos facere sit ad distinctio
+                    doloribus repellendus eum reprehenderit mollitia officia
+                    inventore? Voluptatum ipsa repellendus eveniet. Saepe
+                    assumenda atque, soluta, iusto quas doloribus placeat
+                    voluptate facilis accusantium nemo alias! Possimus sit enim
+                    saepe! Architecto neque voluptate, illo possimus iure
+                    voluptas vero dolorem in quod vitae maiores a eligendi
+                    quibusdam culpa nesciunt id facilis, veritatis dignissimos.
+                    Dolor voluptas molestiae cupiditate architecto excepturi
+                    natus nulla saepe! Maiores corporis, necessitatibus
+                    consequuntur ad dolore maxime quos suscipit dolor ut amet
+                    iste libero porro soluta consequatur debitis cumque
+                    deserunt, dignissimos minima voluptatem inventore
+                    asperiores! Doloribus, ullam. Consequatur fuga saepe rem
+                    iste! Quo obcaecati porro inventore, est cupiditate deleniti
+                    officia nam aliquid harum nobis possimus vero eaque natus
+                    provident minima deserunt, facilis consequatur doloremque
+                    voluptate et. Delectus aperiam nam aspernatur, repellendus
+                    neque optio recusandae dolore, doloremque, inventore
+                    reiciendis unde perferendis ex aut. Quod fuga eos placeat
+                    eum, nam asperiores repudiandae voluptatem incidunt
+                    voluptates, libero perferendis culpa aspernatur enim impedit
+                    corrupti sint debitis sed dolor laborum excepturi? Dolorum
+                    doloremque porro eveniet numquam veritatis laboriosam
+                    ducimus commodi dolore, cum dicta aspernatur et id, aut hic
+                    aliquam quae eaque! Rem eaque id eum atque ratione tempora,
+                    quisquam cupiditate accusantium tenetur soluta assumenda est
+                    hic voluptas quibusdam illo libero reiciendis, maxime
+                    voluptate. Magnam, laudantium at soluta exercitationem sunt
+                    consequatur consectetur error voluptas aut fugit amet!
+                    Itaque omnis laboriosam pariatur expedita tempora
+                    reprehenderit voluptatum beatae, sint assumenda tempore,
+                    deserunt eligendi eveniet aut cumque accusantium nemo iste
+                    quis illo laudantium iusto ut. Aperiam consequuntur corrupti
+                    accusamus velit voluptates. Qui nihil numquam odit beatae.
+                    Dignissimos, dolores! Mollitia delectus voluptate earum id
+                    quisquam omnis et praesentium placeat deleniti, est sint
+                    reiciendis? Numquam minima voluptatibus eaque aut ducimus
+                    voluptas corrupti temporibus id odit. Earum ea voluptatibus
+                    autem possimus sapiente consectetur dolores! Neque nobis
+                    totam voluptatem fuga possimus eum vero nostrum iusto ipsam
+                    aspernatur quas earum illo asperiores, animi perferendis
+                    pariatur consequatur beatae dolore tenetur in adipisci
+                    obcaecati distinctio ipsa alias. Eveniet nisi a accusantium
+                    aperiam recusandae deleniti eum exercitationem eius, qui
+                    sint culpa repellendus, nulla repellat itaque velit. A
+                    fugiat quis harum voluptates itaque totam, numquam assumenda
+                    earum explicabo quae sed consequatur inventore amet
+                    laudantium autem aspernatur velit asperiores quidem odio
+                    adipisci quas perspiciatis voluptas quisquam vero! Ipsam
+                    sint nihil voluptate incidunt minima cupiditate! Eligendi
+                    velit eos aliquam dolores ad aspernatur, officia possimus
+                    illum ex saepe? Atque voluptatibus blanditiis magnam non
+                    officiis nemo id, similique rerum magni sed, perspiciatis,
+                    distinctio consequatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__experts experts">
+          <div class="experts__container">
+            <div class="cards-expert">
+              <div class="cards-expert__row-1 cards-expert__row-1--margin">
+                <div class="expert expert--fix">
+                  <div class="expert__img">
+                    <img src="img/experts/01.webp" alt="expert photo">
+                  </div>
+                  <div class="expert__social social">
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/inst.svg" alt="instagram icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/fb.svg" alt="facebook icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/tw.svg" alt="twitter icon"
+                   ></a>
+                  </div>
+                  <div class="expert__body">
+                    <h4 class="expert__name">Nattasha Kelvin</h4>
+                    <div class="expert__position">Managing Director</div>
+                  </div>
+                </div>
+                <div class="expert expert--fix">
+                  <div class="expert__img">
+                    <img src="img/experts/02.webp" alt="expert photo">
+                  </div>
+                  <div class="expert__social social">
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/inst.svg" alt="instagram icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/fb.svg" alt="facebook icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/tw.svg" alt="twitter icon"
+                   ></a>
+                  </div>
+                  <div class="expert__body">
+                    <h4 class="expert__name">David Simpson</h4>
+                    <div class="expert__position">Designer</div>
+                  </div>
+                </div>
+                <div class="expert expert--fix">
+                  <div class="expert__img">
+                    <img src="img/experts/03.webp" alt="expert photo">
+                  </div>
+                  <div class="expert__social social">
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/inst.svg" alt="instagram icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/fb.svg" alt="facebook icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/tw.svg" alt="twitter icon"
+                   ></a>
+                  </div>
+                  <div class="expert__body">
+                    <h4 class="expert__name">Madeleine Grant</h4>
+                    <div class="expert__position">Marketing Specialist</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-expert__row-2">
+                <div class="expert expert--fix">
+                  <div class="expert__img">
+                    <img src="img/experts/04.webp" alt="expert photo">
+                  </div>
+                  <div class="expert__social social">
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/inst.svg" alt="instagram icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/fb.svg" alt="facebook icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/tw.svg" alt="twitter icon"
+                   ></a>
+                  </div>
+                  <div class="expert__body">
+                    <h4 class="expert__name">Jonathan Coleman</h4>
+                    <div class="expert__position">Managing Director</div>
+                  </div>
+                </div>
+                <div class="expert expert--fix">
+                  <div class="expert__img">
+                    <img src="img/experts/05.webp" alt="expert photo">
+                  </div>
+                  <div class="expert__social social">
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/inst.svg" alt="instagram icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/fb.svg" alt="facebook icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/tw.svg" alt="twitter icon"
+                   ></a>
+                  </div>
+                  <div class="expert__body">
+                    <h4 class="expert__name">Wanda Forsyth</h4>
+                    <div class="expert__position">Designer</div>
+                  </div>
+                </div>
+                <div class="expert expert--fix">
+                  <div class="expert__img">
+                    <img src="img/experts/06.webp" alt="expert photo">
+                  </div>
+                  <div class="expert__social social">
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/inst.svg" alt="instagram icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/fb.svg" alt="facebook icon"
+                   ></a>
+                    <a href="#" class="social__link"
+                      ><img src="img/experts/tw.svg" alt="twitter icon"
+                   ></a>
+                  </div>
+                  <div class="expert__body">
+                    <h4 class="expert__name">Austin Randall</h4>
+                    <div class="expert__position">Marketing Specialist</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__wtf wtf">
+            <div class="wtf__one">
+              <img src="img/teacher/1.jpg" alt="Женя вибач">
+            </div>
+            <div class="wtf__two">
+              <img src="img/teacher/2.png" alt="fls photo">
+            </div>
+            <div class="wtf__three">
+              <img src="img/teacher/3.png" alt="за роботою">
+            </div>
+            <div class="wtf__four">
+              <img src="img/teacher/4.png" alt="fls photo">
+            </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <a target="_blank" href="https://fls.guru/cssposition.html" class="up">Шпаргалка</a>
+          <a href="../" class="up">FLS</a>
+          <a class="up" href="#up">UP</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

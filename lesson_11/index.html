@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/style.css">
+    <title>11 - BEM</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="../" id="up" class="up">FLS</a>
+
+        <a class="header__logo logo" href="#"
+          ><img src="img/header/logo.svg" alt="Logo"
+       ></a>
+
+        <div class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Shop</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Men</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--active">Women</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Combos</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Joggers </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__search search">
+          <div class="search__icon">
+            <img src="img/header/search.svg" alt="search icon">
+          </div>
+          <div class="search__input">Search</div>
+        </div>
+        <ul class="header__user user">
+          <li class="user__fav">
+            <a href="#"><img src="img/header/fav.svg" alt="fav icon"></a>
+          </li>
+          <li class="user__profile">
+            <a href="#"><img src="img/header/user.svg" alt="profile icon"></a>
+          </li>
+          <li class="user__cart">
+            <a href="#"><img src="img/header/cart.svg" alt="cart icon"></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="page__product product">
+        <div class="product__container">
+          <div class="product__sidebar sidebar">
+            <div class="sidebar__slider slider-product">
+              <div class="slider-product__item-1">
+                <img src="img/main/sidebar_1.webp" alt="sidebar image 1">
+              </div>
+              <div class="slider-product__item-2">
+                <img src="img/main/sidebar_2.webp" alt="sidebar image 2">
+              </div>
+              <div class="slider-product__item-3">
+                <img src="img/main/sidebar_3.webp" alt="sidebar image 3">
+              </div>
+              <a href="#" class="slider-product__actions-up">
+                <img src="img/main/up.svg" alt="sidebar image up">
+              </a>
+              <a href="#" class="slider-product__actions-down">
+                <img src="img/main/down.svg" alt="sidebar image down">
+              </a>
+            </div>
+          </div>
+          <div class="product__img">
+            <img src="img/main/product.webp" alt="product image">
+          </div>
+          <div class="product__main-section product-body">
+            <div class="pagination">
+              <a class="pagination__page-1">Shop</a>
+              <img src="img/main/left.svg" alt="pagination icon">
+              <a class="pagination__page-2">Women</a>
+              <img src="img/main/left.svg" alt="pagination icon">
+              <a class="pagination__page-3">Top</a>
+            </div>
+
+            <h1 class="product-body__title">
+              Raven Hoodie With Black colored Design
+            </h1>
+
+            <div class="product-body__review review">
+              <div class="review__rating rating">
+                <div class="rating__icon">
+                  <img src="img/main/raiting.svg" alt="raiting icon">
+                </div>
+                <div class="rating__value">3.5</div>
+              </div>
+
+              <a class="review__feedback feedback">
+                <div class="feedback__icon">
+                  <img src="img/main/feedback.svg" alt="feedback icon">
+                </div>
+                <div class="feedback__total">120 comment</div>
+              </a>
+            </div>
+
+            <div class="product-body__size size">
+              <div class="size__text">Select Size</div>
+              <a href="#" class="size__guide guide">
+                <div class="guide__text">Size Guide</div>
+                <div class="guide__icon">
+                  <img src="img/main/arrow.svg" alt="arrow icon">
+                </div>
+              </a>
+
+              <div class="size__select size-item">
+                <div class="size-item__1">xs</div>
+                <div class="size-item__2">s</div>
+                <div class="size-item__3">m</div>
+                <div class="size-item__4">l</div>
+                <div class="size-item__5">xl</div>
+              </div>
+            </div>
+
+            <div class="product-body__color color">
+              <div class="color__text">Select Color</div>
+              <div class="color__select color-item">
+                <div class="color__1"></div>
+                <div class="color__2"></div>
+                <div class="color__3"></div>
+                <div class="color__4"></div>
+                <div class="color__5"></div>
+              </div>
+            </div>
+
+            <div class="product-body__cart cart">
+              <a href="#" class="cart__body">
+                <div class="cart__icon">
+                  <img src="img/main/cart.svg" alt="cart icon">
+                </div>
+                <div class="cart__text">Add to cart</div>
+              </a>
+              <div class="cart__price">$63.00</div>
+            </div>
+
+            <div class="product-body__benefits benefits">
+              <div class="benefits__item">
+                <div class="benefits__icon">
+                  <img src="img/main/card.svg" alt="card icon">
+                </div>
+                <div class="benefits__text">Secure payment</div>
+              </div>
+
+              <div class="benefits__item">
+                <div class="benefits__icon">
+                  <img src="img/main/size.svg" alt="card icon">
+                </div>
+                <div class="benefits__text">Size & Fit</div>
+              </div>
+
+              <div class="benefits__item">
+                <div class="benefits__icon">
+                  <img src="img/main/delivery.svg" alt="card icon">
+                </div>
+                <div class="benefits__text">Free shipping</div>
+              </div>
+
+              <div class="benefits__item">
+                <div class="benefits__icon">
+                  <img src="img/main/return.svg" alt="card icon">
+                </div>
+                <div class="benefits__text">Free Shipping & Returns</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product__description description-product">
+            <div class="description-product__body">
+              <h2 class="description-product__title title">
+                Product Description
+              </h2>
+              <ul
+                class="description-product__navigations navigations-description-product">
+                <li class="navigations-description-product__description">
+                  <a href="#">Description</a>
+                </li>
+                <li class="navigations-description-product__comments">
+                  <a href="#">User comments</a>
+                </li>
+                <li class="navigations-description-product__question">
+                  <a href="#">Question & Answer</a>
+                </li>
+              </ul>
+              <div class="description-product__text text-description-product">
+                <p>
+                  100% Bio-washed Cotton – makes the fabric extra soft & silky.
+                  Flexible ribbed crew neck. Precisely stitched with no pilling
+                  & no fading. Provide all-time comfort. Anytime, anywhere.
+                  Infinite range of matte-finish HD prints.
+                </p>
+              </div>
+              <div class="description-product__frame frame-description-product">
+                <div
+                  class="frame-description-product__item item-frame-description-product">
+                  <div class="item-frame-description-product__title">
+                    Fabric
+                  </div>
+                  <div class="item-frame-description-product__text">
+                    Bio-washed Cotton
+                  </div>
+                </div>
+                <div
+                  class="frame-description-product__item item-frame-description-product">
+                  <div class="item-frame-description-product__title">
+                    Pattern
+                  </div>
+                  <div class="item-frame-description-product__text">
+                    Printed
+                  </div>
+                </div>
+                <div
+                  class="frame-description-product__item item-frame-description-product">
+                  <div class="item-frame-description-product__title">Fit</div>
+                  <div class="item-frame-description-product__text">
+                    Regular-fit
+                  </div>
+                </div>
+                <div
+                  class="frame-description-product__item item-frame-description-product">
+                  <div class="item-frame-description-product__title">Neck</div>
+                  <div class="item-frame-description-product__text">
+                    Round Neck
+                  </div>
+                </div>
+                <div
+                  class="frame-description-product__item item-frame-description-product">
+                  <div class="item-frame-description-product__title">
+                    Sleeve
+                  </div>
+                  <div class="item-frame-description-product__text">
+                    Half-sleeves
+                  </div>
+                </div>
+                <div
+                  class="frame-description-product__item item-frame-description-product">
+                  <div class="item-frame-description-product__title">Style</div>
+                  <div class="item-frame-description-product__text">
+                    Casual Wear
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="description-product__video video-description-product">
+              <img src="img/main/video.webp" alt="video">
+            </div>
+          </div>
+          <div class="similar-products">
+            <h3 class="similar-products__title title-similar-products title">
+              Similar Products
+            </h3>
+            <div class="similar-products__container container-similar-products">
+              <a href="#" class="similar-products-item">
+                <div class="similar-products-item__img">
+                  <img src="img/card_item/1.webp" alt="image item 1">
+                </div>
+                <div class="similar-products-item__box">
+                  <div
+                    class="similar-products-item__body body-similar-products-item">
+                    <div class="body-similar-products-item__title">
+                      White T-Shirt
+                    </div>
+                    <div class="body-similar-products-item__text">
+                      Priya’s Brand
+                    </div>
+                  </div>
+                  <div class="similar-products-item__price">$13.00</div>
+                </div>
+              </a>
+
+              <a href="#" class="similar-products-item">
+                <div class="similar-products-item__img">
+                  <img src="img/card_item/2.webp" alt="image item 2">
+                </div>
+                <div class="similar-products-item__box">
+                  <div
+                    class="similar-products-item__body body-similar-products-item">
+                    <div class="body-similar-products-item__title">
+                      Dark Green Sweatshirt
+                    </div>
+                    <div class="body-similar-products-item__text">
+                      Roboto’s Brand
+                    </div>
+                  </div>
+                  <div class="similar-products-item__price">$127.00</div>
+                </div>
+              </a>
+
+              <a href="#" class="similar-products-item">
+                <div class="similar-products-item__img">
+                  <img src="img/card_item/3.webp" alt="image item 3">
+                </div>
+                <div class="similar-products-item__box">
+                  <div
+                    class="similar-products-item__body body-similar-products-item">
+                    <div class="body-similar-products-item__title">
+                      Levender Sweatshirt
+                    </div>
+                    <div class="body-similar-products-item__text">
+                      Jhanvi’s Brand
+                    </div>
+                  </div>
+                  <div class="similar-products-item__price">$133.00</div>
+                </div>
+              </a>
+
+              <a href="#" class="similar-products-item">
+                <div class="similar-products-item__img">
+                  <img src="img/card_item/4.webp" alt="image item 4">
+                </div>
+                <div class="similar-products-item__box">
+                  <div
+                    class="similar-products-item__body body-similar-products-item">
+                    <div class="body-similar-products-item__title">
+                      Urban jacket with white
+                    </div>
+                    <div class="body-similar-products-item__text">
+                      Sagar’s Brand
+                    </div>
+                  </div>
+                  <div class="similar-products-item__price">$79.00</div>
+                </div>
+              </a>
+
+              <a href="#" class="similar-products-item">
+                <div class="similar-products-item__img">
+                  <img src="img/card_item/5.webp" alt="image item 5">
+                </div>
+                <div class="similar-products-item__box">
+                  <div
+                    class="similar-products-item__body body-similar-products-item">
+                    <div class="body-similar-products-item__title">
+                      Plain White T-Shirt
+                    </div>
+                    <div class="body-similar-products-item__text">
+                      Jhanvi’s Brand
+                    </div>
+                  </div>
+                  <div class="similar-products-item__price">$123.00</div>
+                </div>
+              </a>
+
+              <a href="#" class="similar-products-item">
+                <div class="similar-products-item__img">
+                  <img src="img/card_item/6.webp" alt="image item 6">
+                </div>
+                <div class="similar-products-item__box">
+                  <div
+                    class="similar-products-item__body body-similar-products-item">
+                    <div class="body-similar-products-item__title">
+                      Checks Shirt with white
+                    </div>
+                    <div class="body-similar-products-item__text">
+                      H.M’s Brand
+                    </div>
+                  </div>
+                  <div class="similar-products-item__price">$133.00</div>
+                </div>
+              </a>
+
+              <a href="#" class="similar-products-item">
+                <div class="similar-products-item__img">
+                  <img src="img/card_item/7.webp" alt="image item 7">
+                </div>
+                <div class="similar-products-item__box">
+                  <div
+                    class="similar-products-item__body body-similar-products-item">
+                    <div class="body-similar-products-item__title">
+                      One piece black top &
+                    </div>
+                    <div class="body-similar-products-item__text">
+                      Nike’s Brand
+                    </div>
+                  </div>
+                  <div class="similar-products-item__price">$113.00</div>
+                </div>
+              </a>
+
+              <a href="#" class="similar-products-item">
+                <div class="similar-products-item__img">
+                  <img src="img/card_item/8.webp" alt="image item 8">
+                </div>
+                <div class="similar-products-item__box">
+                  <div
+                    class="similar-products-item__body body-similar-products-item">
+                    <div class="body-similar-products-item__title">
+                      Denim Blue Shirt
+                    </div>
+                    <div class="body-similar-products-item__text">
+                      MOMO’s Brand
+                    </div>
+                  </div>
+                  <div class="similar-products-item__price">$24.00</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__menu menu-footer">
+          <div class="menu-footer__body body-menu-footer">
+            <h3 class="body-menu-footer__title">Need Help</h3>
+            <ul class="body-menu-footer__item item-body-menu-footer">
+              <li>
+                <a href="#" class="item-body-menu-footer__link">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link">Track Order</a>
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >Returns & Refunds</a
+                >
+              </li>
+              <li><a href="#" class="item-body-menu-footer__link">FAQ's</a></li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link">Career</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-footer__body body-menu-footer">
+            <h3 class="body-menu-footer__title">Company</h3>
+            <ul class="body-menu-footer__item item-body-menu-footer">
+              <li>
+                <a href="#" class="item-body-menu-footer__link">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >euphoria Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link">euphoriastan</a>
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >Collaboration</a
+                >
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link">Media</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-footer__body body-menu-footer">
+            <h3 class="body-menu-footer__title">More Info</h3>
+            <ul class="body-menu-footer__item item-body-menu-footer">
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >Term and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >Shipping Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-footer__body body-menu-footer">
+            <h3 class="body-menu-footer__title">Location</h3>
+            <ul class="body-menu-footer__item item-body-menu-footer">
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >support@euphoria.in</a
+                >
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >Eklingpura Chouraha, Ahmedabad Main Road</a
+                >
+              </li>
+              <li>
+                <a href="#" class="item-body-menu-footer__link"
+                  >(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__sosial-apps">
+          <div class="footer__social social">
+            <a href="#" class="social__link"
+              ><img src="img/footer/fb.svg" alt="facebook icon"
+           ></a>
+            <a href="#" class="social__link"
+              ><img src="img/footer/insta.svg" alt="insta icon"
+           ></a>
+            <a href="#" class="social__link"
+              ><img src="img/footer/tw.svg" alt="twitter icon"
+           ></a>
+            <a href="#" class="social__link"
+              ><img src="img/footer/in.svg" alt="linkedin icon"
+           ></a>
+          </div>
+          <div class="footer__apps apps">
+            <h3 class="apps__title">Download The App</h3>
+            <div class="apps__links links-apps">
+              <a href="" class="links-apps__item"
+                ><img src="img/footer/ap_store.svg" alt="app store icon"
+             ></a>
+              <a href="" class="links-apps__item"
+                ><img src="img/footer/g_play.svg" alt="google play icon"
+             ></a>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#"
+          class="footer__popular-categories popular-categories-footer">
+          <h3 class="popular-categories-footer__title">Popular Categories</h3>
+        </a>
+
+        <div class="footer__copyright footer-copyright">
+          <div class="footer-copyright__text">
+            <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="up" href="#up">UP</a>
+    </footer>
+  </body>
+</html>

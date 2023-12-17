@@ -1,0 +1,45 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  /* font-family: 'DM Serif Text', serif; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Core Sans C 65", sans-serif; */
+  /* font-family: "Cormorant Infant", serif; */
+  /* background-image: linear-gradient(to bottom, #f4f6f5, #f4f6f5, #f3f5f4, #f3f5f4, #f2f4f3); */
+  background: linear-gradient(rgb(4, 42, 68), rgb(20, 122, 142));
+  color: white;
+}
+
+.header-block {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer-block {
+  padding: 5px;
+  text-align: center;
+}
+
+.fls {
+  text-align: center;
+  padding: 5px;
+}
+
+.main-container {
+  max-width: 1020px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+div p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+p img {
+  max-width: 500px;
+}

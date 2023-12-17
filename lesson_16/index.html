@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/style.css">
+    <title>16 - Forms</title>
+  </head>
+  <body>
+    <div id="up" class="wrapper">
+      <header class="header header--fix">
+        <div class="header__container">
+          <a class="up" href="./">Reload page</a>
+          <a class="up" href="checkout.html">Checkout page</a>
+          <a class="up" href="contact_us.html">Contact Us page</a>
+        </div>
+      </header>
+
+      <main class="page">
+        <div class="page__container">
+          <div class="page__my-info info-my">
+            <h2 class="info-my__title title">My Info</h2>
+            <h3 class="info-my__subtitle subtitle">Add Address</h3>
+            <div class="info-my__block body-info">
+              <form
+                action="#"
+                enctype="multipart/form-data"
+                method="GET"
+                id="form-my-info">
+                <div class="body-info__colums">
+                  <div class="column-1">
+                    <div class="column-1__f-name">
+                      <label for="f-name">First Name*</label>
+                      <input
+                        type="text"
+                        id="f-name"
+                        required
+                        placeholder="First Name"
+                        name="f-name">
+                    </div>
+                    <div class="column-1__country">
+                      <label for="country">Country Region*</label>
+                      <input
+                        type="text"
+                        id="country"
+                        required
+                        placeholder="Country Region"
+                        name="country">
+                    </div>
+                    <div class="column-1__street">
+                      <label for="street">Street Address*</label>
+                      <input
+                        type="text"
+                        id="street"
+                        required
+                        placeholder="Street Address"
+                        name="street">
+                    </div>
+                    <div class="column-1__city">
+                      <label for="city">City* Town City</label>
+                      <input
+                        type="text"
+                        id="city"
+                        required
+                        placeholder="City Town City"
+                        name="city">
+                    </div>
+                    <div class="column-1__phone">
+                      <label for="phone">Phone*</label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        required
+                        placeholder="Phone"
+                        name="phone">
+                    </div>
+                  </div>
+                  <div class="column-2">
+                    <div class="column-2__l-name">
+                      <label for="l-name">Last Name*</label>
+                      <input
+                        type="text"
+                        id="l-name"
+                        required
+                        placeholder="Last Name"
+                        name="l-name">
+                    </div>
+                    <div class="column-2__company">
+                      <label for="company">Company Name</label>
+                      <input
+                        type="text"
+                        id="company"
+                        placeholder="Company Name"
+                        name="company">
+                    </div>
+                    <div class="column-2__apt">
+                      <label for="apt">Apt, suite, unit</label>
+                      <input
+                        type="text"
+                        id="apt"
+                        placeholder="Apt, suite, unit"
+                        name="apt">
+                    </div>
+                    <div class="column-2__state">
+                      <label for="state">State*</label>
+                      <select name="state" id="state">
+                        <option value="10" selected="selected">State №1</option>
+                        <option value="20">State №2</option>
+                        <option value="30">State №3</option>
+                        <option value="40">State №4</option>
+                      </select>
+                    </div>
+                    <div class="column-2__code">
+                      <label for="code">Postal Code*</label>
+                      <input
+                        type="number"
+                        id="code"
+                        placeholder="Postal Code"
+                        name="code">
+                    </div>
+                  </div>
+                </div>
+                <div class="instruction instruction--margin">
+                  <label for="instruction">Delivery Instruction</label>
+                  <textarea
+                    name="instruction"
+                    id="instruction"
+                    placeholder="Delivery Instruction"></textarea>
+                </div>
+
+                <div class="info-my__checkbox checkbox">
+                  <div class="checkbox__item">
+                    <input
+                      class="checkbox__input"
+                      id="check"
+                      name="address"
+                      type="checkbox">
+                    <label class="checkbox__label" for="check"
+                      >Set as default shipping address</label
+                    >
+                  </div>
+                  <div class="checkbox__item">
+                    <input
+                      class="checkbox__input"
+                      id="check-2"
+                      name="billing"
+                      type="checkbox">
+                    <label class="checkbox__label" for="check-2"
+                      >Set as default billing address</label
+                    >
+                  </div>
+                </div>
+              </form>
+              <div class="info-my__buttons">
+                <button class="submit submit--margin" form="form-my-info" type="submit">
+                  Save
+                </button>
+                <button class="reset" form="form-my-info" type="reset">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <ul class="footer-links">
+            <li><a href="../" class="up">FLS</a></li>
+            <li><a class="up" href="#up">UP</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
