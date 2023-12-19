@@ -1,7 +1,8 @@
 $mainColor: rgb(0, 0, 0);
 $secondColor: rgb(67, 67, 67);
-$thirdColor: #ffffff;
+$thirdColor: rgb(0, 0, 0);
 $linkColor: rgb(0, 0, 0);
+$fontSize: 18px;
 $fourK: 2559.98px;
 $laptopL: 1439.98px;
 $laptop: 1023.98px;
@@ -20,7 +21,7 @@ body {
 	// font-family: "Montserrat", serif;
 	background-image: linear-gradient(to bottom, #f4f6f5, #f4f6f5, #f3f5f4, #f3f5f4, #f2f4f3);
 	font-family: "Inter", sans-serif;
-	font-size: 18px;
+	font-size: $fontSize;
 	color: $mainColor;
 }
 
@@ -43,3 +44,5 @@ body {
 		// padding: 10px 0;
 	}
 }
+
+// ----------------
