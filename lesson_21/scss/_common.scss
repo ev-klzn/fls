@@ -1,0 +1,45 @@
+$mainColor: rgb(0, 0, 0);
+$secondColor: rgb(67, 67, 67);
+$thirdColor: #ffffff;
+$linkColor: rgb(0, 0, 0);
+$fourK: 2559.98px;
+$laptopL: 1439.98px;
+$laptop: 1023.98px;
+$tablet: 767.98px;
+$mobileL: 424.98px;
+$mobileM: 374.98px;
+$mobileS: 319.98px;
+
+body {
+	font-family: "Inter", sans-serif;
+	// font-family: "Causten", sans-serif;
+	// font-family: 'DM Serif Text', serif;
+	// font-family: "Poppins", sans-serif;
+	// font-family: "Core Sans C 65", sans-serif;
+	// font-family: "Cormorant Infant", serif;
+	// font-family: "Montserrat", serif;
+	background-image: linear-gradient(to bottom, #f4f6f5, #f4f6f5, #f3f5f4, #f3f5f4, #f2f4f3);
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: $mainColor;
+}
+
+[class*="__container"] {
+	max-width: 1270px;
+	margin: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrapper {
+	min-height: 100vh;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	& > main {
+		flex-grow: 1;
+		// text-align: center;
+		// display: flex;
+		// padding: 10px 0;
+	}
+}
