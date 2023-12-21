@@ -1,7 +1,7 @@
 $mainColor: rgb(0, 0, 0);
 $secondColor: rgb(67, 67, 67);
 $thirdColor: rgb(0, 0, 0);
-$linkColor: rgb(0, 0, 0);
+$linkColor: #3c4242;
 $fontSize: 18px;
 $fourK: 2559.98px;
 $laptopL: 1439.98px;
@@ -10,6 +10,24 @@ $tablet: 767.98px;
 $mobileL: 424.98px;
 $mobileM: 374.98px;
 $mobileS: 319.98px;
+
+// @media (max-width: $laptopL) {
+// }
+
+// @media (max-width: $laptop) {
+// }
+
+// @media (max-width: $tablet) {
+// }
+
+// @media (max-width: $mobileL) {
+// }
+
+// @media (max-width: $mobileM) {
+// }
+
+// @media (max-width: $mobileS) {
+// }
 
 body {
 	font-family: "Inter", sans-serif;

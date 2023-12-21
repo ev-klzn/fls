@@ -118,6 +118,12 @@ input {
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Core Sans C 75";
+  src: url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"), url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
 body {
   font-family: "Inter", sans-serif;
   font-family: "Inter", sans-serif;
@@ -262,8 +268,8 @@ body {
   padding: 12px;
   border-radius: 8px;
   background: #f6f6f6;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .actions__link:hover {
   background: #cccccc;
