@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:regular,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:regular,500,600,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,600,700,800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  resize: vertical;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Regular.woff2") format("woff2"), url("../fonts/Causten-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Medium.woff2") format("woff2"), url("../fonts/Causten-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Semi-Bold.woff2") format("woff2"), url("../fonts/Causten-Semi-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Bold.woff2") format("woff2"), url("../fonts/Causten-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C 55";
+  src: url("../fonts/CoreSansC-55Medium.woff2") format("woff2"), url("../fonts/CoreSansC-55Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C 65";
+  src: url("../fonts/CoreSansC-65Bold.woff2") format("woff2"), url("../fonts/CoreSansC-65Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C 75";
+  src: url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"), url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+[class*=__container] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.deals {
+  padding-top: 10px;
+}
+
+.deals__items {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  gap: 30px;
+  grid-template-areas: "item-deals--1 item-deals--2" "item-deals--3 item-deals--4";
+  /* "item-deals--5 item-deals--6"
+     "item-deals--7 item-deals--8"
+     "item-deals--9 item-deals--10"; */
+}
+
+.item-deals--1 {
+  grid-area: item-deals--1;
+}
+
+.item-deals--2 {
+  grid-area: item-deals--2;
+}
+
+.item-deals--3 {
+  grid-area: item-deals--3;
+}
+
+.item-deals--4 {
+  grid-area: item-deals--4;
+}
+
+.item-deals--5 {
+  grid-area: item-deals--5;
+}
+
+.item-deals--6 {
+  grid-area: item-deals--6;
+}
+
+.item-deals--7 {
+  grid-area: item-deals--7;
+}
+
+.item-deals--8 {
+  grid-area: item-deals--8;
+}
+
+.item-deals--9 {
+  grid-area: item-deals--9;
+}
+
+.item-deals--10 {
+  grid-area: item-deals--10;
+}
+
+@media (max-width: 768px) {
+  .deals__items {
+    grid-template: repeat(1, 1fr)/repeat(1, 1fr);
+    grid-template-areas: "item-deals--1" "item-deals--2" "item-deals--3" "item-deals--4";
+    /* "item-deals--5"
+        "item-deals--6"
+        "item-deals--7"
+        "item-deals--8"
+        "item-deals--9"
+        "item-deals--10"; */
+  }
+}
+.deals__item {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.item-deals {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  min-height: 355px;
+}
+
+.item-deals__body {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.item-deals__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 605/355;
+}
+
+.item-deals__img img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 605/355;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* object-position: top; */
+  border-radius: 12px;
+}
+
+.item-deals__content {
+  padding: 5% 50% 5% 5%;
+  height: 100%;
+}
+
+.item-deals__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  gap: 15px;
+}
+
+.item-deals__subtitle {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.67;
+  letter-spacing: 0.251px;
+}
+
+.item-deals__title {
+  color: #fff;
+  font-family: "Core Sans C 75", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.33;
+}
+
+.item-deals__text p {
+  color: #fff;
+  font-family: "Core Sans C 55";
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.56;
+  letter-spacing: 0.251px;
+}
+
+.item-deals__link {
+  color: #fff;
+  font-family: "Core Sans C 75", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.item-deals:hover .item-deals__body .item-deals__content .item-deals__link {
+  text-decoration-line: underline;
+}
+
+@media (max-width: 1023.98px) {
+  .deals__items {
+    gap: 15px;
+  }
+  .item-deals__content {
+    padding: 5% 5% 5% 5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2196078431);
+  }
+  .item-deals__subtitle {
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .item-deals__title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .item-deals__text p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .item-deals__link {
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
+@media (max-width: 425.98px) {
+  .deals__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 374.98px) {
+  .item-deals__subtitle {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .item-deals__title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .item-deals__text p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .item-deals__link {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+  }
+}
+[class*="--margin"] {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 767.98px) {
+  [class*="--margin"] {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 424.98px) {
+  [class*="--margin"] {
+    margin-bottom: 20px;
+  }
+}
