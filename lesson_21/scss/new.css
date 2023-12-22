@@ -201,6 +201,30 @@ body {
   }
 }
 
+.title--margin {
+  margin-bottom: 70px;
+}
+@media (max-width: 1023.98px) {
+  .title--margin {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .title--margin {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 424.98px) {
+  .title--margin {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 374.98px) {
+  .title--margin {
+    margin-bottom: 20px;
+  }
+}
+
 .items-new {
   position: relative;
 }

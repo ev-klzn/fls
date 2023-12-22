@@ -7,6 +7,17 @@
 	// .new--margin
 
 	&--margin {
+		// @media (max-width: $laptop) {
+		// }
+
+		// @media (max-width: $tablet) {
+		// }
+
+		// @media (max-width: $mobileL) {
+		// }
+
+		// @media (max-width: $mobileM) {
+		// }
 	}
 
 	// .new__container
@@ -69,6 +80,23 @@
 	// .title--margin
 
 	&--margin {
+		margin-bottom: 70px;
+
+		@media (max-width: $laptop) {
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: $tablet) {
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: $mobileL) {
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: $mobileM) {
+			margin-bottom: 20px;
+		}
 	}
 }
 .items-new {
