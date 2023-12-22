@@ -7,17 +7,23 @@
 	// .new--margin
 
 	&--margin {
-		// @media (max-width: $laptop) {
-		// }
+		margin-bottom: 100px;
 
-		// @media (max-width: $tablet) {
-		// }
+		@media (max-width: $laptop) {
+			margin-bottom: 75px;
+		}
 
-		// @media (max-width: $mobileL) {
-		// }
+		@media (max-width: $tablet) {
+			margin-bottom: 60px;
+		}
 
-		// @media (max-width: $mobileM) {
-		// }
+		@media (max-width: $mobileL) {
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: $mobileM) {
+			margin-bottom: 50px;
+		}
 	}
 
 	// .new__container
@@ -71,6 +77,7 @@
 
 		@media (max-width: $tablet) {
 			grid-template-columns: 1fr;
+			gap: 45px;
 			margin-left: 0;
 			margin-right: 0;
 		}
