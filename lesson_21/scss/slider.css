@@ -161,6 +161,14 @@ body {
   aspect-ratio: 1449/716;
   position: relative;
 }
+.slider--margin {
+  margin-bottom: 130px;
+}
+@media (max-width: 1023.98px) {
+  .slider--margin {
+    margin-bottom: 0;
+  }
+}
 .slider__body {
   position: relative;
   z-index: 2;

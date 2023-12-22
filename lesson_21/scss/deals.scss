@@ -22,15 +22,22 @@
 .deals {
 	// .deals--margin
 
-	&--margin {
-		@media (max-width: $laptop) {
-		}
+	margin-bottom: 150px;
 
-		@media (max-width: $tablet) {
-		}
+	@media (max-width: $laptop) {
+		margin-bottom: 60px;
+	}
 
-		@media (max-width: $mobileL) {
-		}
+	@media (max-width: $tablet) {
+		margin-bottom: 60px;
+	}
+
+	@media (max-width: $mobileL) {
+		margin-bottom: 30px;
+	}
+
+	@media (max-width: $mobileM) {
+		margin-bottom: 20px;
 	}
 
 	// .deals__container
