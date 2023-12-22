@@ -156,12 +156,16 @@ body {
 }
 
 .slider {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1449/716;
   position: relative;
 }
 .slider__body {
   position: relative;
   z-index: 2;
   padding: 13.319531% 18.156425%;
+  height: 100%;
 }
 .slider__body > * {
   line-height: 1.2;

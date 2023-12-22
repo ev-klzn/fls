@@ -3,6 +3,9 @@
 @import "_commons.scss";
 
 .slider {
+	height: 100%;
+	width: 100%;
+	aspect-ratio: 1449 / 716;
 	// .slider__body
 	position: relative;
 
@@ -10,6 +13,7 @@
 		position: relative;
 		z-index: 2;
 		padding: 13.319531% 18.156425%;
+		height: 100%;
 
 		& > * {
 			line-height: 1.2;
