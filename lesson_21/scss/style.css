@@ -169,12 +169,17 @@ header {
 }
 @media (max-width: 1023.98px) {
   .slider--margin {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767.98px) {
   .slider--margin {
-    margin-bottom: 60px;
+    margin-bottom: 65px;
+  }
+}
+@media (max-width: 635px) {
+  .slider--margin {
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 424.98px) {
