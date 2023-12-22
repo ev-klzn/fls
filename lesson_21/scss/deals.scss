@@ -89,7 +89,13 @@
 	min-height: 355px;
 
 	&:hover {
-		// text-decoration-line: underline;
+		& .item-deals__body {
+			& .item-deals__content {
+				& .item-deals__link {
+					text-decoration-line: underline;
+				}
+			}
+		}
 	}
 
 	// .item-deals__body

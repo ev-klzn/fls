@@ -221,6 +221,9 @@ body {
           box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
   min-height: 355px;
 }
+.item-deals:hover .item-deals__body .item-deals__content .item-deals__link {
+  text-decoration-line: underline;
+}
 .item-deals__body {
   width: 100%;
   height: 100%;
