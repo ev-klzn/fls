@@ -420,4 +420,6 @@ body {
   aspect-ratio: 1449/716;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
