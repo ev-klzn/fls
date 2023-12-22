@@ -48,7 +48,7 @@
 			width: 5px;
 			margin-right: 20px;
 			border-radius: 10px;
-			background-color: #8a33fd;
+			background-color: $thirdColor;
 		}
 	}
 
@@ -115,7 +115,7 @@
 		&:hover {
 			& .items-new__body {
 				& .items-new__link {
-					color: #8a33fd;
+					color: $thirdColor;
 					text-decoration: underline;
 				}
 			}
