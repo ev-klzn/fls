@@ -1,9 +1,9 @@
-// @use "sass:math";
+@use "sass:math";
 @import "_reset.scss";
 @import "_fonts.scss";
 @import "_commons.scss";
-// @import "_mixins.scss";
-// @import "_functions.scss";
+@import "_mixins.scss";
+@import "_functions.scss";
 
 body {
 }
@@ -19,5 +19,42 @@ header {
 
 .slider--margin {
 	margin-bottom: 130px;
+
+	@media (max-width: $laptop) {
+		margin-bottom: 60px;
+	}
+
+	@media (max-width: $tablet) {
+		margin-bottom: 60px;
+	}
+
+	@media (max-width: $mobileL) {
+		margin-bottom: 10px;
+	}
+
+	@media (max-width: $mobileM) {
+		margin-bottom: 10px;
+	}
 }
+
+.deals--margin {
+	margin-bottom: 150px;
+
+	@media (max-width: $laptop) {
+		margin-bottom: 60px;
+	}
+
+	@media (max-width: $tablet) {
+		margin-bottom: 60px;
+	}
+
+	@media (max-width: $mobileL) {
+		margin-bottom: 30px;
+	}
+
+	@media (max-width: $mobileM) {
+		margin-bottom: 20px;
+	}
+}
+
 // ------------
