@@ -23,7 +23,6 @@
 	// .deals--margin
 
 	&--margin {
-		
 	}
 
 	// .deals__container
@@ -45,11 +44,17 @@
 
 		@media (max-width: $laptop) {
 			gap: 15px;
+			padding-top: 25px;
 		}
 
 		@media (max-width: $tablet) {
-			padding-top: 75px;
 			grid-template-columns: 1fr;
+			padding-top: 75px;
+		}
+
+		@media (max-width: $mobileL) {
+			grid-template-columns: 1fr;
+			padding-top: 25px;
 		}
 	}
 

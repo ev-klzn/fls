@@ -216,10 +216,16 @@
 	&__carousel {
 		position: absolute;
 		content: "";
-		bottom: 2.760524%;
+		bottom: 30px;
 		left: 45%;
-		@media (max-width: $tablet) {
+
+		@media (max-width: $laptopL) {
+		}
+
+		@media (max-width: $laptop) {
 			display: none;
+		}
+		@media (max-width: $tablet) {
 		}
 	}
 
