@@ -280,8 +280,16 @@
 			// justify-content: left;
 			// text-align: start;
 			// align-items: start;
-			.save-item__link {
+			& .save-item__link {
 				border: 1px solid white;
+				transition: all 0.3s;
+
+				&:hover {
+					color: #000000;
+					background-color: #ffffff;
+					color: $thirdColor;
+					border: 1px solid $thirdColor;
+				}
 			}
 		}
 	}
@@ -293,11 +301,16 @@
 	& .save-item__body {
 		justify-content: end;
 		& .save-item__content {
-			// justify-content: right;
-			// text-align: end;
-			// align-items: end;
-			.save-item__link {
+			& .save-item__link {
+				transition: all 0.3s;
 				border: 1px solid white;
+
+				&:hover {
+					color: #000000;
+					background-color: #ffffff;
+					color: $thirdColor;
+					border: 1px solid $thirdColor;
+				}
 			}
 		}
 	}

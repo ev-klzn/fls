@@ -422,6 +422,14 @@ body {
 }
 .save-item--white-left .save-item__body .save-item__content .save-item__link {
   border: 1px solid white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.save-item--white-left .save-item__body .save-item__content .save-item__link:hover {
+  color: #000000;
+  background-color: #ffffff;
+  color: #8a33fd;
+  border: 1px solid #8a33fd;
 }
 
 .save-item--white-right {
@@ -437,7 +445,15 @@ body {
           justify-content: end;
 }
 .save-item--white-right .save-item__body .save-item__content .save-item__link {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid white;
+}
+.save-item--white-right .save-item__body .save-item__content .save-item__link:hover {
+  color: #000000;
+  background-color: #ffffff;
+  color: #8a33fd;
+  border: 1px solid #8a33fd;
 }
 
 .save-item--black-right {
