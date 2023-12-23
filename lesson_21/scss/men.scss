@@ -67,7 +67,7 @@
 
 	@media (max-width: $mobileL) {
 		grid-template-columns: 1fr;
-		column-gap: 25px;
+		gap: 40px;
 	}
 
 	@media (max-width: $mobileM) {
@@ -76,6 +76,9 @@
 .men-card {
 	font-family: "Causten", sans-serif;
 	// .men-card__img
+
+	@media (max-width: $mobileL) {
+	}
 
 	&__img {
 		border-radius: 10px;

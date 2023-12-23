@@ -155,6 +155,25 @@ body {
           flex-grow: 1;
 }
 
+.title {
+  color: #3c4242;
+  font-family: "Core Sans C 65", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.68px;
+  height: 100%;
+  margin-bottom: 70px;
+}
+.title::before {
+  content: "";
+  width: 6px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #8a33fd;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
 .deals {
   margin-bottom: 150px;
 }
