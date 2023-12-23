@@ -148,7 +148,6 @@
 	// .made__link
 
 	&__link {
-		display: inline-block;
 		position: relative;
 		z-index: 2;
 		border-radius: 8px;
@@ -160,17 +159,24 @@
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
-		max-width: 168px;
+		max-width: 170px;
+		border: 1px solid transparent;
+		transition: all 0.3s;
 
 		@media (max-width: $tablet) {
-			font-size: 16px;
-			padding: 12px 32px;
 		}
 
 		@media (max-width: $mobileL) {
 		}
 
 		@media (max-width: $mobileM) {
+		}
+
+		&:hover {
+			color: #000000;
+			background-color: #ffffff;
+			color: $thirdColor;
+			border: 1px solid $thirdColor;
 		}
 	}
 

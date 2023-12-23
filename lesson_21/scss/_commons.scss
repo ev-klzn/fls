@@ -91,4 +91,16 @@ body {
 	}
 }
 
+.link {
+	border: 1px solid transparent;
+	transition: all 0.3s;
+
+	&:hover {
+		color: #000000;
+		background-color: #ffffff;
+		color: $thirdColor;
+		border: 1px solid $thirdColor;
+	}
+}
+
 // ----------------
