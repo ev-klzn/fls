@@ -253,7 +253,6 @@ body {
   position: relative;
 }
 .items-new__item:hover .items-new__body .items-new__link {
-  color: #8a33fd;
   text-decoration: underline;
 }
 .items-new__img {
