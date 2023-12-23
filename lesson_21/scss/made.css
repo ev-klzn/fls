@@ -186,6 +186,7 @@ body {
 @media (max-width: 767.98px) {
   .made__body {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
 .made__content {
@@ -332,6 +333,12 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+@media (max-width: 767.98px) {
+  .made__bg img {
+    border-radius: 10px 10px 10px 10px;
+  }
 }
 .made__img {
   aspect-ratio: 620/640;
@@ -342,4 +349,10 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0 10px 10px 0;
+}
+@media (max-width: 767.98px) {
+  .made__img img {
+    border-radius: 10px 10px 10px 10px;
+  }
 }
