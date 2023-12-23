@@ -277,6 +277,7 @@ body {
 .items-new__img {
   margin-bottom: 33px;
   border-radius: 12px;
+  overflow: hidden;
 }
 @media (max-width: 1023.98px) {
   .items-new__img {
@@ -288,6 +289,15 @@ body {
   height: 100%;
   aspect-ratio: 263/263;
   border-radius: 12px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.items-new__img img:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .items-new__link {
   color: #3c4242;

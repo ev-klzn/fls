@@ -131,6 +131,7 @@
 	&__img {
 		margin-bottom: 33px;
 		border-radius: 12px;
+		overflow: hidden;
 
 		@media (max-width: $laptop) {
 			margin-bottom: 25px;
@@ -141,6 +142,11 @@
 			height: 100%;
 			aspect-ratio: 263 / 263;
 			border-radius: 12px;
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 	}
 
