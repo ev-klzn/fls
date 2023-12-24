@@ -22,22 +22,24 @@
 .deals {
 	// .deals--margin
 
-	margin-bottom: 150px;
+	&--margin {
+		margin-bottom: 150px;
 
-	@media (max-width: $laptop) {
-		margin-bottom: 75px;
-	}
+		@media (max-width: $laptop) {
+			margin-bottom: 75px;
+		}
 
-	@media (max-width: $tablet) {
-		margin-bottom: 60px;
-	}
+		@media (max-width: $tablet) {
+			margin-bottom: 60px;
+		}
 
-	@media (max-width: $mobileL) {
-		margin-bottom: 50px;
-	}
+		@media (max-width: $mobileL) {
+			margin-bottom: 50px;
+		}
 
-	@media (max-width: $mobileM) {
-		margin-bottom: 50px;
+		@media (max-width: $mobileM) {
+			margin-bottom: 50px;
+		}
 	}
 
 	// .deals__container

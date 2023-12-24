@@ -78,7 +78,6 @@ body {
 	font-weight: 600;
 	letter-spacing: 0.68px;
 	height: 100%;
-	margin-bottom: 70px;
 
 	&::before {
 		content: "";
@@ -88,6 +87,28 @@ body {
 		background-color: #8a33fd;
 		margin-right: 20px;
 		vertical-align: middle;
+	}
+
+	&--margin {
+		margin-bottom: 70px;
+
+		@media (max-width: $laptop) {
+			font-size: 28px;
+			margin-bottom: 25px;
+		}
+
+		@media (max-width: $tablet) {
+			font-size: 26px;
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: $mobileL) {
+			font-size: 24px;
+		}
+
+		@media (max-width: $mobileM) {
+			font-size: 22px;
+		}
 	}
 }
 

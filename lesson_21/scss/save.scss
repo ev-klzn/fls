@@ -38,15 +38,6 @@
 		font-weight: 600;
 		line-height: 0.98;
 		letter-spacing: 0.68px;
-		margin-bottom: 70px;
-
-		@media (max-width: $laptop) {
-			margin-bottom: 50px;
-		}
-
-		@media (max-width: $mobileL) {
-			margin-bottom: 30px;
-		}
 	}
 
 	&__title::before {
