@@ -79,6 +79,16 @@
 	@media (max-width: $mobileL) {
 	}
 
+	&:hover {
+		& .item-card__body {
+			& .item-card__items {
+				& .item-card__title {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
 	&__img {
 		border-radius: 10px;
 		overflow: hidden;
@@ -122,9 +132,6 @@
 		letter-spacing: -0.715px;
 		margin-bottom: 10px;
 		transition: color 0.3s ease 0s;
-		&:hover {
-			text-decoration: underline;
-		}
 	}
 
 	// .item-card__link

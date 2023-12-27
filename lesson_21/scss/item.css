@@ -277,6 +277,9 @@ body {
 .item-card {
   font-family: "Causten", sans-serif;
 }
+.item-card:hover .item-card__body .item-card__items .item-card__title {
+  text-decoration: underline;
+}
 .item-card__img {
   border-radius: 10px;
   overflow: hidden;
@@ -322,9 +325,6 @@ body {
   margin-bottom: 10px;
   -webkit-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
-}
-.item-card__title:hover {
-  text-decoration: underline;
 }
 .item-card__link {
   color: #7f7f7f;
