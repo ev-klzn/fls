@@ -210,6 +210,29 @@ body {
   border: 1px solid #8a33fd;
 }
 
+.brands--margin {
+  margin-bottom: 75px;
+}
+@media (max-width: 1023.98px) {
+  .brands--margin {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .brands--margin {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 424.98px) {
+  .brands--margin {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 374.98px) {
+  .brands--margin {
+    margin-bottom: 40px;
+  }
+}
 .brands__container {
   border-radius: 12px;
   background: #3c4242;
@@ -234,7 +257,7 @@ body {
 }
 @media (max-width: 424.98px) {
   .brands__container {
-    padding: 15px;
+    padding: 35px 15px 15px 15px;
   }
 }
 .brands__title {

@@ -103,6 +103,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 10px;
 	}
 
 	// .item-card__items
@@ -121,6 +122,9 @@
 		letter-spacing: -0.715px;
 		margin-bottom: 10px;
 		transition: color 0.3s ease 0s;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	// .item-card__link
@@ -136,9 +140,5 @@
 	// .item-card__arrow
 
 	&__arrow {
-		transition: opacity 0.3s;
-		&:hover {
-			opacity: 0.5;
-		}
 	}
 }

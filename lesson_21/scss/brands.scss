@@ -23,6 +23,23 @@
 	// .brands--margin
 
 	&--margin {
+		margin-bottom: 75px;
+
+		@media (max-width: $laptop) {
+			margin-bottom: 60px;
+		}
+
+		@media (max-width: $tablet) {
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: $mobileL) {
+			margin-bottom: 40px;
+		}
+
+		@media (max-width: $mobileM) {
+			margin-bottom: 40px;
+		}
 	}
 
 	// .brands__container
@@ -48,7 +65,7 @@
 		}
 
 		@media (max-width: $mobileL) {
-			padding: 15px;
+			padding: 35px 15px 15px 15px;
 		}
 
 		@media (max-width: $mobileM) {
