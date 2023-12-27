@@ -306,3 +306,8 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
 }
+@media (max-width: 767.98px) {
+  .feedback-card__text {
+    font-size: 16px;
+  }
+}
