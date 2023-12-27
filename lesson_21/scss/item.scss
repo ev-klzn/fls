@@ -2,7 +2,7 @@
 @import "_fonts.scss";
 @import "_commons.scss";
 
-.men {
+.item {
 	&--margin {
 		margin-bottom: 100px;
 
@@ -22,12 +22,12 @@
 			margin-bottom: 50px;
 		}
 	}
-	// .men__container
+	// .item__container
 
 	&__container {
 	}
 
-	// .men__title
+	// .item__title
 
 	&__title {
 		color: $linkColor;
@@ -49,7 +49,7 @@
 	}
 }
 
-.men-cards {
+.item-cards {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: auto;
@@ -72,9 +72,9 @@
 	@media (max-width: $mobileM) {
 	}
 }
-.men-card {
+.item-card {
 	font-family: "Causten", sans-serif;
-	// .men-card__img
+	// .item-card__img
 
 	@media (max-width: $mobileL) {
 	}
@@ -97,7 +97,7 @@
 		}
 	}
 
-	// .men-card__body
+	// .item-card__body
 
 	&__body {
 		display: flex;
@@ -105,13 +105,13 @@
 		align-items: center;
 	}
 
-	// .men-card__items
+	// .item-card__items
 
 	&__items {
 		overflow: hidden;
 	}
 
-	// .men-card__title
+	// .item-card__title
 
 	&__title {
 		color: #2a2f2f;
@@ -123,7 +123,7 @@
 		transition: color 0.3s ease 0s;
 	}
 
-	// .men-card__link
+	// .item-card__link
 
 	&__link {
 		color: #7f7f7f;
@@ -133,7 +133,7 @@
 		letter-spacing: -0.536px;
 	}
 
-	// .men-card__arrow
+	// .item-card__arrow
 
 	&__arrow {
 		transition: opacity 0.3s;
