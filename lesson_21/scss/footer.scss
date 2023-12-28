@@ -120,6 +120,16 @@
 	// .footer__social
 
 	&__social {
+		& a {
+			max-width: 37px;
+			& img {
+				width: 100%;
+				height: 100%;
+				aspect-ratio: 37 / 37;
+				object-fit: cover;
+				border-radius: 12px;
+			}
+		}
 	}
 
 	// .footer__apps
@@ -137,9 +147,16 @@
 	&__stors {
 	}
 
-	// .footer__stor
+	// .footer__store
 
-	&__stor {
+	&__store {
+		max-width: 154px;
+		& img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 154 / 52;
+			object-fit: cover;
+		}
 	}
 
 	&__details {

@@ -286,6 +286,27 @@ body {
       flex-wrap: wrap;
   gap: 10px;
 }
+.footer__social a {
+  max-width: 37px;
+}
+.footer__social a img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 37/37;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.footer__store {
+  max-width: 154px;
+}
+.footer__store img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 154/52;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .footer__details {
   display: -webkit-box;
   display: -ms-flexbox;
