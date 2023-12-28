@@ -342,9 +342,3 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.brands__item img:hover {
-  -webkit-transform: scale(1.07);
-      -ms-transform: scale(1.07);
-          transform: scale(1.07);
-  border-radius: 0;
-}
