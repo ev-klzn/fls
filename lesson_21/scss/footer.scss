@@ -75,6 +75,12 @@
 	// .footer__item
 
 	&__item {
+		&:hover {
+			text-decoration: underline;
+			& a {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	// .footer__actions
