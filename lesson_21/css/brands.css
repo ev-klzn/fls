@@ -203,6 +203,11 @@ body {
   border: 1px solid #8a33fd;
 }
 
+.brands {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .brands--margin {
   margin-bottom: 75px;
 }
@@ -214,6 +219,7 @@ body {
 @media (max-width: 767.98px) {
   .brands--margin {
     margin-bottom: 50px;
+    padding: 0;
   }
 }
 @media (max-width: 424.98px) {
@@ -310,12 +316,12 @@ body {
 @media (max-width: 767.98px) {
   .brands__items {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 }
 @media (max-width: 424.98px) {
   .brands__items {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
   }
 }
 @media (max-width: 374.98px) {

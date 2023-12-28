@@ -20,6 +20,9 @@
 // ------------------------------------------
 
 .brands {
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
 	// .brands--margin
 
 	&--margin {
@@ -31,6 +34,7 @@
 
 		@media (max-width: $tablet) {
 			margin-bottom: 50px;
+			padding: 0;
 		}
 
 		@media (max-width: $mobileL) {
@@ -155,11 +159,11 @@
 
 		@media (max-width: $tablet) {
 			grid-template-columns: repeat(2, 1fr);
+			gap: 15px;
 		}
 
 		@media (max-width: $mobileL) {
 			grid-template-columns: repeat(2, 1fr);
-			gap: 15px;
 		}
 
 		@media (max-width: $mobileM) {
