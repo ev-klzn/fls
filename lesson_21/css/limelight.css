@@ -544,11 +544,20 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  width: 34px;
 }
 .item-card__fav:hover {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+.item-card__fav img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 34/34;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 .item-card__img {
   border-radius: 10px;

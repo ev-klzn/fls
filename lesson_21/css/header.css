@@ -240,6 +240,13 @@ body {
 .header__logo {
   max-width: 95px;
 }
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 93/45;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .header__img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0;
@@ -327,10 +334,18 @@ body {
   background: #f6f6f6;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  width: 45px;
 }
 .actions__link:hover {
   background: #cccccc;
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+.actions__link img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 20/20;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
