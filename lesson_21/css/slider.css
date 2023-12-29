@@ -455,6 +455,7 @@ body {
   content: "";
   bottom: 30px;
   left: 45%;
+  z-index: 2;
 }
 @media (max-width: 1023.98px) {
   .slider__carousel {
