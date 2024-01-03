@@ -132,3 +132,164 @@
 		}
 	}
 }
+
+// slider------------------------------------------
+
+.slider {
+	position: relative;
+	// aspect-ratio: 1920 / 828;
+	// .slider__container
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	color: $white;
+	height: 100svh;
+	max-height: 828px;
+
+	&__container {
+		height: 100%;
+		max-width: 1980px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	// .slider__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 43.125%;
+		margin: 0;
+		padding: toRem(5);
+		color: $white;
+		background-color: rgba(55, 57, 63, 0.91);
+
+		@media (max-width: toEm($laptopL)) {
+			width: 100%;
+			background-color: rgba(55, 57, 63, 0.65);
+			text-align: center;
+		}
+	}
+
+	// .slider__content
+
+	&__content {
+		width: 64%;
+
+		@media (max-width: toEm($laptopL)) {
+			width: 100%;
+		}
+	}
+
+	// .slider__subtitle
+
+	&__subtitle {
+		font-size: toRem(18);
+		font-weight: 600;
+		line-height: 1.46;
+		margin-bottom: toEm(10, 18);
+
+		@media (max-width: toEm($laptop)) {
+			font-size: toRem(16);
+		}
+	}
+
+	// .slider__title
+
+	&__title {
+		font-family: "Poppins";
+		font-size: toRem(60);
+		font-style: normal;
+		font-weight: 700;
+		line-height: 1.1;
+		margin-bottom: toEm(20, 60);
+
+		@media (max-width: toEm($laptop)) {
+			font-size: toRem(48);
+		}
+
+		@media (max-width: toEm($tablet)) {
+			font-size: toRem(36);
+		}
+
+		@media (max-width: toEm($mobileL)) {
+			font-size: toRem(28);
+		}
+	}
+
+	// .slider__color
+
+	&__color {
+		color: $thirdColor;
+	}
+
+	// .slider__text
+
+	&__text {
+		font-size: toRem(18);
+		margin-bottom: toEm(35, 18);
+
+		& p :not(:last-child) {
+			margin-bottom: toRem(15);
+		}
+
+		@media (max-width: toEm($tablet)) {
+			margin-bottom: 15px;
+		}
+
+		@media (max-width: toEm($mobileL)) {
+			margin-bottom: 10px;
+		}
+	}
+
+	// .slider__actions
+
+	&__actions {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		// justify-content: start;
+		gap: toRem(15);
+		// justify-content: center;
+		align-items: center;
+		@media (max-width: toEm($laptopL)) {
+			justify-content: center;
+		}
+	}
+
+	// .slider__links
+
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: toRem(10);
+	}
+
+	// .slider__link
+
+	&__link {
+	}
+
+	// .slider__img
+
+	&__img {
+		& img {
+			aspect-ratio: 1920 / 828;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+}

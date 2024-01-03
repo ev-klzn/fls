@@ -8,6 +8,7 @@ $fourColor: #6b78e5;
 $fiveColor: #f4f4f4;
 $btn: #fff;
 $bc: #fff;
+$white: #fff;
 $fourK: 2559.98;
 $laptopL: 1439.98;
 $laptop: 1023.98;
@@ -101,4 +102,6 @@ body {
 
 main {
 	// padding-top: 65px;
+	// padding-top: toRem(131);
+	position: relative;
 }
