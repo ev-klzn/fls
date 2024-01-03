@@ -213,15 +213,15 @@
 		margin-bottom: toEm(20, 60);
 
 		@media (max-width: toEm($laptop)) {
-			font-size: toRem(48);
+			font-size: toRem(54);
 		}
 
 		@media (max-width: toEm($tablet)) {
-			font-size: toRem(36);
+			font-size: toRem(44);
 		}
 
 		@media (max-width: toEm($mobileL)) {
-			font-size: toRem(28);
+			font-size: toRem(36);
 		}
 	}
 
@@ -242,11 +242,11 @@
 		}
 
 		@media (max-width: toEm($tablet)) {
-			margin-bottom: 15px;
+			margin-bottom: toRem(15);
 		}
 
 		@media (max-width: toEm($mobileL)) {
-			margin-bottom: 10px;
+			margin-bottom: toRem(10);
 		}
 	}
 
@@ -287,6 +287,7 @@
 			height: 100%;
 			object-fit: cover;
 			position: absolute;
+			object-position: top;
 			top: 0;
 			left: 0;
 			z-index: 1;
