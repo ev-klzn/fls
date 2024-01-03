@@ -1,8 +1,7 @@
 @use "sass:math";
-@import "_fonts.scss";
 @import "_reset.scss";
+@import "_fonts.scss";
 @import "_commons.scss";
-@import "_functions.scss";
 
 // @media (max-width: $laptopL) {
 // }
@@ -18,3 +17,73 @@
 
 // @media (max-width: $mobileM) {
 // }
+
+.header {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	background-color: $bc;
+	// .header__container
+
+	&__container {
+		display: flex;
+		row-gap: toRem(20);
+		column-gap: toRem(40);
+		align-items: center;
+		padding-top: toRem(33);
+		padding-bottom: toRem(33);
+		text-transform: capitalize;
+	}
+
+	// .header__logo
+
+	&__logo {
+		flex: 0 0 200px;
+	}
+
+	// .header__nav
+
+	&__nav {
+		flex: 1 1 250px;
+	}
+
+	// .header__menu
+
+	&__menu {
+		display: flex;
+		justify-content: center;
+	}
+
+	// .header__btn
+
+	&__btn {
+	}
+}
+.menu-level-1 {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: toRem(20);
+	column-gap: toRem(40);
+	// .menu-level-1__item
+
+	&__item {
+	}
+
+	// .menu-level-1__link
+
+	&__link {
+	}
+}
+.menu-level-2 {
+	// .menu-level-2__item
+
+	&__item {
+	}
+
+	// .menu-level-2__link
+
+	&__link {
+	}
+}

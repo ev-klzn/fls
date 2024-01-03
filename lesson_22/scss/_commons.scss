@@ -1,8 +1,13 @@
+@use "sass:math";
+@import "_functions.scss";
+
 $mainColor: #7d7d7d;
 $secondColor: #37393f;
 $thirdColor: #40ddb6;
 $fourColor: #6b78e5;
 $fiveColor: #f4f4f4;
+$btn: #fff;
+$bc: #fff;
 // $fourK: 2559.98px;
 // $laptopL: 1439.98px;
 // $laptop: 1023.98px;
@@ -62,6 +67,7 @@ body {
 	overflow: clip;
 	display: flex;
 	flex-direction: column;
+	background-color: $bc;
 	& > main {
 		flex-grow: 1;
 		// text-align: center;
@@ -70,4 +76,29 @@ body {
 	}
 }
 
+.btn {
+	padding: 21px 35px 22px 35px;
+	background-color: $fourColor;
+	// padding: toRem(21) toRem(35) toRem(22) toRem(35);
+	flex: 0 0 194px;
+	max-height: 65px;
+	color: $btn;
+	font-family: "Cabin";
+	font-size: toRem(18);
+	font-weight: 600;
+	text-transform: capitalize;
+	border: 1px solid transparent;
+	transition: all 0.3s;
+
+	&:hover {
+		border: 1px solid $fourColor;
+		background-color: transparent;
+		color: $fourColor;
+	}
+}
+
 // ----------------
+
+main {
+	// padding-top: 65px;
+}
