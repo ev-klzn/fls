@@ -1,0 +1,13 @@
+@mixin gridCards($columnGap: 20px, $rowGap: 20px, $min: 280px, $max: 1fr) {
+	display: grid;
+	column-gap: $columnGap;
+	row-gap: $rowGap;
+	grid-template-columns: repeat(auto-fill, minmax($min, $max));
+	grid-auto-rows: 1fr;
+}
+
+// // .box {
+// 	@include gridCards(15px, 12px, 330px, 370px);
+// }
+
+// --------------------
