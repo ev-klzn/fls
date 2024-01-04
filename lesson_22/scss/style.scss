@@ -169,7 +169,8 @@
 		top: 0;
 		left: 0;
 		z-index: 2;
-		width: 43.125%;
+		// width: 43.125%;
+		width: percent(828, 1920);
 		margin: 0;
 		padding: toRem(5);
 		color: $white;
@@ -185,7 +186,8 @@
 	// .slider__content
 
 	&__content {
-		width: 64%;
+		// width: 64%;
+		width: percent(595, 828);
 
 		@media (max-width: toEm($laptopL)) {
 			width: 100%;
@@ -578,22 +580,22 @@
 	// .clients--margin
 
 	&--margin {
-		margin-bottom: toRem(100);
+		margin-bottom: toRem(82);
 
 		@media (max-width: toEm($laptopL)) {
-			margin-bottom: toRem(80);
+			margin-bottom: toRem(60);
 		}
 
 		@media (max-width: toEm($laptop)) {
-			margin-bottom: toRem(50);
-		}
-
-		@media (max-width: toEm($tablet)) {
 			margin-bottom: toRem(40);
 		}
 
+		@media (max-width: toEm($tablet)) {
+			margin-bottom: toRem(50);
+		}
+
 		@media (max-width: toEm($mobileL)) {
-			margin-bottom: toRem(35);
+			margin-bottom: toRem(30);
 		}
 
 		@media (max-width: toEm($mobileM)) {
@@ -622,6 +624,7 @@
 
 		@media (max-width: toEm($tablet)) {
 			grid-template-columns: repeat(2, 1fr);
+			row-gap: toRem(30);
 		}
 
 		@media (max-width: toEm($mobileL)) {
