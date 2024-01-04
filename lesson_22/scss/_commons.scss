@@ -116,3 +116,20 @@ main {
 	// padding-top: toRem(131);
 	position: relative;
 }
+
+.title {
+	color: $secondColor;
+	font-family: "Poppins";
+	font-size: toRem(40);
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: toEm(20, 40);
+}
+
+.subtitle {
+	color: $secondColor;
+	font-family: "Inter";
+	font-size: toRem(18);
+	font-weight: 500;
+	margin-bottom: toRem(14);
+}
