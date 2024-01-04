@@ -30,19 +30,22 @@ $containerPadding: 30;
 // Ширина спрацьовування першого брейкпоінту
 $containerWidth: $maxWidthContainer + $containerPadding;
 
-// @media (max-width: $laptopL) {
+// @media (max-width: toEm($laptopL)) {
 // }
 
-// @media (max-width: $laptop) {
+// @media (max-width: toEm($laptop)) {
 // }
 
-// @media (max-width: $tablet) {
+// @media (max-width: toEm($tablet)) {
 // }
 
-// @media (max-width: $mobileL) {
+// @media (max-width: toEm($mobileL)) {
 // }
 
-// @media (max-width: $mobileM) {
+// @media (max-width: toEm($mobileM)) {
+// }
+
+// @media (max-width: toEm($mobileS)) {
 // }
 
 body {
