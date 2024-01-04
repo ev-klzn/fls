@@ -460,7 +460,6 @@ main {
   margin-bottom: 0.9375rem;
 }
 .l-side__text p {
-  font-family: "Inter";
   font-size: 1.125rem;
   line-height: 1.46;
 }
@@ -480,4 +479,106 @@ main {
 .l-side__link:hover {
   color: #40ddb6;
   border-bottom: 3px solid #40ddb6;
+}
+
+.r-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  font-size: 1.125rem;
+  padding-right: 2.7777777778em;
+  padding-left: 2.7777777778em;
+  padding-top: 8.3333333333em;
+  padding-bottom: 8.3333333333em;
+}
+.r-side__body {
+  max-width: 38.3125rem;
+}
+.r-side__subtitle {
+  color: #37393f;
+  font-family: "Inter";
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.8125rem;
+}
+.r-side__title {
+  color: #37393f;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 0.5em;
+}
+.r-side__text {
+  margin-bottom: 1.25rem;
+}
+.r-side__text p {
+  font-size: 1.125rem;
+  line-height: 1.46;
+}
+.r-side__text p:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.r-side__list {
+  margin-bottom: 2.6875rem;
+}
+.r-side__item {
+  color: #37393f;
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.5rem;
+     -moz-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.r-side__item:not(:last-child) {
+  margin-bottom: 1.4375rem;
+}
+.r-side__item img {
+  width: 1.6875rem;
+  height: 1.6875rem;
+}
+.r-side__achievements {
+  margin-bottom: 2.3125rem;
+}
+
+.achievements__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1.25rem;
+}
+.achievements__item {
+  padding: 2rem;
+  border: 1px solid #e3e3e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.1875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.achievements__title {
+  color: #37393f;
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.achievements__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.35;
 }

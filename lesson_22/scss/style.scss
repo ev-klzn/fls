@@ -352,7 +352,6 @@
 	&__text {
 		margin-bottom: toRem(15);
 		& p {
-			font-family: "Inter";
 			font-size: toRem(18);
 			line-height: 1.46;
 
@@ -380,50 +379,105 @@
 	}
 }
 .r-side {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	font-size: toRem(18);
+	padding-right: toEm(50, 18);
+	padding-left: toEm(50, 18);
+	padding-top: toEm(150, 18);
+	padding-bottom: toEm(150, 18);
 	// .r-side__body
 
 	&__body {
+		max-width: toRem(613);
 	}
 
 	// .r-side__subtitle
 
 	&__subtitle {
+		color: $secondColor;
+		font-family: "Inter";
+		font-size: toRem(18);
+		font-weight: 500;
+		margin-bottom: toRem(13);
 	}
 
 	// .r-side__title
 
 	&__title {
+		color: $secondColor;
+		font-family: "Poppins";
+		font-size: toRem(40);
+		font-weight: 700;
+		line-height: 1.21;
+		margin-bottom: toEm(20, 40);
 	}
 
 	// .r-side__text
 
 	&__text {
+		margin-bottom: toRem(20);
+		& p {
+			font-size: toRem(18);
+			line-height: 1.46;
+
+			&:not(:last-child) {
+				margin-bottom: toRem(15);
+			}
+		}
 	}
 
 	// .r-side__list
 
 	&__list {
+		margin-bottom: toRem(43);
 	}
 
 	// .r-side__item
 
 	&__item {
+		color: $secondColor;
+		font-family: "Poppins";
+		font-size: toRem(20);
+		display: flex;
+		column-gap: toRem(8);
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: toRem(23);
+		}
+
+		& img {
+			width: toRem(27);
+			height: toRem(27);
+		}
 	}
 
 	// .r-side__achievements
 
 	&__achievements {
+		margin-bottom: toRem(37);
 	}
 }
 .achievements {
 	// .achievements__items
 
 	&__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		gap: toRem(20);
 	}
 
 	// .achievements__item
 
 	&__item {
+		padding: toRem(32);
+		border: 1px solid #e3e3e3;
+		display: flex;
+		gap: toRem(19);
+		align-items: center;
 	}
 
 	// .achievements__icon
@@ -439,11 +493,18 @@
 	// .achievements__title
 
 	&__title {
+		color: $secondColor;
+		font-family: "Poppins";
+		font-size: toRem(20);
+		font-weight: 600;
 	}
 
 	// .achievements__text
 
 	&__text {
+		font-size: toRem(16);
+		font-weight: 400;
+		line-height: 1.35;
 	}
 }
 
