@@ -8,6 +8,7 @@ $fourColor: #6b78e5;
 $fiveColor: #f4f4f4;
 $btn: #fff;
 $bc: #fff;
+$bc2: #f4f4f4;
 $white: #fff;
 $fourK: 2559.98;
 $laptopL: 1439.98;
@@ -92,9 +93,15 @@ body {
 	transition: all 0.3s;
 
 	&:hover {
-		border: 1px solid $fourColor;
-		background-color: transparent;
-		color: $fourColor;
+		background-color: $thirdColor;
+	}
+
+	&--green {
+		background-color: $thirdColor;
+
+		&:hover {
+			background-color: $fourColor;
+		}
 	}
 }
 

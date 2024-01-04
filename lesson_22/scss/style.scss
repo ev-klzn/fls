@@ -271,6 +271,11 @@
 		display: flex;
 		align-items: center;
 		gap: toRem(10);
+		transition: transform 0.3s;
+
+		&:hover {
+			color: $thirdColor;
+		}
 	}
 
 	// .slider__link
@@ -294,3 +299,163 @@
 		}
 	}
 }
+
+// Welcome ============================================
+
+.welcome {
+	display: grid;
+	grid-template-columns: 0.43125fr 0.56875fr;
+	grid-template-rows: auto;
+	row-gap: 15px;
+}
+.l-side {
+	background-color: $bc2;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	font-size: toRem(18);
+	padding-right: toEm(50, 18);
+	padding-left: toEm(50, 18);
+	padding-top: toEm(150, 18);
+	padding-bottom: toEm(150, 18);
+	// .l-side__body
+
+	&__body {
+		max-width: toRem(424);
+	}
+
+	// .l-side__img
+
+	&__img {
+		margin-bottom: toRem(19);
+		& img {
+			aspect-ratio: 408 / 424;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .l-side__title
+
+	&__title {
+		color: $secondColor;
+		font-family: "Poppins";
+		font-size: toRem(30);
+		font-weight: 600;
+		line-height: 1.21;
+		margin-bottom: toRem(13);
+	}
+
+	// .l-side__text
+
+	&__text {
+		margin-bottom: toRem(15);
+		& p {
+			font-family: "Inter";
+			font-size: toRem(18);
+			line-height: 1.46;
+
+			&:not(:last-child) {
+				margin-bottom: toRem(15);
+			}
+		}
+	}
+
+	// .l-side__link
+
+	&__link {
+		color: $secondColor;
+		font-family: "Inter";
+		font-size: toRem(18);
+		font-weight: 600;
+		text-transform: capitalize;
+		border-bottom: 3px solid $secondColor;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $thirdColor;
+			border-bottom: 3px solid $thirdColor;
+		}
+	}
+}
+.r-side {
+	// .r-side__body
+
+	&__body {
+	}
+
+	// .r-side__subtitle
+
+	&__subtitle {
+	}
+
+	// .r-side__title
+
+	&__title {
+	}
+
+	// .r-side__text
+
+	&__text {
+	}
+
+	// .r-side__list
+
+	&__list {
+	}
+
+	// .r-side__item
+
+	&__item {
+	}
+
+	// .r-side__achievements
+
+	&__achievements {
+	}
+}
+.achievements {
+	// .achievements__items
+
+	&__items {
+	}
+
+	// .achievements__item
+
+	&__item {
+	}
+
+	// .achievements__icon
+
+	&__icon {
+	}
+
+	// .achievements__body
+
+	&__body {
+	}
+
+	// .achievements__title
+
+	&__title {
+	}
+
+	// .achievements__text
+
+	&__text {
+	}
+}
+
+// .benefits-item::before {
+//   content: "";
+//   display: inline-block;
+//   background: url("../img/li.svg") 0 0 no-repeat;
+//   width: 27px;
+//   height: 27px;
+//   margin-right: 8px;
+// }
+
+// .benefits-item:not(:last-child) {
+//   margin-bottom: 28px;
+// }

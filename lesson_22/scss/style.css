@@ -126,9 +126,13 @@ body {
   transition: all 0.3s;
 }
 .btn:hover {
-  border: 1px solid #6b78e5;
-  background-color: transparent;
-  color: #6b78e5;
+  background-color: #40ddb6;
+}
+.btn--green {
+  background-color: #40ddb6;
+}
+.btn--green:hover {
+  background-color: #6b78e5;
 }
 
 main {
@@ -384,6 +388,13 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.625rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.slider__links:hover {
+  color: #40ddb6;
 }
 .slider__img img {
   aspect-ratio: 1920/828;
@@ -397,4 +408,76 @@ main {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: 0.43125fr 0.56875fr;
+  grid-template-rows: auto;
+  row-gap: 15px;
+}
+
+.l-side {
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  font-size: 1.125rem;
+  padding-right: 2.7777777778em;
+  padding-left: 2.7777777778em;
+  padding-top: 8.3333333333em;
+  padding-bottom: 8.3333333333em;
+}
+.l-side__body {
+  max-width: 26.5rem;
+}
+.l-side__img {
+  margin-bottom: 1.1875rem;
+}
+.l-side__img img {
+  aspect-ratio: 408/424;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.l-side__title {
+  color: #37393f;
+  font-family: "Poppins";
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.21;
+  margin-bottom: 0.8125rem;
+}
+.l-side__text {
+  margin-bottom: 0.9375rem;
+}
+.l-side__text p {
+  font-family: "Inter";
+  font-size: 1.125rem;
+  line-height: 1.46;
+}
+.l-side__text p:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.l-side__link {
+  color: #37393f;
+  font-family: "Inter";
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-bottom: 3px solid #37393f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.l-side__link:hover {
+  color: #40ddb6;
+  border-bottom: 3px solid #40ddb6;
 }
