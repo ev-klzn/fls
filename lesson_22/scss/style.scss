@@ -721,10 +721,12 @@
 			text-align: center;
 			justify-content: center;
 			padding: toRem(7);
+			padding-top: toRem(15);
 		}
 
 		@media (max-width: toEm($mobileL)) {
 			padding: toRem(5);
+			padding-top: toRem(15);
 		}
 	}
 
@@ -744,7 +746,6 @@
 		}
 
 		@media (max-width: toEm($mobileM)) {
-			font-size: toRem(15);
 		}
 	}
 
