@@ -210,7 +210,6 @@ body {
 .slider {
   height: 100%;
   width: 100%;
-  aspect-ratio: 1449/716;
   position: relative;
   overflow: hidden;
 }
@@ -453,7 +452,7 @@ body {
 .slider__carousel {
   position: absolute;
   content: "";
-  bottom: 30px;
+  bottom: 9%;
   left: 45%;
   z-index: 2;
 }
