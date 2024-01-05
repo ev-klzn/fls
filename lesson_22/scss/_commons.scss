@@ -83,9 +83,9 @@ body {
 }
 
 .btn {
-	padding: 21px 35px 22px 35px;
+	// padding: 22px 35px 22px 35px;
 	background-color: $fourColor;
-	// padding: toRem(21) toRem(35) toRem(22) toRem(35);
+	padding: toRem(22) toRem(35) toRem(22) toRem(35);
 	flex: 0 0 194px;
 	max-height: 65px;
 	color: $btn;

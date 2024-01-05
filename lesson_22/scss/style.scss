@@ -97,7 +97,7 @@
 		}
 
 		& .menu-level-1__link {
-			text-decoration: underline;
+			color: $thirdColor;
 		}
 	}
 
@@ -110,6 +110,7 @@
 	// .menu-level-1__link
 
 	&__link {
+		transition: color 0.3s;
 	}
 }
 .menu-level-2 {
@@ -130,8 +131,9 @@
 	// .menu-level-2__link
 
 	&__link {
+		transition: color 0.3s;
 		&:hover {
-			text-decoration: underline;
+			color: $thirdColor;
 		}
 	}
 }
@@ -642,6 +644,26 @@
 
 	&--margin {
 		margin-bottom: toRem(130);
+
+		@media (max-width: toEm($laptopL)) {
+			margin-bottom: toRem(80);
+		}
+
+		@media (max-width: toEm($laptop)) {
+			margin-bottom: toRem(50);
+		}
+
+		@media (max-width: toEm($tablet)) {
+			margin-bottom: toRem(40);
+		}
+
+		@media (max-width: toEm($mobileL)) {
+			margin-bottom: toRem(35);
+		}
+
+		@media (max-width: toEm($mobileM)) {
+			margin-bottom: toRem(10);
+		}
 	}
 
 	// .solutions__container
