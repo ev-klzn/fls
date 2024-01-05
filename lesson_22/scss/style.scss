@@ -768,12 +768,13 @@
 		font-weight: 600;
 		line-height: 1.27;
 
-		@media (max-width: toEm($mobileL)) {
+		@media (max-width: toEm($tablet)) {
 			max-width: 100%;
-			font-size: toRem(18);
+			font-size: toRem(22);
 		}
 
-		@media (max-width: toEm($mobileM)) {
+		@media (max-width: toEm($mobileL)) {
+			// font-size: toRem(18);
 		}
 	}
 
