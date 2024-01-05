@@ -837,13 +837,31 @@
 	position: relative;
 	color: $white;
 	background-color: $secondColor;
-	aspect-ratio: 1920 / 741;
+	// aspect-ratio: 1920 / 741;
 	// grid-template-columns: 0.55fr 0.45fr;
 	// grid-template-rows: auto;
 	// .me__container
 
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 55%;
+		height: 100%;
+		background-color: $secondColor;
+		z-index: 2;
+	}
+
+	&--margin {
+		margin-bottom: toRem(100);
+	}
+
 	&__container {
 		height: 100%;
+		padding: 0;
+		@media (max-width: toEm($laptop)) {
+		}
 	}
 
 	// .me__body
@@ -856,6 +874,40 @@
 		background-color: $secondColor;
 		max-width: 55%;
 		height: 100%;
+		padding-top: toRem(135);
+		padding-bottom: toRem(135);
+
+		@media (max-width: toEm($laptopL)) {
+			max-width: 60%;
+			padding-top: toRem(100);
+			padding-bottom: toRem(100);
+			padding-left: toRem(15);
+			padding-right: toRem(15);
+		}
+
+		@media (max-width: toEm($laptop)) {
+			max-width: 100%;
+
+			padding-top: toRem(80);
+			padding-bottom: toRem(80);
+		}
+
+		@media (max-width: toEm($tablet)) {
+			padding-top: toRem(50);
+			padding-bottom: toRem(50);
+		}
+
+		@media (max-width: toEm($mobileL)) {
+			// padding-top: toRem(35);
+			// padding-bottom: toRem(35);
+			text-align: center;
+		}
+
+		@media (max-width: toEm($mobileM)) {
+		}
+
+		@media (max-width: toEm($mobileS)) {
+		}
 	}
 
 	// .me__content
@@ -866,18 +918,46 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		@media (max-width: toEm($laptop)) {
+			max-width: 100%;
+		}
 	}
 
 	// .me__subtitle
 
 	&__subtitle {
 		color: $white;
+
+		@media (max-width: toEm($tablet)) {
+			text-align: center;
+		}
+
+		@media (max-width: toEm($mobileM)) {
+		}
+
+		@media (max-width: toEm($mobileS)) {
+		}
 	}
 
 	// .me__title
 
 	&__title {
 		color: $white;
+		font-size: toRem(30);
+
+		@media (max-width: toEm($tablet)) {
+			text-align: center;
+			font-size: toRem(28);
+		}
+
+		@media (max-width: toEm($mobileM)) {
+			font-size: toRem(26);
+		}
+
+		@media (max-width: toEm($mobileS)) {
+			font-size: toRem(24);
+		}
 	}
 
 	// .me__text
@@ -896,9 +976,9 @@
 	&__statistics {
 	}
 
-	// .me__clients
+	// .me__client
 
-	&__clients {
+	&__client {
 	}
 
 	// .me__img
@@ -915,8 +995,6 @@
 			height: 100%;
 			aspect-ratio: 848 / 741;
 			object-fit: cover;
-			/* object-fit: contain; */
-			/* object-position: top; */
 		}
 	}
 }
@@ -930,7 +1008,11 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
-		gap: toRem(15);
+		gap: toRem(10);
+		// padding: toRem(15);
+		@media (max-width: toEm($laptop)) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	// .statistics__item
@@ -943,6 +1025,26 @@
 		padding-right: toRem(30);
 		display: flex;
 		gap: toRem(12);
+
+		@media (max-width: toEm($laptopL)) {
+		}
+
+		@media (max-width: toEm($laptop)) {
+			justify-content: center;
+			gap: toRem(10);
+		}
+
+		@media (max-width: toEm($tablet)) {
+		}
+
+		@media (max-width: toEm($mobileL)) {
+		}
+
+		@media (max-width: toEm($mobileM)) {
+		}
+
+		@media (max-width: toEm($mobileS)) {
+		}
 	}
 
 	// .statistics__persent
@@ -981,33 +1083,70 @@
 		font-weight: 600;
 	}
 }
-.clients {
-	// .clients__items
+.client {
+	// .client__items
 
 	&__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		row-gap: toRem(23);
+		column-gap: toRem(37);
+
+		@media (max-width: toEm($mobileL)) {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
 	}
 
-	// .clients__item
+	// .client__item
 
 	&__item {
+		display: flex;
+		gap: toRem(7);
+		align-items: center;
+
+		@media (max-width: toEm($tablet)) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 
-	// .clients__icon
+	// .client__icon
 
 	&__icon {
 	}
 
-	// .clients__indicator
+	// .client__indicator
 
 	&__indicator {
+		font-family: "Poppins";
+		font-weight: 700;
+		font-size: toRem(20);
 	}
 
-	// .clients__text
+	// .client__text
 
 	&__text {
-		// .clients__text--color
+		font-family: "Poppins";
+		// font-size: toRem(20);
+
+		// .client__text--color
 
 		&--color {
+			color: #ffb342;
+			font-family: "Poppins";
+		}
+	}
+
+	// client__link
+	&__link {
+		color: $thirdColor;
+		text-decoration: underline;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $white;
 		}
 	}
 }
