@@ -823,8 +823,10 @@ main {
 }
 @media (max-width: 47.99875em) {
   .item-solutions__body {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
