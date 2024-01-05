@@ -911,7 +911,6 @@ main {
 .me {
   position: relative;
   color: #fff;
-  background-color: #37393f;
 }
 .me::before {
   content: "";
@@ -922,6 +921,13 @@ main {
   height: 100%;
   background-color: #37393f;
   z-index: 2;
+}
+@media (max-width: 63.99875em) {
+  .me::before {
+    background-color: rgba(49, 43, 43, 0);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+  }
 }
 .me--margin {
   margin-bottom: 6.25rem;
@@ -955,6 +961,9 @@ main {
     max-width: 100%;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    background: rgba(49, 43, 43, 0.7);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
   }
 }
 @media (max-width: 47.99875em) {
@@ -1068,6 +1077,7 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 0.625rem;
+    background: rgba(49, 43, 43, 0.75);
   }
 }
 .statistics__persent {
@@ -1094,7 +1104,7 @@ main {
           justify-content: center;
 }
 .statistics__subtitle {
-  font-size: toRem16;
+  font-size: 1rem;
   line-height: 1.35;
 }
 .statistics__title {

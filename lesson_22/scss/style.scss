@@ -837,7 +837,7 @@
 .me {
 	position: relative;
 	color: $white;
-	background-color: $secondColor;
+	// background-color: $secondColor;
 	// aspect-ratio: 1920 / 741;
 	// grid-template-columns: 0.55fr 0.45fr;
 	// grid-template-rows: auto;
@@ -852,6 +852,12 @@
 		height: 100%;
 		background-color: $secondColor;
 		z-index: 2;
+
+		@media (max-width: toEm($laptop)) {
+			background-color: rgba(49, 43, 43, 0);
+			backdrop-filter: blur(5.6px);
+			-webkit-backdrop-filter: blur(5.6px);
+		}
 	}
 
 	&--margin {
@@ -888,9 +894,12 @@
 
 		@media (max-width: toEm($laptop)) {
 			max-width: 100%;
-
 			padding-top: toRem(80);
 			padding-bottom: toRem(80);
+
+			background: rgba(49, 43, 43, 0.7);
+			backdrop-filter: blur(5.6px);
+			-webkit-backdrop-filter: blur(5.6px);
 		}
 
 		@media (max-width: toEm($tablet)) {
@@ -1033,6 +1042,7 @@
 		@media (max-width: toEm($laptop)) {
 			justify-content: center;
 			gap: toRem(10);
+			background: rgba(49, 43, 43, 0.75);
 		}
 
 		@media (max-width: toEm($tablet)) {
@@ -1072,7 +1082,7 @@
 	// .statistics__subtitle
 
 	&__subtitle {
-		font-size: toRem16;
+		font-size: toRem(16);
 		line-height: 1.35;
 	}
 
