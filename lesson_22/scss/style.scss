@@ -284,7 +284,7 @@
 		display: flex;
 		align-items: center;
 		gap: toRem(10);
-		transition: transform 0.3s;
+		transition: color 0.3s;
 
 		& img {
 			max-width: toRem(60);
@@ -577,7 +577,7 @@
 .welcome__btn {
 }
 
-// clients ===============================================
+// clients =============================================================================================
 
 .clients {
 	// .clients--margin
@@ -649,7 +649,7 @@
 	}
 }
 
-// I Solution ================================================
+// I Solution ========================================================================================
 
 .solutions {
 	// .solutions--margin
@@ -837,7 +837,7 @@
 	}
 }
 
-// me =======================================================
+// me ======================================================================================================
 
 .me {
 	position: relative;
@@ -885,7 +885,6 @@
 		}
 
 		@media (max-width: toEm($mobileM)) {
-			margin-bottom: toRem(10);
 		}
 	}
 
@@ -1194,7 +1193,7 @@
 	}
 }
 
-// projects ======================================
+// projects ================================================================================================
 
 .projects {
 	padding-left: toRem(15);
@@ -1203,6 +1202,25 @@
 
 	&--margin {
 		margin-bottom: toRem(150);
+
+		@media (max-width: toEm($laptopL)) {
+			margin-bottom: toRem(80);
+		}
+
+		@media (max-width: toEm($laptop)) {
+			margin-bottom: toRem(50);
+		}
+
+		@media (max-width: toEm($tablet)) {
+			margin-bottom: toRem(40);
+		}
+
+		@media (max-width: toEm($mobileL)) {
+			margin-bottom: toRem(35);
+		}
+
+		@media (max-width: toEm($mobileM)) {
+		}
 	}
 
 	// .projects__body
@@ -1234,6 +1252,8 @@
 
 	&__item {
 		// max-width: toRem(434);
+		overflow: hidden;
+
 		& img {
 			width: 100%;
 			height: 100%;
@@ -1241,11 +1261,180 @@
 			object-fit: cover;
 			/* object-fit: contain; */
 			/* object-position: top; */
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.02);
+			}
 		}
 	}
 
 	// .projects__link
 
 	&__link {
+	}
+}
+
+// testimonial =================================================================================================
+
+.testimonials {
+	// .testimonials--margin
+
+	&--margin {
+		margin-bottom: toRem(100);
+
+		@media (max-width: toEm($laptopL)) {
+			margin-bottom: toRem(80);
+		}
+
+		@media (max-width: toEm($laptop)) {
+			margin-bottom: toRem(50);
+		}
+
+		@media (max-width: toEm($tablet)) {
+			margin-bottom: toRem(40);
+		}
+
+		@media (max-width: toEm($mobileL)) {
+			margin-bottom: toRem(35);
+		}
+
+		@media (max-width: toEm($mobileM)) {
+		}
+	}
+
+	// .testimonials__container
+
+	&__container {
+	}
+
+	// .testimonials__items
+
+	&__items {
+		display: flex;
+		column-gap: toRem(37);
+		row-gap: toRem(20);
+		gap: toRem(15);
+		flex-wrap: wrap;
+	}
+
+	// .testimonials__body
+
+	&__body {
+		flex: 1 1 toRem(324);
+	}
+
+	// .testimonials__subtitle
+
+	&__subtitle {
+	}
+
+	// .testimonials__title
+
+	&__title {
+	}
+
+	// .testimonials__text
+
+	&__text {
+		& p {
+			&:not(:last-child) {
+				margin-bottom: toRem(15);
+			}
+		}
+	}
+}
+
+.testimonial-item {
+	flex: 1 1 toRem(411);
+	background-color: $bc4;
+
+	// .testimonial-item__wrapper
+
+	&__wrapper {
+		padding-top: toRem(50);
+		padding-bottom: toRem(50);
+		padding-left: toRem(37);
+		padding-right: toRem(37);
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: toRem(37);
+		row-gap: toRem(20);
+
+		@media (max-width: toEm($laptopL)) {
+		}
+
+		@media (max-width: toEm($laptop)) {
+		}
+
+		@media (max-width: toEm($tablet)) {
+			padding-top: toRem(20);
+			padding-bottom: toRem(20);
+			padding-left: toRem(15);
+			padding-right: toRem(15);
+		}
+
+		@media (max-width: toEm($mobileL)) {
+		}
+
+		@media (max-width: toEm($mobileM)) {
+		}
+
+		@media (max-width: toEm($mobileS)) {
+		}
+	}
+
+	// .testimonial-item__content
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: toRem(15);
+	}
+
+	// .testimonial-item__img
+
+	&__img {
+		width: 100px;
+		& img {
+			border-radius: 50%;
+			aspect-ratio: 100 / 100;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .testimonial-item__body
+
+	&__body {
+	}
+
+	// .testimonial-item__title
+
+	&__title {
+		color: $secondColor;
+		font-family: "Poppins";
+		font-size: toRem(20);
+		font-weight: 600;
+	}
+
+	// .testimonial-item__subtitle
+
+	&__subtitle {
+		font-family: "Inter";
+		font-size: toRem(16);
+		line-height: 1.35;
+	}
+
+	// .testimonial-item__rating
+
+	&__rating {
+	}
+
+	// .testimonial-item__feedback
+
+	&__feedback {
+		// flex: 1 1 337px;
 	}
 }
