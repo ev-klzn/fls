@@ -286,6 +286,10 @@
 		gap: toRem(10);
 		transition: transform 0.3s;
 
+		& img {
+			max-width: toRem(60);
+		}
+
 		&:hover {
 			color: $thirdColor;
 		}
@@ -543,6 +547,9 @@
 	// .achievements__icon
 
 	&__icon {
+		& img {
+			max-width: toRem(42);
+		}
 	}
 
 	// .achievements__body
@@ -1126,6 +1133,9 @@
 	// .client__icon
 
 	&__icon {
+		& img {
+			max-width: toRem(28);
+		}
 	}
 
 	// .client__indicator
@@ -1147,6 +1157,10 @@
 		&--color {
 			color: #ffb342;
 			font-family: "Poppins";
+
+			& img {
+				max-width: toRem(15);
+			}
 		}
 	}
 
