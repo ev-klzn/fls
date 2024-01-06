@@ -1040,7 +1040,7 @@
 		}
 
 		@media (max-width: toEm($laptop)) {
-			justify-content: center;
+			justify-content: space-around;
 			gap: toRem(10);
 			background: rgba(49, 43, 43, 0.75);
 		}

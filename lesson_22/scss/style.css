@@ -1073,9 +1073,8 @@ main {
 }
 @media (max-width: 63.99875em) {
   .statistics__item {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     gap: 0.625rem;
     background: rgba(49, 43, 43, 0.75);
   }
