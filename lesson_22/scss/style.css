@@ -1329,6 +1329,9 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.9375rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .testimonial-item__img {
   width: 100px;
