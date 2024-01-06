@@ -1314,7 +1314,6 @@
 		display: flex;
 		column-gap: toRem(37);
 		row-gap: toRem(20);
-		gap: toRem(15);
 		flex-wrap: wrap;
 	}
 
@@ -1358,6 +1357,7 @@
 		padding-right: toRem(37);
 		display: flex;
 		flex-wrap: wrap;
+		align-items: center;
 		column-gap: toRem(37);
 		row-gap: toRem(20);
 
@@ -1436,5 +1436,79 @@
 
 	&__feedback {
 		// flex: 1 1 337px;
+	}
+}
+
+// team ===============================================================================
+
+.team {
+	aspect-ratio: 1920 / 734;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	// .team--margin
+
+	&--margin {
+		margin-bottom: toRem(130);
+	}
+
+	// .team__title
+
+	&__title {
+		color: $white;
+		top: 0;
+		left: 0;
+		position: relative;
+		z-index: 2;
+		text-transform: capitalize;
+		background: rgba(49, 43, 43, 0.75);
+		backdrop-filter: blur(5.6px);
+		-webkit-backdrop-filter: blur(5.6px);
+		font-size: toRem(40);
+		padding-left: toEm(130, 40);
+		padding-right: toEm(130, 40);
+		padding-top: toEm(87, 40);
+		padding-bottom: toEm(87, 40);
+
+		@media (max-width: toEm($laptopL)) {
+		}
+
+		@media (max-width: toEm($laptop)) {
+			font-size: toRem(28);
+			background: rgba(49, 43, 43, 0.5);
+		}
+
+		@media (max-width: toEm($tablet)) {
+			font-size: toRem(20);
+		}
+
+		@media (max-width: toEm($mobileL)) {
+			font-size: toRem(18);
+		}
+
+		@media (max-width: toEm($mobileM)) {
+			font-size: toRem(16);
+		}
+
+		@media (max-width: toEm($mobileS)) {
+		}
+	}
+
+	// .team__img
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		& img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 1920 / 734;
+			object-fit: cover;
+		}
 	}
 }
