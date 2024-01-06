@@ -1477,14 +1477,14 @@
 		}
 
 		@media (max-width: toEm($laptop)) {
-			font-size: toRem(28);
+			font-size: toRem(26);
 			backdrop-filter: blur(3px);
 			-webkit-backdrop-filter: blur(3px);
 			background: rgba(49, 43, 43, 0.5);
 		}
 
 		@media (max-width: toEm($tablet)) {
-			font-size: toRem(20);
+			font-size: toRem(22);
 		}
 
 		@media (max-width: toEm($mobileL)) {
