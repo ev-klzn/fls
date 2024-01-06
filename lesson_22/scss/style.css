@@ -1387,6 +1387,8 @@ main {
 @media (max-width: 63.99875em) {
   .team__title {
     font-size: 1.75rem;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     background: rgba(49, 43, 43, 0.5);
   }
 }

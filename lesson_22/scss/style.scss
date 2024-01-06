@@ -1477,6 +1477,8 @@
 
 		@media (max-width: toEm($laptop)) {
 			font-size: toRem(28);
+			backdrop-filter: blur(3px);
+			-webkit-backdrop-filter: blur(3px);
 			background: rgba(49, 43, 43, 0.5);
 		}
 
