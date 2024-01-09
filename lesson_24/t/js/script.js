@@ -12,6 +12,8 @@
 // 4.
 // let result = 8;
 // console.log(result);
+
+
 /*
 let num = 5;
 let results = 2 + 3 * 10 / ++num;
@@ -26,59 +28,66 @@ let results = 2 + 3 * 10 / ++num;
 console.log(results);
 */
 
+
+
 // Оператори порівняння
 // < > <= >=
 // == !=
 // === !==
-/*
-let result = 5 >= 6
-console.log(typeof result)
-console.log(result)
-*/
 
-/*
-let result = 5 == "5"
-console.log(result)
-*/
-/*
-let result = 5 != "5"
-console.log(result)
-*/
+
+// let result = 5 >= 6
+// console.log(typeof result)
+// console.log(result)
+
+
+// let result = 5 == "5"
+// console.log(result)
+
+
+// let result = 5 != "5"
+// console.log(result)
+
 
 // Порівнює як воно є без зміни типу даних
-/*
-let result = 5 === "5"
-console.log(result)
-*/
-/*
-let result = 5 !== "5"
-console.log(result)
-*/
 
-/*
-let a = 5
-let b = "5"
-let result = a === b;
-console.log(result);
-*/
+
+// let result = 5 === "5"
+// console.log(result)
+
+
+// let result = 5 !== "5"
+// console.log(result)
+
+
+// let a = 5
+// let b = "5"
+// let result = a === b;
+// console.log(result);
+
+
 
 // Оператор присвоєння =
+
 // let someNum = 5;
+
 
 // Логічні оператори
 // ! || &&
 
+
 // Оператор "ні" ! (унарний)
-/*
-let result = !"";
-// 1. перевод типу даних в булінан
-// 2. отримання результату true або false
-// 3. зміна булєвого значення на протележне
-console.log(typeof result);
-console.log(result);
-*/
+
+// let result = !"";
+// // 1. перевод типу даних в булінан
+// // 2. отримання результату true або false
+// // 3. зміна булєвого значення на протележне
+// console.log(typeof result);
+// console.log(result);
+
 
 // Оператор "або" ||
+
 // 1. перевод типу даних в булінан
 // 2. отримання результату
 //    true або false операнда №1
@@ -94,11 +103,12 @@ console.log(result);
 // 5. якщо результат кроку 3 false
 // 	результатом операції буде значення операдна №2
 // 	та булеве значення false
-/*
-let result = 0 || "";
-console.log(result);
-console.log(Boolean(result));
-*/
+
+
+// let result = 0 || "";
+// console.log(result);
+// console.log(Boolean(result));
+
 
 // Оператор "та" &&
 // let result = 1 && 5;
@@ -117,12 +127,12 @@ console.log(Boolean(result));
 // 5. якщо результат кроку 2 та 4 true
 //    результатом операції буде значення операдна №2
 // 	та булеве значення true
-/*
-console.log(result);
-console.log(Boolean(result));
-*/
+
+
+
 // Умовне вітвлення
 // Синтаксис
+
 /*
 if (умова #1) {
 	// Код, який виконоється
@@ -138,41 +148,46 @@ if (умова #1) {
 }
 // продовження коду ...
 */
-/*
-let varOne = 5;
-let varTwo = 30;
-// console.log(Boolean(varOne));
-/*
-// Конструкція if переводить тип даних в boolean
-//if (varOne) { // Чи varOne true?
-	// Виконуємо якщо так
-	//console.log("Працює!");
-//}
 
-if (varOne > varTwo) { // Чи true (правда) що varOne більше за varTwo? 
-	console.log(`${varOne} більше ніж ${varTwo}`);
-} else if (varOne === 10) {// Чи true (правда) що varOne дорівнює 10? 
-	console.log(`varOne дорівнює 10`);
-	// Може бути безліч "else if"
-} else if (varTwo === 20) {// Чи true (правда) що varTwo дорівнює 20?
-	console.log(`varTwo дорівнює 20`);
-} else {// Виконуємо якщо усі попередні умови повернули false
-	console.log(`Все пропало...`);
-}
-// Виконуємо у будь-якому випадку
-console.log('Продовження коду...');
-*/
 
-let varOne = "1";
-let varTwo = 3;
-let varThree = 3;
-let varFour = 4;
 
-if (varTwo === 2 || varOne > 3 && varThree < 4 || varFour > 6) {
-	// Код виконоється
-	// тільки якщо умова вертає true
-	console.log('Умова true');
-}
+// let varOne = 255;
+// let varTwo = 30;
+// // console.log(Boolean(varOne));
+
+// // Конструкція if переводить тип даних в boolean
+// // if (varOne) { // Чи varOne true?
+// // 	// Виконуємо якщо так
+// // 	console.log("Працює!");
+// // }
+
+// if (varOne > varTwo) { // Чи true (правда) що varOne більше за varTwo? 
+// 	console.log(`${varOne} більше ніж ${varTwo}`);
+
+// 	// Може бути безліч "else if"
+// } else if (varOne === 10) {// Чи true (правда) що varOne дорівнює 10? 
+// 	console.log(`varOne дорівнює 10`);
+// } else if (varTwo === 20) {// Чи true (правда) що varTwo дорівнює 20?
+// 	console.log(`varTwo дорівнює 20`);
+
+// } else {// Виконуємо якщо усі попередні умови повернули false
+// 	console.log(`Все пропало...`);
+// }
+// // Виконуємо у будь-якому випадку
+// console.log('Продовження коду...');
+
+
+
+// let varOne = "1";
+// let varTwo = 3;
+// let varThree = 3;
+// let varFour = 4;
+
+// if (varTwo === 2 || varOne > 3 && varThree < 4 || varFour > 6) {
+// 	// Код виконоється
+// 	// тільки якщо умова вертає true
+// 	console.log('Умова true');
+// }
 
 // Крок №1 (Пріорітет у операторів порівняння)
 //if (false || false && true || false) {}
@@ -184,30 +199,36 @@ if (varTwo === 2 || varOne > 3 && varThree < 4 || varFour > 6) {
 // if (false) {}
 
 
+
 // Оператор умови ?
 // Синтаксис
 // умова ? значення якщо умова true : значення якщо умова false
-// let someVar = 10 > 5 ? "10 більше 5" : "10 меньше 5";
+
+// let someVar = 5 > 5 ? "10 більше 5" : "10 меньше 5";
 // console.log(someVar);
 
-/*
-let someVar;
-if (10 > 5) {
-	someVar = "10 більше 5";
-} else {
-	someVar = "10 меньше 5";
-}
-*/
 
-/*
-let someVar = "123";
-let someNewVar = someVar ? "Так, все ок" : null;
-console.log(someNewVar);
-*/
+// // теж саме
+// let someVar;
+// if (3 > 5) {
+// 	someVar = "10 більше 5";
+// 	console.log(someVar);
+// } else {
+// 	someVar = "10 меньше 5";
+// 	console.log(someVar);
+// }
+
+
+
+// let someVar = "";
+// let someNewVar = someVar ? "Так, все ок" : null;
+// console.log(someNewVar);
+
 
 
 // Цикл For
 // Синтаксис
+
 /*
 for(початок; умова закінчення циклу; крок){
 	// код виконується
@@ -215,109 +236,111 @@ for(початок; умова закінчення циклу; крок){
 }
 */
 
-/*
-let someString = "Привіт! Як справи?";
-console.log(someString.length);
-*/
-/*
-console.log(someString[0]);
-console.log(someString[1]);
-console.log(someString[2]);
-console.log(someString[3]);
-console.log(someString[4]);
-console.log(someString[5]);
-console.log(someString[6]);
-*/
-/*
-for (let i = 0; i < someString.length; ++i) {
-	console.log(someString[i]);
-}
-*/
+
+// let someString = "Привіт! Як справи?";
+// console.log(someString.length);
+// console.log(someString[0]);
+// console.log(someString[1]);
+// console.log(someString[2]);
+// console.log(someString[3]);
+// console.log(someString[4]);
+// console.log(someString[5]);
+// console.log(someString[6]);
+
+
+// let someString = "Привіт! Як справи?";
+// for (let i = 0; i < someString.length; ++i) {
+// 	console.log(someString[i]);
+// }
+
+
 
 // Масиви
-/*
-let someArray = [];
-console.log(typeof someArray);
-*/
-// Чи це масив. Array.isArray(тут пишемо змінну)
-// console.log(Array.isArray(someArray));
-/*
-if (Array.isArray(someArray)) {
-	// ...
-}
-*/
 
-let someArray = [10, "Жека", true, "Привіт!"];
-/*
-console.log(someArray);
-console.log(someArray[1]);
-console.log(someArray.length);
-*/
-/*
-for (let i = 0; i < someArray.length; ++i) {
-	console.log(i);
-	console.log(someArray[i]);
-	// ...
-}
-*/
+// let someArray = [];
+// console.log(typeof someArray);
+
+// // Чи це масив. Array.isArray(тут пишемо змінну)
+// // console.log(Array.isArray(someArray));
+
+// if (Array.isArray(someArray)) {
+// 	// ...
+// }
+
+
+// let someArray = [10, "Жека", true, "Привіт!"];
+// console.log(someArray);
+// console.log(someArray[1]);
+// console.log(someArray.length);
+
+
+// let someArray = [10, "Жека", true, "Привіт!"];
+// for (let i = 0; i < someArray.length; ++i) {
+// 	// console.log(i);
+// 	console.log(someArray[i]);
+// 	// ...
+// }
+
+
 // Метод перебору масиву
 // масив.forEach(змінна яка отримає значення елементу масива => {});
-/*
-someArray.forEach((value, index) => {
-	// Номер ячейки
-	//console.log(index);
-	// Значення ячейки
-	//console.log(value);
-	if (typeof value === "string") {
-		for (let i = 0; i < value.length; ++i) {
-			console.log(value[i]);
-		}
-	}
-});
-*/
+
+// let someArray = [10, "Жека", true, "Привіт!"];
+// someArray.forEach((value, index) => {
+// 	// Номер ячейки
+// 	console.log(index);
+
+// 	// Значення ячейки
+// 	console.log(value);
+
+// 	if (typeof value === "string") {
+// 		for (let i = 0; i < value.length; ++i) {
+// 			console.log(value[i]);
+// 		}
+// 	}
+// });
+
+
 
 // Додати елемент в масив
-// push додає елемент кінець масиву
-/*
-let usersNames = ["Вася", "Петро", "Ілдика"];
-console.log(usersNames);
-usersNames.push("Жека");
-console.log(usersNames);
-*/
+
+// push додає елемент у кінець масиву
+
+// let usersNames = ["Вася", "Петро", "Ілдика"];
+// console.log(usersNames);
+// usersNames.push("Жека");
+// console.log(usersNames);
+
 
 // includes Чи є елемент в масиві (пошук елемента)
-/*
-let usersNames = ["Вася", "Петро", "Ілдика"];
-console.log(usersNames);
-console.log(usersNames.includes("Петро"));
-*/
-// якщо в масиві usersNames НЕМАЄ значення 10,
-// то додати
-/*
-if (!usersNames.includes(10)) {
-	usersNames.push(10);
-}
-*/
-// або..
+
+// let usersNames = ["Вася", "Петро", "Ілдика"];
+// console.log(usersNames);
+// console.log(usersNames.includes("Петро"));
+
+
+// якщо в масиві usersNames НЕМАЄ значення 10, то додати
+
+// let usersNames = ["Вася", "Петро", "Ілдика"];
+// if (!usersNames.includes(10)) {
+// 	usersNames.push(10);
+// 	console.log(usersNames);
+// }
+
+// теж саме..
 // !usersNames.includes(10) ? usersNames.push(10) : null;
 // console.log(usersNames);
 
-// З масива у рядок
-let usersNames = ["Вася", "Петро", "Ілдика"];
-/*
-let users = "";
-usersNames.forEach((item, index) => {
-	users += item;
-	index !== usersNames.length - 1 ? users += ',' : null;
-});
-console.log(users);
-*/
-/*
-let usersNamesStr = usersNames.join();
-console.log(usersNamesStr);
-*/
+
+// // З(с) масива у рядок
+// let usersNames = ["Вася", "Петро", "Ілдика"];
+// let usersNamesStr = usersNames.join("/"); // за замовчуванням ставиться кома(без "")
+// console.log(usersNamesStr);
+
+
 
 // Функції
+
 /*
 Використовується для запуску
 коду який повторюється,
@@ -325,8 +348,10 @@ console.log(usersNamesStr);
 програмування (кожну дію варто помістити в окрему функцію)
 */
 
+
 // Об'ява функції
 // Синтаксис
+
 /*
 function ім'я(параметри){
 	// тіло функції (код функції)
@@ -345,147 +370,139 @@ function ім'я(параметри){
 "check..." – що-то перевіряють і повертають логічно
 значення, і т.д.
 */
+
 // Приклади імен
-/*
-showMessage
-getOptions
-calcSum
-*/
+// showMessage
+// getOptions
+// calcSum
 
 
-/*
-showMessage()
+// showMessage() 
+// //Виклик функції можна робити до оголошення функції
+// function showMessage() {
+// 	console.log('я текст!');
+// }
+// //  Виклик функції
+// showMessage()
+// // ....
+// showMessage()
 
-function showMessage() {
-	console.log('я текст!');
-}
-*/
-// Виклик (запуск) функції
-/*
-showMessage()
-// ....
-showMessage()
-showMessage()
-showMessage()
-// ...
-showMessage()
-showMessage()
-*/
 
-// Параметри функції
-/*
-function showMessage(someText = "Текст за замовченням") {
-	console.log(someText);
-}
-showMessage()
-showMessage("Все ок, тримаємось!")
-*/
-/*
+// // Параметри функції
+// function showMessage(someText = "Довільний текст") {
+// 	console.log(someText);
+// }
+// showMessage()
+// showMessage("Пердаємо у функцію новий текст")
+// showMessage("Пердаємо ще текст")
+
+
+
 const numOne = 10;
 const numTwo = 20;
 
-// Функція суми двох чисел
-function calcSum(a = 0, b = 0) {
-	const result = a + b;
-	showMessage(result);
-}
-function showMessage(someText = "Текст за замовченням") {
-	console.log(someText);
-}
-calcSum(10, 30)
-calcSum(50, 300)
-calcSum(50, -300)
-calcSum(50)
-*/
+// // Функція суми двох чисел
+// function calcSum(a = 0, b = 0) {
+// 	const result = a + b;
+// 	showMessage(result);
+// }
+// function showMessage(someText = "Текст риба") {
+// 	console.log(someText);
+// }
+// calcSum(5, 10)
+// calcSum(50, 30)
+// calcSum(1, -3)
+// calcSum(50)
+
 
 // Поовернення результату
 // return - повертає результат функції
 
-// Функція суми двох чисел
-function calcSum(a = 0, b = 0) {
-	return a + b
-}
-function showMessage(someText = "Текст за замовченням") {
-	console.log(someText);
-}
-// showMessage(calcSum(10, 20))
-/*
-let result = calcSum(10, 20);
-showMessage(result);
-*/
+// // Функція суми двох чисел
+// function calcSum(a = 0, b = 0) {
+// 	return a + b
+// }
+// function showMessage(someText = "Текст риба") {
+// 	console.log(someText);
+// }
+// showMessage(calcSum(15, 8))
 
-// Область видимості
-// Привласнення функції змінній
-/*
-let someVar;
-let someFuncVar;
+// //те ж саме
+// let result = calcSum(10, 20);
+// showMessage(result);
 
-function someFunc() {
-	someVar = 10;
-	// Функціональний вираз
-	someFuncVar = function (message) {
-		console.log(message);
-	}
-}
-someFunc()
-someFuncVar("Привіт!")
-console.log(someVar);
-*/
 
-// Стрілочні функції
 
-// Звичайна функція
-/*
-function some(text) {
-	console.log(text);
-}
-*/
-// Стрілочна функція в один рядок
-/*
-let some = (text) => console.log(text);
-*/
+// // Область видимості
+// // Привласнення функції змінній
+// let someVar;
+// let someFuncVar;
 
-// Функція де більше рядків
-/*
-let some = (text) => {
-	console.log(text);
-	// ....
-	// ....
-	// ....
-}
-*/
+// function someFunc() {
+// 	someVar = 15;
+// 	// Функціональний вираз
+// 	someFuncVar = function (message) {
+// 		console.log(message);
+// 	}
+// }
+// someFunc()
+// someFuncVar("Привіт!")
+// console.log(someVar);
+
+
+
+// // Стрілочні функції
+
+// // Звичайна функція
+// // function some(text) {
+// // 	console.log(text);
+// // }
+
+// // Стрілочна функція в один рядок
+// let someOne = (text) => console.log(text);
+
+// // Функція де більше рядків
+
+// let someTwo = (text) => {
+// 	console.log(text);
+// 	// ....
+// 	// ....
+// 	// ....
+// }
+
+
 
 // Інше
 // Сукупність операторів додавання та присвоєння
-/*
-let someText = "";
-console.log(someText);
-someText = someText + "<div></div>";
-console.log(someText);
-someText = someText + `<a href="contacts.html"></a>`;
-console.log(someText);
-*/
-/*
-let someText = "";
-someText += `<div>`
-someText += `<a href="contacts.html"></a>`
-someText += `</div>`
-console.log(someText);
-*/
+
+// let someText = "";
+// console.log(someText);
+// someText = someText + "<div></div>";
+// console.log(someText);
+// someText = someText + `<a href="contacts.html"></a>`;
+// console.log(someText);
+
+
+// let someText = "";
+// someText += `<div>`
+// someText += `<a href="contacts.html"></a>`
+// someText += `</div>`
+// console.log(someText);
+
 
 
 // Завдання
 // Текст з ефектом друку
-const text = "Привіт!"
-let template = ``;
+// const text = "Привіт!"
+// let template = ``;
 
-function createText(someText) {
-	for (let i = 0; i < someText.length; ++i) {
-		const item = someText[i]
-		template += `<span style="animation-delay: 0.${i}s">${item}</span>`
-	}
-}
-createText(text);
+// function createText(someText) {
+// 	for (let i = 0; i < someText.length; ++i) {
+// 		const item = someText[i]
+// 		template += `<span style="animation-delay: 0.${i}s">${item}</span>`
+// 	}
+// }
+// createText(text);
 
-const page = document.querySelector('.page');
-page.insertAdjacentHTML("beforeend", template);
+// const page = document.querySelector('.page');
+// page.insertAdjacentHTML("beforeend", template);
