@@ -1,0 +1,137 @@
+@use "sass:math";
+@import "_functions.scss";
+
+$mainColor: #7d7d7d;
+$secondColor: #37393f;
+$thirdColor: #40ddb6;
+$fourColor: #6b78e5;
+$fiveColor: #f4f4f4;
+$btn: #fff;
+$bc: #fff;
+$bc2: #f4f4f4;
+$bc3: #2e2f34;
+$bc4: #f6f6f6;
+$white: #fff;
+$fourK: 2559.98;
+$laptopL: 1439.98;
+$laptop: 1023.98;
+$tablet: 767.98;
+$mobileL: 424.98;
+$mobileM: 374.98;
+$mobileS: 319.98;
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1220;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// @media (max-width: toEm($laptopL)) {
+// }
+
+// @media (max-width: toEm($laptop)) {
+// }
+
+// @media (max-width: toEm($tablet)) {
+// }
+
+// @media (max-width: toEm($mobileL)) {
+// }
+
+// @media (max-width: toEm($mobileM)) {
+// }
+
+// @media (max-width: toEm($mobileS)) {
+// }
+
+body {
+	font-family: "Inter", sans-serif;
+	// font-family: "Causten", sans-serif;
+	// font-family: 'DM Serif Text', serif;
+	// font-family: "Poppins", sans-serif;
+	// font-family: "Core Sans C 65", sans-serif;
+	// font-family: "Cormorant Infant", serif;
+	// font-family: "Montserrat", serif;
+	// background-image: linear-gradient(to bottom, #f4f6f5, #f4f6f5, #f3f5f4, #f3f5f4, #f2f4f3);
+	font-size: toRem(18);
+	color: $mainColor;
+}
+
+[class*="__container"] {
+	max-width: #{$containerWidth}px;
+	margin: 0 auto;
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+}
+
+.wrapper {
+	min-height: 100svh;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	background-color: $bc;
+	& > main {
+		flex-grow: 1;
+		// text-align: center;
+		// display: flex;
+		// padding: 10px 0;
+	}
+}
+
+.btn {
+	// padding: 22px 35px 22px 35px;
+	background-color: $fourColor;
+	padding: toRem(22) toRem(35) toRem(22) toRem(35);
+	flex: 0 0 194px;
+	max-height: 65px;
+	color: $btn;
+	font-family: "Cabin";
+	font-size: toRem(18);
+	font-weight: 600;
+	text-transform: capitalize;
+	border: 1px solid transparent;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: $thirdColor;
+	}
+
+	&--green {
+		background-color: $thirdColor;
+
+		&:hover {
+			background-color: $fourColor;
+		}
+	}
+}
+
+// ----------------
+
+main {
+	// padding-top: 65px;
+	// padding-top: toRem(131);
+	position: relative;
+}
+
+.title {
+	color: $secondColor;
+	font-family: "Poppins";
+	font-size: toRem(40);
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: toEm(20, 40);
+}
+
+.subtitle {
+	color: $secondColor;
+	font-family: "Inter";
+	font-size: toRem(18);
+	font-weight: 500;
+	margin-bottom: toRem(14);
+}

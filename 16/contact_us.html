@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/style.css">
+    <title>16 - Forms</title>
+  </head>
+  <body>
+    <div id="up" class="wrapper">
+      <header class="header header--fix">
+        <div class="header__container">
+          <a class="up" href="contact_us.html">Reload page</a>
+          <a class="up" href="index.html">My Info page</a>
+          <a class="up" href="checkout.html">Checkout page</a>
+        </div>
+      </header>
+
+      <main class="page">
+        <div class="page__container">
+          <div class="page__contact-us contact-us">
+            <h3 class="contact-us__subtitle">Contact Us</h3>
+            <h2 class="contact-us__subtitle-call-back">
+              Request A Call Back!
+            </h2>
+            <form
+              class="form-call-back form-call-back--margin"
+              action="#"
+              enctype="multipart/form-data"
+              method="GET"
+              id="call-back">
+              <div>
+                <input
+                  autocomplete="off"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  class="input-contact"
+                  placeholder="Your Name">
+              </div>
+              <div>
+                <input
+                  autocomplete="off"
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input-contact"
+                  placeholder="E-mail Address">
+              </div>
+              <div>
+                <input
+                  autocomplete="off"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  class="input-contact"
+                  placeholder="Phone Number">
+              </div>
+              <div>
+                <input
+                  autocomplete="off"
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  class="input-contact"
+                  placeholder="Subject">
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  id="message"
+                  autocomplete="off"
+                  required
+                  class="textarea-call-back"
+                  placeholder="Message"></textarea>
+              </div>
+            </form>
+          </div>
+          <div>
+            <button class="submit-call-back" form="call-back" type="submit">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <ul class="footer-links">
+            <li><a href="../" class="up">FLS</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

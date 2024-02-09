@@ -1,0 +1,692 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 0;
+}
+
+.up {
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+.up:hover {
+	text-decoration: underline;
+}
+
+[class*="__container"] {
+	max-width: 1980px;
+	margin: 0 auto;
+}
+
+.page {
+	background-image: url(../img/car/bg.webp);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+
+.page {
+	position: relative;
+}
+
+.page__bus {
+	width: 657px;
+	height: 277px;
+	/* background-image: url(../img/car/car.jpg); */
+	position: fixed;
+	bottom: 25px;
+	left: 18%;
+	z-index: 25;
+}
+
+.bus__text {
+	display: inline-block;
+	font-size: 34px;
+	position: absolute;
+	top: 4px;
+	left: 200px;
+	z-index: 5;
+	letter-spacing: 10px;
+	font-family: 'Amatic SC', sans-serif;
+	font-weight: 700;
+}
+
+.bus__lighting-one img {
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	position: absolute;
+	top: 135px;
+	left: 50px;
+	z-index: 5;
+}
+
+.bus__lighting-twoo img {
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	position: absolute;
+	top: 135px;
+	left: 490px;
+	z-index: 5;
+}
+
+.bus__lighting-three img {
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	position: absolute;
+	top: 135px;
+	left: 330px;
+	z-index: 5;
+}
+
+.bus__boys {
+	width: 200px;
+	height: 75px;
+	display: inline-block;
+	position: absolute;
+	top: 140px;
+	left: 135px;
+	z-index: 5;
+	font-size: 25px;
+	font-family: 'Amatic SC', sans-serif;
+	font-weight: 700;
+}
+
+
+.bus__front {
+	vertical-align: top;
+	display: inline-block;
+	background-image: linear-gradient(to bottom, #ffd200, #f5d803, #ebdd0c, #e1e218, #d6e723);
+	width: 250px;
+	height: 250px;
+	border-radius: 73% 27% 100% 0% / 0% 94% 6% 100%;
+	position: relative;
+}
+
+.bus__rear {
+	display: inline-block;
+	background-image: linear-gradient(to bottom, #ffd200, #f5d803, #ebdd0c, #e1e218, #d6e723);
+	width: 200px;
+	height: 250px;
+	vertical-align: top;
+	border-radius: 100% 0% 95% 5% / 12% 100% 0% 88%;
+	position: relative;
+}
+
+.bus__midle {
+	position: relative;
+	display: inline-block;
+	background-image: linear-gradient(to bottom, #ffd200, #f5d803, #ebdd0c, #e1e218, #d6e723);
+	width: 170px;
+	height: 250px;
+	vertical-align: top;
+}
+
+.wheel-f {
+	position: absolute;
+	top: 210px;
+	left: 115px;
+	background-color: grey;
+	border-radius: 50%;
+}
+
+.wheel-r {
+	position: absolute;
+	top: 210px;
+	left: 80px;
+	background-color: grey;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.wheel-r--twoo {
+	left: 170px;
+}
+
+.window-f {
+	position: absolute;
+	top: 20px;
+	right: 2px;
+	width: 50px;
+	height: 150px;
+	z-index: 1;
+	border-radius: 3% 100% 100% 0% / 0% 100% 0% 100%;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+	border: 1px solid gray;
+	border-right: none;
+	border-top: none;
+}
+
+.window-f-twoo {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	width: 75px;
+	height: 75px;
+	z-index: 1;
+	border-radius: 5%;
+	border: 2px solid grey;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+}
+
+.door {
+	position: absolute;
+	top: 250px;
+	left: 0;
+}
+
+.door__one {
+	position: absolute;
+	bottom: 0;
+	left: 7px;
+	width: 40px;
+	height: 200px;
+	z-index: 5;
+	border-radius: 8% 0 0 0;
+	border: 4px solid grey;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+	transition: all 0.5s;
+	transform-origin: top left;
+}
+
+.door__twoo {
+	position: absolute;
+	bottom: 0;
+	left: 47px;
+	width: 40px;
+	height: 200px;
+	z-index: 5;
+	border-radius: 0 8% 0 0;
+	border: 4px solid grey;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+	transition: all 0.5s;
+	transform-origin: top right;
+}
+
+.door__bg {
+	position: absolute;
+	z-index: 3;
+	top: -200px;
+	left: 9px;
+	background-color: #0e0808c4;
+	width: 76px;
+	height: 198px;
+}
+
+.door:hover .door__one {
+	transform: rotateY(82deg);
+	padding: 20px 0;
+	transform-origin: top left;
+
+}
+
+.door:hover .door__twoo {
+	transform: rotateY(82deg);
+	padding: 20px 0;
+	transform-origin: top right;
+
+}
+
+@keyframes door {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	30% {
+		transform: rotateY(0deg);
+	}
+
+	35% {
+		transform: rotateY(82deg);
+	}
+
+	65% {
+		transform: rotateY(82deg);
+	}
+
+	70% {
+		transform: rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+.door__one,
+.door__twoo {
+	animation: door 15s ease infinite normal running 0s forwards;
+}
+
+/* midle */
+
+.window-m-one {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 75px;
+	height: 75px;
+	z-index: 1;
+	border-radius: 5%;
+	border: 2px solid grey;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+}
+
+.window-m-twoo {
+	position: absolute;
+	top: 50px;
+	right: 13px;
+	width: 75px;
+	height: 75px;
+	z-index: 1;
+	border-radius: 5%;
+	border: 2px solid grey;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+}
+
+.window-m-twoo__grn {
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+	background-color: #fffdfc;
+	width: 55px;
+	height: 20px;
+	z-index: 7;
+	color: rgb(61, 60, 60);
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.window-r-one {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 25px;
+	height: 75px;
+	z-index: 1;
+	border-radius: 5%;
+	border: 2px solid grey;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+	border-left: 0;
+}
+
+.window-r-twoo {
+	position: absolute;
+	top: 50px;
+	left: 35px;
+	width: 75px;
+	height: 75px;
+	z-index: 1;
+	border-radius: 5%;
+	border: 2px solid grey;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+}
+
+.window-r-three {
+	position: absolute;
+	top: 50px;
+	right: 7px;
+	width: 75px;
+	height: 75px;
+	z-index: 1;
+	border-radius: 5%;
+	border: 2px solid grey;
+	background: linear-gradient(121deg, rgb(45, 45, 216) 0%, rgba(133, 184, 244, 1) 100%);
+}
+
+/* animation */
+
+/*
+	animation-name
+	animation-duration
+	animation-timing-function
+	animation-iteration-count
+	animation-direction
+	animation-play-state
+	animation-delay
+	animation-fill-mode
+*/
+
+@keyframes bus {
+	0% {
+		transform: translate(-300%, 0);
+	}
+
+	30% {
+		transform: translate(0, 0);
+	}
+
+	70% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(400%, 0);
+	}
+}
+
+.bus {
+	animation: bus 15s ease 1 normal running 0s forwards;
+}
+
+/* - */
+
+.wheel-r,
+.wheel-f {
+	animation: wheel 15s ease 1 normal running 0s forwards;
+}
+
+/* - */
+
+@keyframes wheel {
+	0% {
+		transform: rotate(-2500deg);
+	}
+
+	27% {
+		transform: rotate(0);
+	}
+
+	67% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(10000deg);
+	}
+}
+
+/* clouds */
+
+.cloud-tr {
+	position: absolute;
+	top: 10%;
+	right: 12%;
+}
+
+.cloud-tc {
+	position: absolute;
+	top: 5%;
+	left: 40%;
+}
+
+.cloud-tl {
+	position: absolute;
+	top: 10%;
+	left: 12%;
+}
+
+.cloud-bl {
+	position: absolute;
+	bottom: 45%;
+	left: 8%;
+}
+
+.cloud-br {
+	position: absolute;
+	bottom: 55%;
+	right: 17%;
+}
+
+/* - */
+
+@keyframes cloud-t {
+	0% {
+		transform: translate(-30%, 0);
+	}
+
+	100% {
+		transform: translate(30%, 0);
+	}
+}
+
+.cloud-tr,
+.cloud-tl {
+	animation: cloud-t 12s ease infinite alternate running 0s none;
+}
+
+@keyframes cloud-b {
+	0% {
+		transform: translate(30%, 0);
+	}
+
+	100% {
+		transform: translate(-30%, 0);
+	}
+}
+
+.cloud-br,
+.cloud-tc,
+.cloud-bl {
+	animation: cloud-b 12s ease infinite alternate running 0s none;
+}
+
+/* ferris-wheel */
+
+.ferris-wheel {
+	position: absolute;
+	bottom: 15.5%;
+	left: 28px;
+	z-index: 5;
+}
+
+/* house */
+
+.house {
+	position: absolute;
+	bottom: 14.5%;
+	left: 30.5%;
+	z-index: 5;
+}
+
+.light {
+	position: absolute;
+	left: 55%;
+	bottom: 11.5%;
+	z-index: 20;
+}
+
+.delivery {
+	position: absolute;
+	right: -250px;
+	bottom: 65px;
+	z-index: 515;
+}
+
+.delivery img {
+	max-width: 250px;
+	transform: rotate(30deg);
+}
+
+@keyframes delivery {
+	0% {
+		transform: translate(0px);
+	}
+
+	100% {
+		transform: translate(-2500px);
+	}
+}
+
+.delivery {
+	animation: delivery 3.5s linear 1 normal running 26s forwards;
+}
+
+.gopnik {
+	display: inline-block;
+	position: absolute;
+	top: 51%;
+	right: 27%;
+	font-size: 24px;
+}
+
+.gopnik__talk {
+ 	position: absolute;
+	top: 15px;
+	left: 65px;
+	transition: all 15s;
+	opacity: 0;
+	padding: 3px;
+	width: 120px;
+}
+
+.gopnik:hover .gopnik__talk {
+	
+	border-radius: 12px;
+	background-color: #fffdfc93;
+	transition: all 0.5s;
+	opacity: 1;
+}
+
+.gopnik-song {
+	padding: 3px;
+	border-radius: 12px;
+	background-color: #fffdfca5;
+	transition: all 0.3s;
+	position: absolute;
+	opacity: 1;
+	display: inline-block;
+	font-size: 18px;
+	top: 36%;
+	left: 62%;
+	z-index: 55;
+}
+
+@keyframes gopnik-song {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.gopnik-song {
+	animation: gopnik-song 25s linear infinite alternate running 0s forwards;
+}
+
+.gopnik__img img {
+	max-height: 100px;
+}
+
+.baloon {
+	position: absolute;
+	top: 150px;
+	right: -100px;
+	z-index: 1;
+}
+
+.baloon img {
+	max-width: 100px;
+}
+
+@keyframes baloon {
+	0% {
+		transform: translate(0px);
+	}
+
+	100% {
+		transform: translate(-2100px);
+	}
+}
+
+.baloon {
+	animation: baloon 300s linear infinite alternate running 0s forwards;
+}
+
+.oldman {
+	position: absolute;
+	bottom: 2%;
+	left: 39%;
+	z-index: 500;
+}
+
+ @keyframes oldman {
+	0% {
+		opacity: 0;
+		transform: translate(0, 0);
+	}
+
+	30% {
+		opacity: 0;
+		transform: translate(0, 0);
+	}
+
+	35% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+
+	40% {
+		transform: translate(0, 0);
+	}
+
+	60% {
+		transform: translate(175%, 0);
+	}
+
+	80% { 
+		transform: translate(350%, 0);
+	}
+
+	100% {	
+		transform: translate(525%, -45%);
+	}
+} 
+
+.oldman {
+	animation: oldman 25s linear 1 normal running 0s forwards;
+}
+
+.oldman-talk {
+	padding: 3px;
+	border-radius: 12px;
+	background-color: #ffffff;
+	transition: all 0.3s;
+	position: absolute;
+	opacity: 1;
+	display: inline-block;
+	font-size: 18px;
+	bottom: 34%;
+	left: 62%;
+	z-index: 55;
+}
+
+@keyframes oldman-talk {
+	0% {
+		opacity: 0;
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.oldman-talk {
+	animation: oldman-talk 35s linear infinite normal running 0s forwards;
+}

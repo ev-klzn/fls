@@ -1,0 +1,249 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  /* font-family: 'DM Serif Text', serif; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Core Sans C 65", sans-serif; */
+  /* font-family: "Cormorant Infant", serif; */
+  background-image: linear-gradient(to bottom, #f4f6f5, #f4f6f5, #f3f5f4, #f3f5f4, #f2f4f3);
+}
+
+.up {
+  display: block;
+  text-align: center;
+}
+
+.up:hover {
+  text-decoration: underline;
+}
+
+[class*="__container"] {
+  max-width: 1980px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.practice__title {
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.33;
+}
+
+.practice__title--subtitle {
+  font-size: 24px;
+}
+
+.practice__items {
+  margin-bottom: 50px;
+}
+
+/* .transform {} */
+
+.transform__item,
+.transform-3d__item {
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  vertical-align: top;
+  padding-top: 111px;
+  background-color: rgb(64, 224, 208);
+  text-align: center;
+  margin: 10px;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  border-radius: 5%;
+}
+
+/* .transform__item {} */
+
+.transform__item:hover,
+.transform-3d__item:hover {
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 10px #bebebe,
+    -5px -5px 10px #e1e1e1;
+}
+
+.transform:hover .transform__item--translate {
+  transform: translate(20px, -15px);
+  transform: translateX(10px);
+  transform: translateY(-10%);
+}
+
+.transform:hover .transform__item--scale {
+  transform: scale(0.75);
+  transform: scale(1.1);
+  /* перевернути */
+  /* transform: scale(-1, 1); */
+}
+
+.transform:hover .transform__item--rotate {
+  transform: rotateY(180deg);
+  transform: rotateX(180deg);
+  transform: rotate(45deg);
+}
+
+.transform:hover .transform__item--skew {
+  transform: skew(20deg, 30deg);
+  transform: skewX(15deg);
+  transform: skewY(15deg);
+}
+
+.transform:hover .transform__item--matrix{
+  transform: matrix(-1, 1, 1.5, 0.25, 1, -1);
+}
+
+.transform:hover .transform__item--multi {
+  transform: translate(-10px, 10px) scale(1.5, 0.5) rotate(25deg) skew(15deg, 15deg);
+}
+
+.transform__item--transform-origin {
+  transform-origin: 0 100%;
+  transform-origin: top left;
+}
+
+.transform:hover .transform__item--transform-origin {
+  transform: rotate(45deg) scale(0.95);
+}
+
+/* Transform 3D */
+
+.transform-3d__item {
+  perspective: 100px;
+  perspective-origin: center;
+  /* блок */
+}
+
+.transform-3d__item>div {
+  display: inline-block;
+}
+
+.transform-3d__item .transform-3d__translate-3d,
+.transform-3d__item .transform-3d__scale-3d,
+.transform-3d__item .transform-3d__rotate-3d,
+.transform-3d__item .transform-3d__multi-3d,
+.transform-3d__item .transform-3d__style,
+.transform-3d__item .transform-origin-perspective__body {
+  transition: all 0.5s ease 0s;
+}
+
+.transform-3d__item:hover .transform-3d__translate-3d,
+.transform-3d__item:hover .transform-3d__scale-3d,
+.transform-3d__item:hover .transform-3d__rotate-3d,
+.transform-3d__item:hover .transform-3d__multi-3d,
+.transform-3d__item:hover .transform-3d__style,
+.transform-3d__item:hover .transform-origin-perspective__body {
+  background-color: rgb(64, 224, 208);
+  padding: 20px;
+}
+
+
+.transform-3d__item:hover .transform-3d__translate-3d {
+  transform: translate3d(20px, 10px, -50px);
+  /* transform: translate(0px, 25px) scale(0.25); так краще, без 3d*/
+}
+
+.transform-3d__item:hover .transform-3d__scale-3d {
+  transform: scale3d(0.45, 1.3, 12);
+  /* не працює */
+}
+
+.transform-3d__item:hover .transform-3d__rotate-3d {
+  /* зорядні війні */
+  /* transform: rotate3d(50, 0, 0, 60deg); */
+  transform: rotate3d(50, 50, 200, 345deg);
+
+  /* так простіше, бутьківсьоку потрібно вказати perspective */
+  /* transform: rotateX(50deg); */
+}
+
+.transform-3d__item:hover .transform-3d__multi-3d {
+  transform: translate3d(10px, 10px, 35px) rotate3d(50, 50, 200, 10deg);
+}
+
+/* style */
+.transform-3d__item--style {
+  transform-style: preserve-3d;
+}
+
+.transform-3d__item:hover .transform-3d__style {
+  transform: rotateY(45deg);
+}
+
+/* style off */
+
+/* Backface-Visability (flipper) */
+
+.flip {
+  display: inline-block;
+
+}
+
+.flip__body {
+  margin: 10px;
+  vertical-align: top;
+  position: relative;
+  perspective: 500px;
+  width: 240px;
+  height: 240px;
+  margin: 10px;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+
+.flip__front,
+.flip__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 5%;
+  transition: all 0.5s ease;
+}
+
+.flip__front {
+  background-color: rgb(64, 224, 208);
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  text-align: center;
+  padding-top: 111px;
+}
+
+.flip__back {
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  transform: rotateY(-180deg);
+  text-align: center;
+  padding-top: 111px;
+}
+
+.flip__body:hover .flip__back {
+  transform: rotateY(0deg);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #e1e1e1;
+}
+
+.flip__body:hover .flip__front {
+  transform: rotateY(180deg);
+}
+
+.transform-3d__item {
+  perspective: 500px;
+  transform-origin: 0 0;
+}
+
+/* .transform-origin-perspective {} */
+
+.transform-origin-perspective__body {
+  width: 100%;
+}
+
+.transform-origin-perspective:hover .transform-origin-perspective__body {
+  transform: rotateY(75deg);
+  padding: 20px 0;
+  transform-origin: top left;
+}

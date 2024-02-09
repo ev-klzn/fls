@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  resize: vertical;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+[class*=__container] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.wrapper {
+  min-height: 100svh;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.wrapper {
+  font-size: 1rem;
+}
+
+body {
+  opacity: 0;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
+}
+body.loaded {
+  opacity: 1;
+  background-color: rgb(18, 104, 121);
+}
+
+.main__container {
+  text-align: center;
+}
+.main__title {
+  text-align: center;
+  font-size: 1.875rem;
+  padding: 1.25rem;
+}
+
+.button {
+  padding: 1.5625rem;
+  background-color: rgba(146, 145, 145, 0.4196078431);
+}
+.button:hover {
+  background-color: rgba(189, 11, 11, 0.1607843137);
+}
+
+.header,
+.footer {
+  background-color: rgb(18, 104, 121);
+  padding: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.bg {
+  background-color: #2b343d;
+}
+
+.hover-footer {
+  background-color: rgb(50, 67, 80);
+}
+
+.item-count {
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.items {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.item {
+  padding: 10px;
+}
+
+.link {
+  padding: 10px;
+}

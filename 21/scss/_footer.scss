@@ -1,0 +1,179 @@
+.footer {
+	background: $linkColor;
+	color: #f6f6f6;
+	font-family: "Causten";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2.17;
+
+	@media (max-width: $tablet) {
+		line-height: 2;
+	}
+
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__info
+
+	&__info {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto;
+		gap: 25px;
+		padding: 60px 0 0 0;
+		margin-bottom: 15px;
+
+		// @media (max-width: $laptopL) {
+		// }
+
+		@media (max-width: $laptop) {
+			grid-template-columns: repeat(3, 1fr);
+			padding: 30px 0 0 0;
+		}
+
+		@media (max-width: $tablet) {
+			grid-template-columns: repeat(2, 1fr);
+			padding: 25px 0 0 0;
+			gap: 20px;
+		}
+
+		@media (max-width: $mobileL) {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 15px;
+			text-align: center;
+		}
+
+		// @media (max-width: $mobileM) {
+		// }
+	}
+
+	// .footer__column
+
+	&__column {
+	}
+
+	// .footer__title
+
+	&__title {
+		font-size: 28.579px;
+		font-style: normal;
+		font-weight: 700;
+	}
+
+	// .footer__list
+
+	&__list {
+	}
+
+	// .footer__item
+
+	&__item {
+		&:hover {
+			text-decoration: underline;
+			& a {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	// .footer__actions
+
+	&__actions {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+		gap: 25px;
+		justify-content: space-between;
+		padding: 0 0 15px 0;
+
+		@media (max-width: $mobileL) {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 15px;
+			text-align: center;
+			justify-items: center;
+		}
+	}
+
+	// .footer__column
+
+	&__column {
+		&--socials {
+			align-self: end;
+		}
+	}
+
+	// .footer__socials
+
+	&__socials {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	// .footer__social
+
+	&__social {
+		& a {
+			max-width: 37px;
+			& img {
+				width: 100%;
+				height: 100%;
+				aspect-ratio: 37 / 37;
+				object-fit: cover;
+				border-radius: 12px;
+			}
+		}
+	}
+
+	// .footer__apps
+
+	&__apps {
+	}
+
+	// .footer__title
+
+	&__title {
+	}
+
+	// .footer__stors
+
+	&__stors {
+	}
+
+	// .footer__store
+
+	&__store {
+		max-width: 154px;
+		& img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 154 / 52;
+			object-fit: cover;
+		}
+	}
+
+	&__details {
+		display: flex;
+		gap: 15px;
+		justify-content: space-between;
+		padding: 30px 0 35px 0;
+		border-bottom: 1px solid #bebcbd79;
+		border-top: 1px solid #bebcbd79;
+
+		@media (max-width: $tablet) {
+			padding: 20px 0;
+		}
+	}
+
+	&__copyright {
+		text-align: center;
+		padding: 37px 0 60px 0;
+
+		@media (max-width: $tablet) {
+			padding: 20px 0;
+		}
+	}
+}

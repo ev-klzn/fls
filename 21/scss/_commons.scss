@@ -1,0 +1,127 @@
+$mainColor: rgb(0, 0, 0);
+$secondColor: rgb(67, 67, 67);
+$thirdColor: #8a33fd;
+$linkColor: #3c4242;
+$fontSize: 18px;
+$fourK: 2559.98px;
+$laptopL: 1439.98px;
+$laptop: 1023.98px;
+$tablet: 767.98px;
+$mobileL: 424.98px;
+$mobileM: 374.98px;
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// @media (max-width: $laptopL) {
+// }
+
+// @media (max-width: $laptop) {
+// }
+
+// @media (max-width: $tablet) {
+// }
+
+// @media (max-width: $mobileL) {
+// }
+
+// @media (max-width: $mobileM) {
+// }
+
+body {
+	font-family: "Inter", sans-serif;
+	// font-family: "Causten", sans-serif;
+	// font-family: 'DM Serif Text', serif;
+	// font-family: "Poppins", sans-serif;
+	// font-family: "Core Sans C 65", sans-serif;
+	// font-family: "Cormorant Infant", serif;
+	// font-family: "Montserrat", serif;
+	// background-image: linear-gradient(to bottom, #f4f6f5, #f4f6f5, #f3f5f4, #f3f5f4, #f2f4f3);
+	font-family: "Inter", sans-serif;
+	font-size: $fontSize;
+	color: $mainColor;
+}
+
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrapper {
+	min-height: 100svh;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	& > main {
+		flex-grow: 1;
+		// text-align: center;
+		// display: flex;
+		// padding: 10px 0;
+	}
+}
+
+.title {
+	color: $linkColor;
+	font-family: "Core Sans C 65", sans-serif;
+	font-size: 34px;
+	font-weight: 600;
+	letter-spacing: 0.68px;
+	height: 100%;
+
+	&::before {
+		content: "";
+		width: 6px;
+		height: 30px;
+		border-radius: 10px;
+		background-color: #8a33fd;
+		margin-right: 20px;
+		vertical-align: middle;
+	}
+
+	&--margin {
+		margin-bottom: 70px;
+
+		@media (max-width: $laptop) {
+			font-size: 28px;
+			margin-bottom: 25px;
+		}
+
+		@media (max-width: $tablet) {
+			font-size: 26px;
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: $mobileL) {
+			font-size: 24px;
+		}
+
+		@media (max-width: $mobileM) {
+			font-size: 22px;
+		}
+	}
+}
+
+.link {
+	border: 1px solid transparent;
+	transition: all 0.3s;
+
+	&:hover {
+		color: #000000;
+		background-color: #ffffff;
+		color: $thirdColor;
+		border: 1px solid $thirdColor;
+	}
+}
+
+// ----------------

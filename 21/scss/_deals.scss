@@ -1,0 +1,235 @@
+// @media (max-width: $laptopL) {
+// }
+
+// @media (max-width: $laptop) {
+// }
+
+// @media (max-width: $tablet) {
+// }
+
+// @media (max-width: $mobileL) {
+// }
+
+// @media (max-width: $mobileM) {
+// }
+
+// ------------------------------------------
+
+.deals {
+	// .deals--margin
+
+	&--margin {
+		margin-bottom: 150px;
+
+		@media (max-width: $laptop) {
+			margin-bottom: 75px;
+		}
+
+		@media (max-width: $tablet) {
+			margin-bottom: 60px;
+		}
+
+		@media (max-width: $mobileL) {
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: $mobileM) {
+			margin-bottom: 50px;
+		}
+	}
+
+	// .deals__container
+
+	&__container {
+		@media (max-width: $mobileL) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	// .deals__items
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		gap: 30px;
+
+		@media (max-width: $laptop) {
+			gap: 15px;
+			padding-top: 25px;
+		}
+
+		@media (max-width: $tablet) {
+			grid-template-columns: 1fr;
+			// padding-top: 75px;
+		}
+
+		@media (max-width: $mobileL) {
+			grid-template-columns: 1fr;
+			padding-top: 25px;
+		}
+	}
+
+	// .deals__item
+
+	&__item {
+		height: 100%;
+		width: 100%;
+		border-radius: 12px;
+	}
+}
+.item-deals {
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+	box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+	min-height: 355px;
+
+	&:hover {
+		& .item-deals__body {
+			& .item-deals__content {
+				& .item-deals__link {
+					text-decoration-line: underline;
+				}
+			}
+		}
+	}
+
+	// .item-deals__body
+
+	&__body {
+		width: 100%;
+		height: 100%;
+		border-radius: 12px;
+	}
+
+	// .item-deals__img
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		border-radius: 12px;
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 605 / 355;
+
+		& img {
+			height: 100%;
+			width: 100%;
+			aspect-ratio: 605 / 355;
+			object-fit: cover;
+			/* object-position: top; */
+			border-radius: 12px;
+		}
+	}
+
+	// .item-deals__content
+
+	&__content {
+		padding: 5% 50% 5% 5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 100%;
+		width: 100%;
+		gap: 15px;
+
+		@media (max-width: $laptop) {
+			padding: 5% 5% 5% 5%;
+			height: 100%;
+			background-color: #00000038;
+		}
+	}
+
+	// .item-deals__subtitle
+
+	&__subtitle {
+		color: #fff;
+		font-family: "Montserrat";
+		font-size: 18px;
+		font-weight: 800;
+		line-height: 1.67;
+		letter-spacing: 0.251px;
+
+		@media (max-width: $laptop) {
+			font-size: 16px;
+			font-weight: 800;
+		}
+
+		@media (max-width: $mobileM) {
+			font-size: 16px;
+			font-weight: 800;
+			line-height: 1;
+		}
+	}
+
+	// .item-deals__title
+
+	&__title {
+		color: #fff;
+		font-family: "Core Sans C 75", sans-serif;
+		font-size: 34px;
+		font-weight: 800;
+		line-height: 1.33;
+
+		@media (max-width: $laptop) {
+			font-size: 28px;
+			font-weight: 800;
+		}
+
+		@media (max-width: $mobileM) {
+			font-size: 20px;
+			font-weight: 800;
+			line-height: 1;
+		}
+	}
+
+	// .item-deals__text
+
+	&__text {
+		& p {
+			color: #fff;
+			font-family: "Core Sans C 55";
+			font-weight: 500;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 1.56;
+			letter-spacing: 0.251px;
+
+			@media (max-width: $laptop) {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 1.3;
+			}
+			@media (max-width: $mobileM) {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 1;
+			}
+		}
+	}
+
+	// .item-deals__link
+
+	&__link {
+		color: #fff;
+		font-family: "Core Sans C 75", sans-serif;
+		font-size: 20px;
+		font-weight: 800;
+		line-height: 1.5;
+
+		@media (max-width: $laptop) {
+			font-size: 18px;
+			font-weight: 800;
+		}
+
+		@media (max-width: $mobileM) {
+			font-size: 18px;
+			font-weight: 800;
+			line-height: 1;
+		}
+	}
+}

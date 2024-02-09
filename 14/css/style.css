@@ -1,0 +1,514 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  /* font-family: 'DM Serif Text', serif; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Core Sans C 65", sans-serif; */
+  /* font-family: "Cormorant Infant", serif; */
+  background-image: linear-gradient(to bottom, #f4f6f5, #f4f6f5, #f3f5f4, #f3f5f4, #f2f4f3);
+}
+
+.up {
+  text-align: center;
+}
+
+.up--margin:not(:last-child) {
+  margin-right: 25px;
+}
+
+.up:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+[class*="__container"] {
+  max-width: 1980px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.practice__title {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 1.33px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.33;
+}
+
+.practice__title--subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.practice__items {
+  margin-bottom: 20px;
+}
+
+.trans__item,
+.anim__item {
+  display: inline-block;
+  width: 218px;
+  height: 218px;
+  vertical-align: top;
+  padding-top: 101px;
+  background-color: rgb(64, 224, 208);
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  border-radius: 5%;
+  transition-duration: 0.5s
+}
+
+.trans__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.anim__item:not(:last-child) {
+  margin-right: 43px;
+}
+
+.trans__item:hover,
+.anim__item:hover {
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 10px #bebebe,
+    -5px -5px 10px #e1e1e1;
+}
+
+/* transition */
+
+.trans__item--duration {
+  transition-duration: 5s;
+}
+
+.trans__item--duration:hover {
+  transition-duration: 2s;
+}
+
+/* - */
+
+.trans__item--property {
+  transition-duration: 1s, 2s;
+  transition-property: width, height;
+}
+
+.trans__item--property:hover {
+  width: 250px;
+  height: 230px;
+}
+
+/* - */
+
+.trans__item-opacity {
+  visibility: visible;
+  opacity: 1;
+}
+
+.trans__item:hover .trans__item-opacity {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* - */
+
+.trans__item--delay {
+  transition-delay: 2s;
+}
+
+.trans__item--delay:hover {
+  transition-delay: 1s;
+}
+
+/* - */
+.trans__item--delay-combo {
+  transition-duration: 1.5s, 2s, 1s;
+  transition-delay: 0s, 1.5s, 3.5s;
+  transition-property: width, height, background-color;
+}
+
+.trans__item--delay-combo:hover {
+  width: 250px;
+  height: 230px;
+  background-color: #f0f0f0;
+}
+
+/* - */
+
+.trans__item--ttf-linear:hover {
+  transition-timing-function: linear;
+  transform: scale(1.5);
+}
+
+/* - */
+
+.trans__item--ttf-steps {
+  transition-timing-function: steps(2);
+}
+
+/* - */
+/*
+	Універсальний запис
+	animation
+
+	Порядок запису властивостей:
+	animation-name
+	animation-duration
+	animation-timing-function
+	animation-iteration-count
+	animation-direction
+	animation-play-state
+	animation-delay
+	animation-fill-mode
+	*/
+
+.trans__item--universal {
+  transition:
+    width 0.5s linear 0s,
+    height 0.5s ease-in-out 0.5s,
+    background-color 1.5s linear;
+}
+
+.trans__item--universal:hover {
+  width: 250px;
+  height: 230px;
+  background-color: #f0f0f0;
+}
+
+/* Animation */
+
+/* - */
+@keyframes rotate-box {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim__item--rotate {
+  animation-name: rotate-box;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+}
+
+/* - */
+
+@keyframes iteration-count {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim__item--iteration-count {
+  animation-name: iteration-count;
+  animation-duration: 7s;
+  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
+}
+
+/* - */
+
+@keyframes direction {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim__item--direction {
+  animation-name: direction;
+  animation-duration: 10s;
+  animation-iteration-count: 10;
+  /* animation-direction: reverse;*/
+  /* animation-direction: alternate-reverse; */
+  animation-direction: alternate;
+}
+
+/* - */
+@keyframes play-state {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim__item--play-state {
+  animation-name: play-state;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.anim__item--play-state:hover {
+  animation-play-state: paused;
+}
+
+/* - */
+
+@keyframes delay {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim__item--delay {
+  animation-name: delay;
+  animation-delay: 5s;
+  animation-duration: 100s;
+}
+
+/* - */
+
+@keyframes fill-mode {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(345deg);
+  }
+}
+
+.anim__item--fill-mode {
+  animation-name: fill-mode;
+  animation-duration: 50s;
+  animation-fill-mode: forwards;
+  /* анімація лишається на останньому кадрі */
+}
+
+/* - */
+
+/*
+	Універсальний запис
+	animation
+
+	Порядок запису властивостей:
+	animation-name
+	animation-duration
+	animation-timing-function
+	animation-iteration-count
+	animation-direction
+	animation-play-state
+	animation-delay
+	animation-fill-mode
+
+	*/
+
+@keyframes universal {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim__item--universal {
+  animation: universal 11s linear 10 normal running 1s none;
+
+  /* Декілька анімацій */
+  /* animation: rotate 1s linear 1 normal running 0s forwards, rotate-2 1s ease infinite alternate running 1s forwards; */
+
+}
+
+/* - */
+
+.list {
+  display: inline-block;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 10px #bebebe,
+    -5px -5px 10px #e1e1e1;
+  width: 200px;
+}
+
+.list__item {
+  transform: translate(-100%, 0);
+  transition-duration: 0.2s;
+}
+
+.list:hover .list__item {
+  transform: translate(0px, 0px);
+  transition-duration: 0.5s;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.list__item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.list__item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.list__item:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.list__item:nth-child(4) {
+  transition-delay: 0.7s;
+}
+
+.list--margin {
+  margin-right: 50px;
+}
+
+/* - */
+
+.image {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+
+.image--margin {
+  margin-right: 50px;
+}
+
+.image::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  content: "";
+  transform: translate(-100%, 0px);
+  transition: transform 0.3s;
+}
+
+.image:hover::before {
+  transform: scale(1);
+}
+
+.image img {
+  max-width: 100px;
+}
+
+/* - */
+
+.link-underline-one {
+  font-size: 24px;
+  color: black;
+  transition: color 0.3s;
+  overflow: hidden;
+}
+
+.link-underline-one::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  margin-top: 1px;
+  background-color: black;
+  transition:
+    background-color 0.3s,
+    width 0.3s;
+}
+
+.link-underline-one:hover {
+  color: rgb(64, 224, 208);
+}
+
+.link-underline-one:hover::after {
+  background-color: rgb(64, 224, 208);
+  width: 100%;
+}
+
+/* - */
+
+.link-underline-two {
+  font-size: 24px;
+  color: black;
+  transition: color 0.3s;
+  overflow: hidden;
+}
+
+.link-underline-two::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  left: 50%;
+  position: relative;
+  margin-top: 1px;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.link-underline-two:hover {
+  color: rgb(64, 224, 208);
+}
+
+.link-underline-two:hover::after {
+  background-color: rgb(64, 224, 208);
+  width: 100%;
+  left: 0;
+}
+
+/* - */
+
+.button {
+  cursor: pointer;
+  background-color: rgb(64, 224, 208);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 5px 5px 10px #bebebe,
+    -5px -5px 10px #e1e1e1;
+  position: relative;
+  top: 0;
+  transition: all 0.2s;
+  color: white;
+}
+
+.button:hover {
+  top: 2px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 10px #bebebe,
+    -5px -5px 10px #e1e1e1;
+  color: #000;
+}
+
+.button:active {
+  top: 5px;
+  box-shadow:
+    0px 0px 0px #000,
+    inset 0px 0px 5px 0px #333;
+}
+
+.button--margin {
+  margin-right: 25px;
+}
+

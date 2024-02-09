@@ -1,0 +1,10 @@
+@use "sass:math";
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_commons.scss";
+.wrapper {
+	background-image: linear-gradient(rgb(4, 42, 68), rgb(20, 122, 142));
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: toRem(35);
+}

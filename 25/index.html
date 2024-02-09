@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/style.css">
+    <title>25 - JS DOM</title>
+  </head>
+  <body>
+    <div id="up" class="wrapper">
+      <header></header>
+      <main class="main">
+        <section class="main__container">
+          <h1 class="main__title">JavaScript DOM: Основи та Можливості</h1>
+          <div class="main__text">
+            <p>
+              JavaScript Document Object Model (DOM) є ключовим компонентом у
+              веб-розробці, що дозволяє динамічно взаємодіяти з вмістом
+              веб-сторінки. DOM представляє собою ієрархічну структуру об'єктів,
+              які представляють кожен елемент, атрибут чи текстовий вузол
+              веб-сторінки. У цій статті ми розглянемо основні поняття та
+              можливості JavaScript DOM.
+            </p>
+          </div>
+          <h2 class="main__subtitle">Основні Поняття</h2>
+          <h3 class="main__subtitle-second">DOM елементи:</h3>
+          <div class="main__text">
+            <p>
+              DOM представляє веб-сторінку як ієрархію елементів. Кожен тег HTML
+              стає DOM елементом, який можна змінювати та взаємодіяти за
+              допомогою JavaScript.
+            </p>
+          </div>
+          <h3 class="main__subtitle-second">Дерево DOM:</h3>
+          <div class="main__text">
+            <p>
+              DOM структура представляється як дерево, де кожен елемент є
+              вузлом. За допомогою JavaScript, можна отримувати доступ до
+              будь-якого вузла і змінювати його.
+            </p>
+          </div>
+          <h2 class="main__subtitle">Робота з Елементами</h2>
+          <h3 class="main__subtitle-second">Отримання Елементів:</h3>
+          <div class="main__text">
+            <p>
+              Використовуючи методи, такі як getElementById,
+              getElementsByClassName, getElementsByTagName або сучасні
+              querySelector і querySelectorAll, можна отримати доступ до
+              елементів.
+            </p>
+          </div>
+
+          <h3 class="main__subtitle-second">Зміна Властивостей:</h3>
+          <div class="main__text">
+            <p>
+              Змінюйте атрибути та стилі елементів, використовуючи властивості
+              DOM.
+            </p>
+          </div>
+
+          <h2 class="main__subtitle">Робота з Подіями</h2>
+          <h3 class="main__subtitle-second">Додавання Подій:</h3>
+          <div class="main__text">
+            <p>
+              Додавайте обробники подій, щоб реагувати на взаємодію користувача.
+            </p>
+          </div>
+
+          <h3 class="main__subtitle-second">Робота з Подією:</h3>
+          <div class="main__text">
+            <p>
+              У функції обробника події можна взаємодіяти з елементами та їхніми
+              властивостями.
+            </p>
+          </div>
+
+          <h2 class="main__subtitle">Динамічне Створення Елементів</h2>
+          <h3 class="main__subtitle-second">Створення Елементів:</h3>
+          <div class="main__text">
+            <p>
+              Використовуйте метод createElement для динамічного створення нових
+              елементів.
+            </p>
+          </div>
+
+          <h3 class="main__subtitle-second">Додавання до Дерева:</h3>
+          <div class="main__text">
+            <p>
+              Додавайте нові елементи до дерева DOM за допомогою методу
+              appendChild.
+            </p>
+          </div>
+
+          <h2 class="main__subtitle">
+            JavaScript DOM надає широкий спектр інструментів для взаємодії з
+            веб-сторінками.
+          </h2>
+
+          <ul class="list">
+            <li class="list__item">
+              document.getElementById(id) Отримання елементу за його
+              ідентифікатором.
+            </li>
+            <li class="list__item">
+              document.getElementsByClassName(className) Отримання колекції
+              елементів за їхніми класами.
+            </li>
+            <li class="list__item">
+              document.getElementsByTagName(tagName) Отримання колекції
+              елементів за їхнім ім'ям тегу.
+            </li>
+            <li class="list__item">
+              document.querySelector(selector) Отримання першого елемента, який
+              відповідає CSS-селектору.
+            </li>
+            <li class="list__item">
+              document.querySelectorAll(selector) Отримання всіх елементів, які
+              відповідають CSS-селектору.
+            </li>
+            <li class="list__item">
+              element.innerHTML Отримання або встановлення HTML-вмісту елемента.
+            </li>
+            <li class="list__item">
+              element.style.property Отримання або встановлення стилів елемента.
+            </li>
+            <li class="list__item">
+              element.addEventListener(event, handler) Додавання обробника події
+              до елемента.
+            </li>
+            <li class="list__item">
+              element.removeChild(child) Видалення дочірнього елемента з
+              батьківського.
+            </li>
+            <li class="list__item">
+              element.appendChild(child) Додавання дочірнього елемента до
+              батьківського.
+            </li>
+            <li class="list__item">
+              document.createElement(tagName) Створення нового елемента з
+              вказаним ім'ям тегу.
+            </li>
+            <li class="list__item">
+              element.setAttribute(name, value) Встановлення атрибута елемента з
+              вказаним ім'ям та значенням.
+            </li>
+            <li class="list__item">
+              element.getAttribute(name) Отримання значення атрибута елемента за
+              вказаним ім'ям.
+            </li>
+            <li class="list__item">
+              element.classList.add(className) Додавання класу до списку класів
+              елемента.
+            </li>
+            <li class="list__item">
+              element.classList.remove(className) Видалення класу зі списку
+              класів елемента.
+            </li>
+            <li class="list__item">
+              element.classList.toggle(className) Додавання або видалення класу
+              відповідно до його наявності.
+            </li>
+          </ul>
+          <div class="main__text">
+            <p>
+              Це лише кілька прикладів засобів, які вам доступні при роботі з
+              JavaScript DOM. Знання цих методів і властивостей дозволить вам
+              ефективно маніпулювати структурою та вмістом веб-сторінок.
+            </p>
+          </div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <button class="button" type="Button">Button</button>
+          <a href="#" class="link">Link</a>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

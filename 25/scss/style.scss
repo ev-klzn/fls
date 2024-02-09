@@ -1,0 +1,76 @@
+@use "sass:math";
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_commons.scss";
+.wrapper {
+	// background-image: linear-gradient(rgb(4, 42, 68), rgb(20, 122, 142));
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	font-size: toRem(16);
+}
+
+body {
+	background-image: linear-gradient(rgb(4, 42, 68), rgb(20, 122, 142));
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main {
+	// .main__container
+
+	&__container {
+	}
+
+	// .main__title
+
+	&__title {
+		text-align: center;
+		font-size: toRem(30);
+		padding: toRem(20);
+	}
+
+	// .main__text
+
+	&__text {
+		& p {
+			&:not(:last-child) {
+				margin-bottom: toRem(15);
+			}
+		}
+	}
+
+	// .main__subtitle
+
+	&__subtitle {
+		font-size: toRem(26);
+		padding: toRem(20);
+		text-align: center;
+	}
+
+	// .main__subtitle-second
+
+	&__subtitle-second {
+		font-size: toRem(22);
+		padding: toRem(15);
+	}
+}
+
+.list {
+	// .list__item
+	margin-bottom: toRem(20);
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: toRem(15);
+		}
+	}
+}
+
+.button {
+	padding: toRem(25);
+	background-color: #9291916b;
+
+	&:hover {
+		background-color: #bd0b0b29;
+	}
+}

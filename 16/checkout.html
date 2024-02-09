@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/style.css">
+    <title>16 - Forms</title>
+  </head>
+  <body>
+    <div id="up" class="wrapper">
+      <header class="header header--fix">
+        <div class="header__container">
+          <a class="up" href="checkout.html">Reload page</a>
+          <a class="up" href="index.html">My Info page</a>
+          <a class="up" href="contact_us.html">Contact Us page</a>
+        </div>
+      </header>
+
+      <main class="page">
+        <div class="page__container">
+          <div class="page__check-out check-out">
+            <h2 class="check-out__title title">Check Out</h2>
+            <h3
+              class="check-out__subtitle check-out__subtitle--margin subtitle">
+              Billing Details
+            </h3>
+            <div class="check-out__block body-info">
+              <form
+                action="#"
+                enctype="multipart/form-data"
+                method="GET"
+                id="check-out">
+                <div class="check-out__colums check-out__colums--no-margin">
+                  <div class="column-1">
+                    <div class="column-1__f-name">
+                      <label for="f-name">First Name*</label>
+                      <input
+                        type="text"
+                        id="f-name"
+                        required
+                        placeholder="First Name"
+                        name="f-name">
+                    </div>
+                    <div class="column-1__country">
+                      <label for="country">Country Region*</label>
+                      <input
+                        type="text"
+                        id="country"
+                        required
+                        placeholder="Country Region"
+                        name="country">
+                    </div>
+                    <div class="column-1__street">
+                      <label for="street">Street Address*</label>
+                      <input
+                        type="text"
+                        id="street"
+                        required
+                        placeholder="Street Address"
+                        name="street">
+                    </div>
+                  </div>
+                  <div class="column-2">
+                    <div class="column-2__l-name">
+                      <label for="l-name">Last Name*</label>
+                      <input
+                        type="text"
+                        id="l-name"
+                        required
+                        placeholder="Last Name"
+                        name="l-name">
+                    </div>
+                    <div class="column-2__company">
+                      <label for="company">Company Name</label>
+                      <input
+                        type="text"
+                        id="company"
+                        placeholder="Company Name"
+                        name="company">
+                    </div>
+                    <div class="column-2__apt">
+                      <label for="apt">Apt, suite, unit</label>
+                      <input
+                        type="text"
+                        id="apt"
+                        placeholder="Apt, suite, unit"
+                        name="apt">
+                    </div>
+                  </div>
+                </div>
+                <div class="check-out__columns-three columns-three">
+                  <div class="columns-three__city">
+                    <label for="city">City* Town City</label>
+                    <input
+                      type="text"
+                      id="city"
+                      required
+                      placeholder="City Town City"
+                      name="city">
+                  </div>
+                  <div class="columns-three__state">
+                    <label for="state">State*</label>
+                    <select name="state" id="state">
+                      <option value="10" selected="selected">State №1</option>
+                      <option value="20">State №2</option>
+                      <option value="30">State №3</option>
+                      <option value="40">State №4</option>
+                    </select>
+                  </div>
+                  <div class="columns-three__code">
+                    <label for="code">Postal Code*</label>
+                    <input
+                      type="number"
+                      id="code"
+                      placeholder="Postal Code (50000)"
+                      name="code">
+                  </div>
+                </div>
+
+                <div class="check-out__colums">
+                  <div class="column-1">
+                    <div class="column-1__phone">
+                      <label for="phone">Phone*</label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        required
+                        placeholder="Phone (0951234567)"
+                        name="phone">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="check-out__buttons">
+                  <!-- <a href="#delivery-page" class="submit"></a> -->
+                  <div>
+                    <button class="submit" form="check-out" type="submit">
+                      Continue to delivery
+                    </button>
+                  </div>
+                </div>
+
+                <div class="check-out__checkbox checkbox-check-out">
+                  <div class="checkbox-check-out__item">
+                    <input
+                      class="checkbox-check-out__input"
+                      id="check-3"
+                      name="save-address"
+                      type="checkbox">
+                    <label class="checkbox-check-out__label" for="check-3"
+                      >Save my information for a faster checkout</label
+                    >
+                  </div>
+                </div>
+              </form>
+              <form
+                action="#"
+                enctype="multipart/form-data"
+                method="GET"
+                id="shipping-pay">
+                <h3 id="delivery-page" class="check-out__subtitle subtitle">
+                  Shipping Address
+                </h3>
+                <div class="check-out__text">
+                  <p>
+                    Select the address that matches your card or payment method.
+                  </p>
+                </div>
+                <div class="check-out__billing-adress billing-adress">
+                  <fieldset class="billing-adress__radio radio-form">
+                    <div class="radio-form__address radio-group">
+                      <input
+                        checked
+                        class="radio-group__item"
+                        id="billing-address"
+                        name="address"
+                        value="billing"
+                        type="radio">
+                      <label class="radio-group__title" for="billing-address"
+                        >Same as Billing address</label
+                      >
+                    </div>
+                    <div class="radio-form__address radio-group">
+                      <input
+                        class="radio-group__item"
+                        id="shipping-address"
+                        name="address"
+                        value="shipping"
+                        type="radio">
+                      <label class="radio-group__title" for="shipping-address"
+                        >Use a different shipping address</label
+                      >
+                    </div>
+                  </fieldset>
+                </div>
+                <h3
+                  class="check-out__subtitle check-out__subtitle--margin subtitle">
+                  Shipping Method
+                </h3>
+                <div class="check-out__line">
+                  <div class="check-out__shipping-method method-shipping">
+                    <div class="method-shipping__date">
+                      Arrives by Monday, June 7
+                    </div>
+                    <div class="method-shipping__block">
+                      <div class="method-shipping__body">
+                        <div class="method-shipping__charges">
+                          Delivery Charges
+                        </div>
+                        <div class="method-shipping__text">
+                          <p>Additional fess may apply</p>
+                        </div>
+                      </div>
+                      <div class="method-shipping__price">$5.00</div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="check-out__subtitle subtitle">Payment Method</h3>
+                <div class="method-payment-secure">
+                  All transactions are secure and encrypted.
+                </div>
+                <div class="method-payment-block">
+                  <fieldset class="method-payment-block__radio">
+                    <div class="method-payment-block__card">
+                      <div
+                        class="method-payment-block__margin block-method-payment">
+                        <input
+                          checked
+                          class="block-method-payment__item"
+                          id="credit-card"
+                          name="payment-method"
+                          value="credit-card"
+                          type="radio">
+                        <label
+                          class="block-method-payment__title"
+                          for="credit-card"
+                          >Credit Card</label
+                        >
+                      </div>
+                      <div class="method-payment-block__text">
+                        <p>We accept all major credit cards.</p>
+                      </div>
+                      <div class="method-payment-block__icon">
+                        <div class="method-payment-block__img">
+                          <img
+                            src="img/paymet_method/1.jpg"
+                            alt="paymet method image">
+                        </div>
+                        <div class="method-payment-block__img">
+                          <img
+                            src="img/paymet_method/2.jpg"
+                            alt="paymet method image">
+                        </div>
+                        <div class="method-payment-block__img">
+                          <img
+                            src="img/paymet_method/3.jpg"
+                            alt="paymet method image">
+                        </div>
+                        <div class="method-payment-block__img">
+                          <img
+                            src="img/paymet_method/4.jpg"
+                            alt="paymet method image">
+                        </div>
+                      </div>
+                      <div
+                        class="method-payment-block__card-number number-card">
+                        <div class="number-card__body">
+                          <!-- - -->
+                          <div
+                            class="number-card__colums number-card__colums--no-margin">
+                            <div class="column-1">
+                              <div class="column-1__card-number">
+                                <input
+                                  type="number"
+                                  id="card-number"
+                                  required
+                                  placeholder="Card number"
+                                  name="card-number">
+                              </div>
+                              <div class="column-1__expiration">
+                                <input
+                                  type="number"
+                                  id="expiration"
+                                  required
+                                  autocomplete="off"
+                                  placeholder="Expiration date (MM/YY)"
+                                  name="expiration">
+                              </div>
+                            </div>
+                            <div class="column-2">
+                              <div class="column-2__name-card">
+                                <input
+                                  type="text"
+                                  id="name-card"
+                                  required
+                                  autocomplete="off"
+                                  placeholder="Name of card"
+                                  name="name-card">
+                              </div>
+                              <div class="column-2__cvv">
+                                <input
+                                  type="password"
+                                  id="cvv"
+                                  autocomplete="off"
+                                  placeholder="Security Code"
+                                  name="cvv"
+                                  minlength="3"
+                                  maxlength="3">
+                                <img
+                                  src="img/paymet_method/eye.svg"
+                                  alt="eye">
+                              </div>
+                            </div>
+                          </div>
+                          <!-- - -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="method-payment-block__cash">
+                      <div
+                        class="method-payment-block__margin block-method-payment">
+                        <input
+                          class="block-method-payment__item"
+                          id="cash"
+                          name="payment-method"
+                          value="cash"
+                          type="radio">
+                        <label class="block-method-payment__title" for="cash"
+                          >Cash on delivery</label
+                        >
+                      </div>
+                      <div class="method-payment-block__cash-delivery">
+                        <p>Pay with cash upon delivery</p>
+                      </div>
+                    </div>
+                    <div class="method-payment-block__paypal">
+                      <div
+                        class="method-payment-block__margin block-method-payment">
+                        <input
+                          class="block-method-payment__item"
+                          id="paypal"
+                          name="payment-method"
+                          value="paypal"
+                          type="radio">
+                        <label class="block-method-payment__title" for="paypal"
+                          >Paypal</label
+                        >
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+
+            <div>
+              <button class="submit" form="shipping-pay" type="submit">
+                Pay Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <ul class="footer-links">
+            <li><a href="../" class="up">FLS</a></li>
+            <li><a class="up" href="#up">UP</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

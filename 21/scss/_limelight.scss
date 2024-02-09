@@ -1,0 +1,116 @@
+// @import "_commons.scss";
+// @import "item.scss";
+
+.item-card {
+	position: relative;
+	font-family: "Causten", sans-serif;
+
+	@media (max-width: $mobileL) {
+	}
+
+	&__fav {
+		position: absolute;
+		top: 25px;
+		right: 20px;
+		content: "";
+		transition: transform 0.3s;
+		width: 34px;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+
+		& img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 34 / 34;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+
+	// .item-card__img
+
+	&__img {
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: 15px;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 270 / 393;
+			object-fit: cover;
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	// .item-card__body
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .item-card__items
+
+	&__items {
+		overflow: hidden;
+
+		&--limelight {
+		}
+	}
+
+	// .item-card__title
+
+	&__title {
+		color: #2a2f2f;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.56;
+		letter-spacing: -0.715px;
+		margin-bottom: 10px;
+		transition: color 0.3s ease 0s;
+
+		&--limelight {
+			line-height: 1;
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+
+	// .item-card__link
+
+	&__link {
+		color: #7f7f7f;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.56;
+		letter-spacing: -0.536px;
+
+		&--limelight {
+			line-height: 1;
+		}
+	}
+
+	// .item-card__arrow
+
+	&__arrow {
+		&--price {
+			color: #3c4242;
+			font-family: "Causten";
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			padding: 10px 16px;
+			border-radius: 8px;
+			background: #f6f6f6;
+		}
+	}
+}

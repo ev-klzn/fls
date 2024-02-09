@@ -1,0 +1,77 @@
+@use "sass:math";
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_commons.scss";
+.wrapper {
+	font-size: toRem(16);
+}
+
+body {
+	opacity: 0;
+	transition: opacity 3s;
+
+	&.loaded {
+		opacity: 1;
+		background-color: rgb(18, 104, 121);
+	}
+}
+
+.main {
+	// .main__container
+
+	&__container {
+		text-align: center;
+	}
+
+	// .main__title
+
+	&__title {
+		text-align: center;
+		font-size: toRem(30);
+		padding: toRem(20);
+	}
+}
+
+.button {
+	padding: toRem(25);
+	background-color: #9291916b;
+
+	&:hover {
+		background-color: #bd0b0b29;
+	}
+}
+
+.header,
+.footer {
+	background-color: rgb(18, 104, 121);
+	padding: 100px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.bg {
+	background-color: #2b343d;
+}
+
+.hover-footer {
+	background-color: rgb(50, 67, 80);
+}
+
+.item-count {
+	padding: 50px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.items {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.item {
+	padding: 10px;
+}
+
+.link {
+	padding: 10px;
+}
