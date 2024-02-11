@@ -1375,9 +1375,6 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.team--margin {
-  margin-bottom: 8.125rem;
-}
 .team__title {
   color: #fff;
   top: 0;
